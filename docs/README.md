@@ -5,12 +5,11 @@ Android新星学习路线
 
 ## 学习路线
 
-1. [Android学习资料](./学习路线/Android学习资料.md)
-2. [学长推荐学习路线](./学习路线/学长推荐学习路线.md)
+1. 
 
 ## Android基础知识
 
-1. [Android第一课](./Android基础知识/1.Android第一课.md)
+1. 
 
 软件架构说明
 
