@@ -6,6 +6,10 @@ export default defineConfig({
   description: "一个移动开发学习网站",
   themeConfig: {
     logo: '/logo.svg',
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present Evan You'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
