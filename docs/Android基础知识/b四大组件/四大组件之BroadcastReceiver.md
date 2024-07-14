@@ -32,10 +32,10 @@ public class mBroadcastReceiver extends BroadcastReceiver {
 # 广播接收器的注册方式
 分为两种：1. 静态注册 2. 动态注册
 ## 静态注册
-使用：在androidManifest文件中通过**<receive>**标签声明
+使用：在androidManifest文件中通过** receive **标签声明
 特点：常驻、不受任何组件的生命周期影响（应用程序关闭后，如果有信息广播，程序依旧会被系统调用），耗电，占内存
 ```xml
-<receiver 
+<receiver>
   android:enabled=["true" | "false"]
   //此broadcastReceiver能否接收其他App的发出的广播
   //默认值是由receiver中有无intent-filter决定的：如果有intent-filter，默认值为true，否则为false
