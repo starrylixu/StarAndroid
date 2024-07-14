@@ -11,7 +11,7 @@ export default defineConfig({
       copyright: 'Copyright © 2019-present Evan You'
     },
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/starrylixu/StarAndroid/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
     // https://vitepress.dev/reference/default-theme-config
