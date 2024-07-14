@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "StarAndroid"
+  text: "一个移动开发爱好者的学习知识库"
+  tagline: Android/Flutter/HarmonyOS
   actions:
     - theme: brand
       text: Markdown Examples
@@ -17,6 +17,7 @@ hero:
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: 
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
