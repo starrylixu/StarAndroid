@@ -5,6 +5,7 @@ export default defineConfig({
   title: "StarAndroid",
   description: "一个移动开发学习网站",
   themeConfig: {
+    logo: '/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
