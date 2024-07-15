@@ -1,4 +1,3 @@
-import { homedir } from 'os'
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
@@ -76,7 +75,43 @@ export default defineConfig({
             { text: '异步支持', link: '/dart/异步支持' }
           ]
         }
-        ]
+        ],
+        '/开发框架/': [
+          {
+            text: "Dart语言",
+            items: [
+              { text: 'mac下flutter环境配置', link: '/dart/mac下flutter环境配置' },
+              { text: 'Dart环境安装', link: '/dart/Dart环境安装' },
+              { text: 'Dart基础', link: '/dart/Dart基础' },
+              { text: 'Dart语言进阶', link: '/dart/Dart语言进阶' },
+              { text: '异步支持', link: '/dart/异步支持' }
+            ]
+          }
+          ],
+          '/Java/': [
+            {
+              text: "Dart语言",
+              items: [
+                { text: 'mac下flutter环境配置', link: '/dart/mac下flutter环境配置' },
+                { text: 'Dart环境安装', link: '/dart/Dart环境安装' },
+                { text: 'Dart基础', link: '/dart/Dart基础' },
+                { text: 'Dart语言进阶', link: '/dart/Dart语言进阶' },
+                { text: '异步支持', link: '/dart/异步支持' }
+              ]
+            }
+            ],
+            '/Flutter/': [
+              {
+                text: "Dart语言",
+                items: [
+                  { text: 'mac下flutter环境配置', link: '/dart/mac下flutter环境配置' },
+                  { text: 'Dart环境安装', link: '/dart/Dart环境安装' },
+                  { text: 'Dart基础', link: '/dart/Dart基础' },
+                  { text: 'Dart语言进阶', link: '/dart/Dart语言进阶' },
+                  { text: '异步支持', link: '/dart/异步支持' }
+                ]
+              }
+              ],
       }
     ,
     //友链
