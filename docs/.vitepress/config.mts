@@ -33,7 +33,15 @@ export default defineConfig({
     //导航栏
     nav: [
       { text: '主页', link: '/' },
-      { text: 'Android', link: '/markdown-examples' },
+      {
+        text: 'Android', items: [
+          { text: '快速入门', link: '/a快速入门/1.Android第一课' },
+          { text: '四大组件', link: '/b四大组件/『初入茅庐』- 四大组件之ContentProvider' },
+          { text: 'Fragment', link: '/dart/Dart基础' },
+          { text: 'View', link: '/Java/2.Java特性' },
+          { text: '多线程', link: '/Kotlin/协程' }
+        ]
+      },
       { text: 'Flutter', link: '/Flutter/1.控件' },
       { text: '开发工具', link: '/开发工具/Git使用指南' },
       {
