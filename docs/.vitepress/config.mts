@@ -35,6 +35,7 @@ export default defineConfig({
       { text: '主页', link: '/' },
       { text: 'Android', link: '/markdown-examples' },
       { text: 'Flutter', link: '/Flutter/1.控件' },
+      { text: '开发工具', link: '/开发工具/Git使用指南' },
       {
         text: '语言学习',
         items: [
@@ -78,13 +79,11 @@ export default defineConfig({
         ],
         '/开发框架/': [
           {
-            text: "Dart语言",
+            text: "开发框架",
             items: [
-              { text: 'mac下flutter环境配置', link: '/dart/mac下flutter环境配置' },
-              { text: 'Dart环境安装', link: '/dart/Dart环境安装' },
-              { text: 'Dart基础', link: '/dart/Dart基础' },
-              { text: 'Dart语言进阶', link: '/dart/Dart语言进阶' },
-              { text: '异步支持', link: '/dart/异步支持' }
+              { text: '网络请求的历史渊源', link: '/开发框架/网络请求的历史渊源' },
+              { text: '网络请求与JSON解析', link: '/开发框架/网络请求与JSON解析' },
+              { text: '网络请求之okhttp框架', link: '/开发框架/网络请求之okhttp框架' }
             ]
           }
           ],
