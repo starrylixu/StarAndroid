@@ -35,7 +35,7 @@ export default defineConfig({
       { text: '主页', link: '/' },
       {
         text: 'Android', items: [
-          { text: '快速入门', link: '/a快速入门/1.Android第一课' },
+          { text: '快速入门', link: '/Android基础知识/1快速入门/Android第一课' },
           { text: '四大组件', link: '/b四大组件/『初入茅庐』- 四大组件之ContentProvider' },
           { text: 'Fragment', link: '/dart/Dart基础' },
           { text: 'View', link: '/Java/2.Java特性' },
@@ -68,6 +68,25 @@ export default defineConfig({
           items: [
             { text: 'Markdown Examples', link: '/markdown-examples' },
             { text: 'Runtime API Examples', link: '/api-examples' },
+            { text: '目录大纲', link: '/目录大纲' }
+          ]
+        }
+      ],
+      '/Android基础知识/1快速入门/':[
+
+        {
+          text: "Android基础知识-快速入门",
+          items: [
+            { text: 'Android第一课', link: '/Android基础知识/1快速入门/Android第一课' },
+            { text: '怎么把androidStudio卸载干净', link: '/Android基础知识/1快速入门/2.怎么把androidStudio卸载干净' },
+            { text: 'TextView如何实现走马灯的效果', link: '/Android基础知识/1快速入门/3.TextView如何实现走马灯的效果' },
+            { text: '如何为组件添加响应', link: '/Android基础知识/1快速入门/4.如何为组件添加响应' },
+            { text: 'Fragment的使用', link: '/Android基础知识/1快速入门/7.Fragment的使用' },
+            { text: 'RecyclerView列表组件', link: '/Android基础知识/1快速入门/8.RecyclerView列表组件' },
+            { text: 'SharedPreferences简单数据存储', link: '/Android基础知识/1快速入门/9.SharedPreferences简单数据存储' },
+            { text: '11.网络请求数据与JSON解析', link: '/Android基础知识/1快速入门/11.网络请求数据与JSON解析' },
+            { text: '12.1网络请求之Retrofit', link: '/Android基础知识/1快速入门/12.1网络请求之Retrofit' },
+            { text: '12.网络编程之网络请求', link: '/Android基础知识/1快速入门/12.网络编程之网络请求' },
             { text: '目录大纲', link: '/目录大纲' }
           ]
         }
