@@ -38,7 +38,7 @@ export default defineConfig({
       {
         text: 'Android', items: [
           { text: '快速入门', link: '/Android基础知识/1快速入门/Android第一课' },
-          { text: '四大组件', link: '/b四大组件/『初入茅庐』- 四大组件之ContentProvider' },
+          { text: '四大组件', link: '/b四大组件/四大组件之ContentProvider' },
           { text: 'Fragment', link: '/dart/Dart基础' },
           { text: 'View', link: '/Java/2.Java特性' },
           { text: '多线程', link: '/Kotlin/协程' }
@@ -75,7 +75,6 @@ export default defineConfig({
         }
       ],
       '/Android基础知识/1快速入门/':[
-
         {
           text: "Android基础知识-快速入门",
           items: [
@@ -91,6 +90,26 @@ export default defineConfig({
             { text: '11.网络请求数据与JSON解析', link: '/Android基础知识/1快速入门/11.网络请求数据与JSON解析' },
             { text: '12.1网络请求之Retrofit', link: '/Android基础知识/1快速入门/12.1网络请求之Retrofit' },
             { text: '12.网络编程之网络请求', link: '/Android基础知识/1快速入门/12.网络编程之网络请求' },
+            { text: '目录大纲', link: '/目录大纲' }
+          ]
+        }
+      ],
+      '/Android基础知识/b四大组件/':[
+        {
+          text: "Android基础知识-四大组件",
+          items: [
+            { text: 'Activity', link: '/Android基础知识/b四大组件/四大组件之ContentProvider' },
+            { text: '怎么把androidStudio卸载干净', link: '/Android基础知识/b四大组件/四大组件之Service' },
+            { text: 'TextView如何实现走马灯的效果', link: '/Android基础知识/b四大组件/3.TextView如何实现走马灯的效果' },
+            { text: '如何为组件添加响应', link: '/Android基础知识/b四大组件/4.如何为组件添加响应' },
+            { text: '5.如何实现页面的跳转，并传输参数',link: '/Android基础知识/b四大组件/5.如何实现页面的跳转，并传输参数'},
+            { text: '6.如何实现界面间的数据传输', link: '/Android基础知识/b四大组件/6.如何实现界面间的数据传输' },
+            { text: 'Fragment的使用', link: '/Android基础知识/b四大组件/7.Fragment的使用' },
+            { text: 'RecyclerView列表组件', link: '/Android基础知识/b四大组件/8.RecyclerView列表组件' },
+            { text: 'SharedPreferences简单数据存储', link: '/Android基础知识/b四大组件/9.SharedPreferences简单数据存储' },
+            { text: '11.网络请求数据与JSON解析', link: '/Android基础知识/b四大组件/11.网络请求数据与JSON解析' },
+            { text: '12.1网络请求之Retrofit', link: '/Android基础知识/b四大组件/12.1网络请求之Retrofit' },
+            { text: '12.网络编程之网络请求', link: '/Android基础知识/b四大组件/12.网络编程之网络请求' },
             { text: '目录大纲', link: '/目录大纲' }
           ]
         }
