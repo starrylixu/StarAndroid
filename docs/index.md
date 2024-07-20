@@ -24,12 +24,12 @@ features:
   - title: Kotlin
     details: Kotlin入门
     link: /Kotlin/协程
-  - title: JetPack
-    details: JetPack组件库
-    link: /Jetpack/RxJava2简介与使用
+  - title: 开源框架
+    details: 开源框架解读
+    link: /开源框架/RxJava/1.RxJava2简介与使用
   - title: Compose
     details: Compose入门
-    link: /Android控件/8.1Compose入门
+    link: /Compose/8.1Compose入门
 ---
 
 
