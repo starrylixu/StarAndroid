@@ -66,7 +66,6 @@ export default defineConfig({
     {
       '/Android/': [
         {
-
           text: "Android",
           items: [
             { text: 'Markdown Examples', link: '/markdown-examples' },
@@ -185,8 +184,6 @@ export default defineConfig({
 
           '/开源框架/RxJava/': [
             {
-              
-              
               text :"RxJava",
               items: [
                 { text: '1.RxJava2简介与使用', link: '/开源框架/RxJava/1.RxJava2简介与使用' },
@@ -233,19 +230,25 @@ export default defineConfig({
                 { text: '13.Java注解', link: '/Java/13.Java注解' },
                 { text: 'Java的抽象类和接口', link: '/Java/Java的抽象类和接口' },
                 { text: 'Java的抽象类和接口', link: '/Java/Java的抽象类和接口' },
-          
               ]
             }
           ],
           '/Flutter/': [
             {
-                text: "Dart语言",
+                text: "Flutter基础",
                 items: [
-                  { text: 'mac下flutter环境配置', link: '/dart/mac下flutter环境配置' },
-                  { text: 'Dart环境安装', link: '/dart/Dart环境安装' },
-                  { text: 'Dart基础', link: '/dart/Dart基础' },
-                  { text: 'Dart语言进阶', link: '/dart/Dart语言进阶' },
-                  { text: '异步支持', link: '/dart/异步支持' }
+                  { text: '基础控件使用', link: '/Flutter/1.控件' },
+                  { text: 'Scaffold的使用', link: '/Flutter/1.Scaffold的实践' },
+                  { text: '常用布局', link: '/Flutter/3.布局' },
+                  { text: '手势处理', link: '/Flutter/4.手势' },
+                  { text: '组件化开发', link: '/Flutter/5.组件化开发' },
+                  { text: '导包', link: '/Flutter/6.导包' },
+                  { text: 'Retrofit', link: '/Flutter/7.Retrofit' },
+                  { text: 'dio框架', link: '/Flutter/8.dio框架' },
+                  { text: '跳转和生命周期', link: '/Flutter/9.跳转和生命周期' },
+                  { text: '开发技巧', link: '/Flutter/10.开发技巧' },
+                  { text: '组件化开发', link: '/5.组件化开发' },
+                  { text: '组件化开发', link: '/5.组件化开发' },
                 ]
               }
           ],
