@@ -7,6 +7,7 @@ export default defineConfig({
   title: "StarAndroid",
   description: "一个移动开发学习网站",
   themeConfig: {
+    outline: 'deep',
     lastUpdated: {
       text: '最近更新',
       formatOptions: {
@@ -15,8 +16,6 @@ export default defineConfig({
       }
     },
     logo: '/logo.svg',
-
-    
     docFooter: {
       prev: '上一页',
       next: '下一页'

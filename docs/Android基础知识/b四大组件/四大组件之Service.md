@@ -1,12 +1,19 @@
-![黄绿色手绘风新闻资讯微信公众号封面 (1).gif](https://cdn.nlark.com/yuque/0/2024/gif/32682386/1704599283938-29ff8ad5-e0f2-4a0b-b401-9c51a3d26b62.gif#averageHue=%2371ba38&clientId=ua2c31edd-b4a1-4&from=paste&height=383&id=u47b2b59f&originHeight=383&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&size=385716&status=done&style=none&taskId=uf8b8a062-10ce-4f78-9249-c0cefd40619&title=&width=900)
+---
+outline: deep
+title: 什么是Service
+---
+
+
+![黄绿色手绘风新闻资讯微信公众号封面 (1).gif](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251653476.gif)
 # 什么是Service
 `Service` 是一种可**在后台执行长时间运行操作**而不提供界面的应用组件。可以理解为是一种专门用于后台计算的组件。
 例如，服务可在后台处理网络事务、播放音乐，执行文件 I/O 或与内容提供程序进行交互。
+
 > 注意：服务在其托管进程的主线程中运行，它既**不**创建自己的线程，也**不**在单独的进程中运行（除非另行指定）。所以在Service中不能进行耗时的操作
 
 # Service的生命周期
 与Activity不同，Service的生命周期有两种，这对应着两种创建服务的方式：**启动服务**与**绑定服务**
-![](https://cdn.nlark.com/yuque/0/2023/png/32682386/1702519385990-0035f317-7fac-4f4b-a0d8-587d8fe429da.png#averageHue=%23968d6f&clientId=u92d60ce7-d308-4&from=paste&id=ueb870115&originHeight=507&originWidth=389&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u8daf4596-ee9a-433a-a3e6-ccf21fc93d7&title=)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251653372.png)
 图中展示的5个方法是Service内部调用，其次我们还有手动调用的4个方法，提供给开发者去启动/关闭服务，绑定/解绑服务
 4个手动调用的方法
 
@@ -43,7 +50,8 @@
 **START_STICKY**：车祸后自己苏醒，但是失忆；
 **START_NOT_STICKY**：车祸后再也没有苏醒；
 **START_REDELIVER_INTENT**：车祸后自己苏醒，依然保持记忆。
-![](https://cdn.nlark.com/yuque/0/2023/png/32682386/1702521985541-3974b6c2-0252-463e-aeee-437c60ab8f68.png#averageHue=%23f8f8f8&clientId=u0a630a6b-dddf-4&from=paste&id=uc4bcc15e&originHeight=179&originWidth=1119&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u7bb805b7-1a50-4daa-8310-3486251d50a&title=)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251653234.png)
+
 ### stopService
 作用：关闭Service服务
 调用stopService后会自动调用方法：onDestroy
@@ -52,32 +60,34 @@
 1. 服务本身已经被关闭
 2. 通过启动&绑定创建的服务未解绑（没有调用unbindService）无法关闭
 
-![](https://cdn.nlark.com/yuque/0/2023/png/32682386/1702522185302-a0596c48-fbce-4446-8a5e-2b5737e05c6e.png#averageHue=%23fbfafa&clientId=u0a630a6b-dddf-4&from=paste&id=u56831e47&originHeight=306&originWidth=1259&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u2cf9e726-485b-4716-bc68-b3abc99eb1f&title=)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251653977.png)
 ### bindService
 作用：绑定Service服务
 调用bindService后会自动调用的方法：onCreate()、onBind()
-![](https://cdn.nlark.com/yuque/0/2023/png/32682386/1702522432370-6c82520a-37b3-4927-87d1-b28db3ea9661.png#averageHue=%23fafafa&clientId=u0a630a6b-dddf-4&from=paste&id=u94e569c1&originHeight=244&originWidth=1168&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ub3e29339-0622-4761-88e3-b64ec5ee6c0&title=)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251653279.png)
+
 ### unbindService
 作用：解绑Service服务
 调用unbindService后会自动调用的方法：onUnbind()、onDestroy()
-![](https://cdn.nlark.com/yuque/0/2023/png/32682386/1702522520366-9c10d3c7-727d-4b9e-9cc2-b0b809e06cfb.png#averageHue=%23fbfbfb&clientId=u0a630a6b-dddf-4&from=paste&id=u79ecfcf2&originHeight=299&originWidth=1432&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u2e18cab9-24da-4950-9d8a-bcaeff41dc3&title=)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251653175.png)
+
 ## 启动方式
 
 ### 启动服务-只使用startService
 
-![](https://cdn.nlark.com/yuque/0/2023/png/32682386/1702522814009-d1231516-dce8-4408-b760-a423e80560c9.png#averageHue=%23f5f5f5&clientId=u0a630a6b-dddf-4&from=paste&id=u7b84063c&originHeight=147&originWidth=1578&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u3857752a-77e9-4021-b746-fbe31a71c41&title=)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251653779.png)
 
 1. 一个Service的onCreate只调用一次（只有一个Service实例），onStartCommand调用次数=startService调用次数
 2. startService与stopService配对（必须通过stopService关闭Service）
 3. 只使用startService，**无法与Activity交互，绑定者无法操作Service**
 ### 绑定服务-只使用bindService
-![](https://cdn.nlark.com/yuque/0/2023/png/32682386/1702522964785-656ac1ae-646d-4a09-9541-2faa8a984e37.png#averageHue=%23f8f8f8&clientId=u0a630a6b-dddf-4&from=paste&id=u236848a8&originHeight=183&originWidth=1718&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u9a5b3eb5-6968-4def-b15f-a8772338c47&title=)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251653799.png)
 
 1. 一个Service的onCreate只调用一次（只有一个Service实例），onBind调用次数=BindService调用次数，多个绑定者可以绑定到同一个服务上
 2. bindService与unbindService配对，当该Service所有绑定者解绑后，系统会自动销毁服务（不需手动stop）
 3. bindService**能让Activity与Service交互**，绑定者通过一个**iBinder接口**与服务通信
 ### 启动服务后绑定-startService+bindService
-![](https://cdn.nlark.com/yuque/0/2023/png/32682386/1702523068543-2dfaf050-b052-43ee-8f6a-49301b1ef818.png#averageHue=%23fbfbfb&clientId=u0a630a6b-dddf-4&from=paste&id=ud5839f68&originHeight=456&originWidth=2170&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ua6e40376-8081-4a05-9bff-1f74f053ebf&title=)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251653494.png)
 关于操作Service：
 
 1. startService、stopService只能开启&关闭Service，但无法操作Service
@@ -109,6 +119,7 @@ Service的分类可以按照3个维度划分：
 步骤2：构建用于启动Service的Intent对象
 步骤3：调用startService()启动Service、调用stopService()停止服务
 步骤4：在AndroidManifest.xml里注册Service
+
 ### 远程服务
 远程服务一般有两个角色，即客户端和服务端，远程服务提供服务，而调用方成为客户端。
 特点：
@@ -123,7 +134,7 @@ Service的分类可以按照3个维度划分：
 > AIDL：Android Interface Definition Language，即Android接口定义语言；用于让某个Service与多个应用程序组件之间进行跨进程通信，从而可以实现多个应用程序共享同一个Service的功能。
 
 远程服务与本地服务最大的区别是：远程Service与调用者不在同一个进程里（即**远程Service是运行在另外一个进程**）；而本地服务则是与调用者运行在同一个进程里
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/32682386/1684028869761-ac30ff3c-5a24-45f3-9aa8-6edb5581ff3f.png#averageHue=%23f2f2f2&clientId=u4729d77b-f9a7-4&from=paste&id=Q5IiC&originHeight=240&originWidth=1000&originalType=url&ratio=1.5&rotation=0&showTitle=false&size=47993&status=done&style=none&taskId=u7d710f5c-d036-41fb-85c7-83bfba2b68a&title=)
+![image.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251723748.png)
 为了让远程Service与多个应用程序的组件进行**跨进程通信（IPC）**，需要使用AIDL
 最简单的多进程通信中，存在两种进程角色：服务器端和客户端
 服务器端：
@@ -134,6 +145,7 @@ Service的分类可以按照3个维度划分：
 步骤1：拷贝服务端的AIDL文件到目录下
 步骤2：使用**Stub.asInterface接口**获取服务器的Binder，根据需要调用服务提供的接口方法
 步骤3：通过Intent指定服务端的服务名称和所在包，**绑定远程Service**
+
 ## 按运行类型
 ### 前台服务
 特点：在通知栏显示通知（用户可以看到）
@@ -206,14 +218,20 @@ IntentService是一个通过Context.startService(Intent)启动可以处理异步
 3. 在Manifest文件中注册（这是四大组件的共性）
 
 创建一个MyService类继承自系统的Service类
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041044009.png#clientId=uec13dd90-cb79-4&id=TgN5I&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u87f3dd16-2cf1-4b52-ba04-1f1bcdf151d&title=)
+
+![image-20240825171827725](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251718941.png)
+
+
 在Manifest文件中注册
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041045099.png#clientId=uec13dd90-cb79-4&id=woyV4&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u680500bc-a8d9-4ae6-b1b6-c58d51127ea&title=)
+![image-20240825171904754](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251719098.png)
 
 因为Service在其托管进程的主线程中运行，所以我们在MainActivity的主线程中实现启动Service的按钮点击监听；启动方法与Activity极其相似，启动Activity是startActivity()方法；而启动Service是startService(intent)方法;
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041045644.png#clientId=uec13dd90-cb79-4&id=xlNid&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uba79ed4f-2d01-435d-9056-9a234f1207a&title=)
+
+![image-20240825171928337](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251719129.png)
+
 每点击一次启动服务按钮，**onStartCommand**方法都会调用一次，但是**onCreate**始终都只调用了一次
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041048202.png#clientId=uec13dd90-cb79-4&id=F3SBf&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ue05ce9c9-5f33-471b-83bc-6204b93c991&title=)
+![image-20240825171944798](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251719890.png)
+
 # Service的类型
 ## 启动式服务
 
@@ -225,25 +243,34 @@ IntentService是一个通过Context.startService(Intent)启动可以处理异步
 通过 `bindService()` 方法启动，服务启动后与启动者的生命周期连体，服务的启动者销毁，服务也会被销毁。而且绑定服务**可以与启动者相互通信**。
 下面演示一下绑定服务的启动
 首先在Activity中创建一个新的按钮，监听MyBindService的启动
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041205988.png#clientId=uec13dd90-cb79-4&id=xZdrq&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u894a2b29-12b0-4a60-ae0d-271d1e89f95&title=)
+![image-20240825172013144](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251720899.png)
 创建一个MyBindService类继承自Service重写其中的几个方法
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041206658.png#clientId=uec13dd90-cb79-4&id=a77oV&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ua5714c7e-0400-4384-98c1-e8add3a4da4&title=)
+
+![image-20240825172042093](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251724926.png)
+
 除了重写必要的方法以外还需要再定义一个内部类继承Binder，在这个类中定义方法和变量，供Service的启动者调用。
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041243749.png#clientId=uec13dd90-cb79-4&id=Iua63&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u3424fbda-f743-4a7b-9ad6-d9a773275bc&title=)
+
+![image-20240825172110695](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251721510.png)
+
 快速在Manifest中注册服务
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041207660.png#clientId=uec13dd90-cb79-4&id=aLYf4&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u43f1dffa-802b-498b-9ca3-87151facc8f&title=)
+
+![image-20240825172137397](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251721537.png)
+
 在Activity中启动服务，这次我们是通过bindStart()方法启动的，需要传入三个参数
 
 - 第一个参数是一个 `Intent`，用于显式命名要绑定的服务。
 - 第二个参数是 `ServiceConnection` 对象。系统通过调用该对象中的回调方法来传递 `IBinder`实现通信
 - 第三个参数是指示绑定选项的标记。如要创建尚未处于活动状态的服务，此参数通常应为 `BIND_AUTO_CREATE`。
 
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041210506.png#clientId=uec13dd90-cb79-4&id=ugITK&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u823afb37-1ef4-4bbf-b4fd-7448a0c4611&title=)
+![image-20240825172155552](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251721531.png)
 
 Android 系统创建启动者与服务之间的连接时，会对 `ServiceConnection` 调用 `onServiceConnected()`。`onServiceConnected()` 方法包含一个 `IBinder` 参数，启动者随后会使用该参数与绑定服务通信。
 所以下面我们在MainActivity中实现一个全局的`ServiceConnection` 对象
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041233181.png#clientId=uec13dd90-cb79-4&id=wNBDE&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ue3a73b28-05cd-4bda-a51d-ee5f99f07a1&title=)
+
+![image-20240825172214445](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251722922.png)
+
 这里的 `IBinder` 参数与我们的MyBindService中的onBind()方法返回的参数是一一对应的。正是通过 `IBinder` 参数实现了与绑定服务通信
+
 ```java
 public IBinder onBind(Intent intent) {
         Log.d(TAG, ":onBind ");
@@ -251,8 +278,12 @@ public IBinder onBind(Intent intent) {
     }
 ```
 在MainActivity中就可以拿到MyBindService中的内部类MyBinder中的test()方法。
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041246781.png#clientId=uec13dd90-cb79-4&id=NriBy&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u44e11d7e-a9db-4e5e-8d49-0926ba84f2e&title=)
+
+![image-20240825172230971](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251722683.png)
+
 运行打印日志发现test方法成功被调用，而且当我们退出MainActvity时，绑定式服务先解绑，然后自动销毁
-![](https://starry-lixu.oss-cn-hangzhou.aliyuncs.com/202210041254306.png#clientId=uec13dd90-cb79-4&id=AFiaW&originHeight=1048&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u27349ed2-f074-4341-820d-9d20220c90b&title=)
+
+![image-20240825172245510](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251722823.png)
+
 通过一个IBinder对象作为中间桥梁连接Activity与Service
 

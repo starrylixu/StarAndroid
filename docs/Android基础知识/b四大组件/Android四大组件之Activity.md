@@ -1,4 +1,4 @@
-![黄绿色手绘风新闻资讯微信公众号封面.gif](https://cdn.nlark.com/yuque/0/2024/gif/32682386/1704593456681-04ccd694-ed41-4eb0-ab2a-a749307b5d15.gif#averageHue=%236fba38&clientId=uc0c3b0f5-873e-4&from=paste&height=383&id=u90572201&originHeight=383&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&size=328506&status=done&style=none&taskId=u9f0dd005-2a60-401d-a3ed-b0380ad5467&title=&width=900)
+![黄绿色手绘风新闻资讯微信公众号封面.gif](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251944850.gif)
 
 1. Activity是什么
 2. Activity的生命周期，异常生命周期有哪些情况
@@ -28,7 +28,7 @@ onCreate和onDestory很好理解，其他的两对方法怎么理解呢？
 onStart和onStop：区分Activity是否可见
 onResume和onPause：区分Activity是否处于前台
 例如A Activity跳转到B Activity，在调用A的onPause后，A不再处于前台，也就是用户无法与之交互，而是去创建B，直到B处于用户可见并处于前台，之后再调用A的onStop，至此A彻底用户不可见。
-![未命名绘图.drawio.png](https://cdn.nlark.com/yuque/0/2024/png/32682386/1710307933515-6c2c15f3-43a3-492e-910a-1eaff59d4e0e.png#averageHue=%23f6f6f6&clientId=uc2a7ffcc-b957-4&from=paste&height=461&id=u8399728f&originHeight=692&originWidth=605&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=89376&status=done&style=none&taskId=u278c95b6-19a6-468b-b96a-0bb84f29785&title=&width=403.3333333333333)
+![未命名绘图.drawio.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251944270.png)
 
 ## 具体场景
 ### 横竖屏切换
@@ -53,8 +53,9 @@ android:configChanges属性为“orientation|screenSize”时，会调用onConfi
 所以一定会执行的就是A onPause -> B onStart -> onResume
 例如如下实例：
 这是正常情况下的生命周期调用：
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/32682386/1681194099059-e73c4c85-c029-494a-8c07-d5092c89690b.png#averageHue=%23869075&clientId=uf948fefa-94ec-4&from=paste&height=319&id=u794eb01f&originHeight=479&originWidth=1920&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=124311&status=done&style=none&taskId=ucbd11bdd-0eb2-4753-9644-083385dda06&title=&width=1280)
+![image.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251944562.png)
 如果BActivity设置为透明主题
+
 ```markdown
 <style name="TranslucentStyle" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景色透明 -->
@@ -116,7 +117,8 @@ taskAffinity是指activity的任务栈的相关性。拥有相同affinity的acti
 </application>
 ```
 效果是不是很熟悉，没错这就是我们常见的一种app应用启动小程序的场景，使用`lanchMode=singleInstance`也能实现这种效果：
-![微信图片_20240107111702.jpg](https://cdn.nlark.com/yuque/0/2024/jpeg/32682386/1704597555082-8ec3141d-9145-48d4-8958-d3fe34694f82.jpeg#averageHue=%232d76ae&clientId=uc0c3b0f5-873e-4&from=drop&height=822&id=u9b47d5d1&originHeight=2712&originWidth=1220&originalType=binary&ratio=1&rotation=0&showTitle=false&size=356880&status=done&style=none&taskId=uaaf860d0-0e7b-4e6f-9300-8ea4a292e45&title=&width=370)![微信图片_20240107112203.jpg](https://cdn.nlark.com/yuque/0/2024/jpeg/32682386/1704597736050-9dccb796-3f3f-473d-a774-68062f68e06d.jpeg#averageHue=%23266380&clientId=uc0c3b0f5-873e-4&from=drop&height=825&id=u99537609&originHeight=2712&originWidth=1220&originalType=binary&ratio=1&rotation=0&showTitle=false&size=728771&status=done&style=none&taskId=u5be3b5ef-40f6-49a5-a9a3-9ee613f3797&title=&width=371)
+![微信图片_20240107111702.jpg](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251944734.jpeg)![微信图片_20240107112203.jpg](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251945630.jpeg)
+
 ## 五种启动模式
 ### Standard
 每启动一次Activity，就会创建一个新的Activity的实例并将该实例置于栈顶
@@ -152,7 +154,7 @@ singleTop适合**接收通知**启动的内容显示页面。例如，某个新�
 - 若存在任务栈，则查看该Activity是否存在栈中，若不存在，则创建Activity实例并置于栈顶
 - 若该Activity存在栈中，在将实例上的所有Activity出栈，使该Activity位于栈顶（回调`onNewIntent`）
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/32682386/1683349272134-3810b8d2-28c6-4020-b027-1a2b00039d89.png#averageHue=%23fbfbfb&clientId=ue8c5465d-41b8-4&from=paste&id=u390329d2&originHeight=232&originWidth=692&originalType=url&ratio=1.5&rotation=0&showTitle=false&size=33030&status=done&style=none&taskId=ucd176535-bf02-4b4b-a0b7-3db322ca359&title=)
+![image.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251945147.png)
 使用场景
 SingleTask这种启动模式最常使用的就是一个**APP的首页**，因为一般为一个APP的第一个页面，且长时间保留在栈中，所以最适合设置singleTask启动模式来复用。
 
@@ -395,7 +397,7 @@ public void onCreate(Bundle savedInstanceState){
 有些内存不足、设备配置、意外操作可能会在运行时发生变化（例如屏幕方向、键盘可用性及语言设定切换而不是正常的应用程序行为）。 发生这种变化时，Android系统会破坏正在运行的 Activity。但系统会使用一组存储在Bundle对象中的键值对的集合来保存该Activity当前状态。这样如果用户导航回它，系统会创建一个新的Activity实例并使用一组保存的数据描述Activity被销毁的状态。从而回复之前"实例状态"。
 要妥善处理重启行为，Activity 必须通过常规的Activity 生命周期恢复其以前的状态，在 Activity 生命周期中，Android 会在停止 Activity 之前调用 `onSaveInstanceState()`，以便您保存有关应用状态的数据。 然后，您可以在 `onCreate()` 或 `onRestoreInstanceState() `期间恢复 Activity 状态。
 因此结合之前的生命周期方法，一个Activity从创建到销毁执行的生命周期方法有： onResume -> onSaveInstanceState（保存数据） ->onPuase -> onStop ->onDestory -> onCreate -> onStart -> onRestoreInstanceState（恢复数据）->onResumne
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/32682386/1683353060007-5b193cb2-1766-4a1f-b9c2-ba7b3c0d0956.png#averageHue=%23fcfcfc&clientId=ubcf61a17-f086-4&from=paste&id=u2ca582c6&originHeight=834&originWidth=623&originalType=url&ratio=1.5&rotation=0&showTitle=false&size=52861&status=done&style=none&taskId=u5370f6eb-0c5d-4148-a0f7-16f026ad458&title=)
+![image.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251945900.png)
 这里存在几个问题：
 
 1. 什么时候会去调用`onSaveInstanceState`保存Activity状态？

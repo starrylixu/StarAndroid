@@ -14,7 +14,7 @@ Context是一个抽象类，直系子类有两个，一个是**ContextWrapper**�
 ContextWrapper是上下文功能的封装类，而ContextImpl则是上下文功能的实现类。
 而ContextWrapper又有三个直接的子类，ContextThemeWrapper、Service和Application。其中，ContextThemeWrapper是一个带主题的封装类，而它有一个直接子类就是Activity。
 Application、Activity这样的类其实并不会去具体实现Context的功能，而仅仅是做了一层接口封装而已，Context的具体功能都是由ContextImpl类去完成的。
-![image.png](https://cdn.nlark.com/yuque/0/2024/png/32682386/1704810379031-28dcb7e2-e83a-402c-bd61-07dff0ffc3b2.png#averageHue=%23fbfbfb&clientId=u1792a4d2-5be3-4&from=paste&height=367&id=u15b64ac7&originHeight=367&originWidth=496&originalType=binary&ratio=1&rotation=0&showTitle=false&size=19125&status=done&style=none&taskId=u4f08283d-bb48-40ce-a27c-538cf948eb2&title=&width=496)
+![image.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251949884.png)
 Context的两个子类分工明确，其中ContextImpl是Context的具体实现类，ContextWrapper是Context的包装类。Activity，Application，Service虽都继承自ContextWrapper（Activity继承自ContextWrapper的子类ContextThemeWrapper），但它们初始化的过程中都会创建ContextImpl对象，由ContextImpl实现Context中的方法。
 
 # Context有几种类型
@@ -35,7 +35,7 @@ Context数量 = Activity数量 + Service数量 + Application的数量
 # Context的作用域
 由于Context的具体实例是由**ContextImpl**类去实现的，因此在绝大多数场景下，Activity、Service和Application这三种类型的Context都是可以通用的。
 不过有几种场景比较特殊，比如**启动Activity**，还有**弹出Dialog**。出于安全原因的考虑，Android是**不允许Activity或Dialog凭空出现的**，一个Activity的启动必须要建立在另一个Activity的基础之上，也就是以此形成的返回栈。而**Dialog则必须在一个Activity上面弹出**（除非是System Alert类型的Dialog），因此在这种场景下，我们只能使用Activity类型的Context，否则将会出错。
-![](https://cdn.nlark.com/yuque/0/2024/png/32682386/1704810972467-b1cc86c2-fa94-4c5a-a024-3af84b86b259.png#averageHue=%23d0e6ba&clientId=u1792a4d2-5be3-4&from=paste&id=u9ccf0dbc&originHeight=339&originWidth=480&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u65808f4d-85ba-4c44-b85b-bb6ac204c5f&title=)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251949629.png)
 使用的注意事项：
 
 1. Activity所持有的Context的作用域最广，无所不能

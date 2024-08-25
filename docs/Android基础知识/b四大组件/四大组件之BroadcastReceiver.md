@@ -1,5 +1,10 @@
-![黄绿色手绘风新闻资讯微信公众号封面 (2).gif](https://cdn.nlark.com/yuque/0/2024/gif/32682386/1704601719081-f5694fbb-b88a-4741-8a93-a20b272431d8.gif#averageHue=%2370b636&clientId=u39eadf88-0a54-4&from=paste&height=383&id=uaaa6df9f&originHeight=383&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&size=387983&status=done&style=none&taskId=u669ed3b1-2413-457e-8cab-61ed461362b&title=&width=900)
+
+
+![广播](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251651460.gif)
 [https://www.jianshu.com/p/ca3d87a4cdf3](https://www.jianshu.com/p/ca3d87a4cdf3)
+
+
+
 # 什么是广播接收器
 BroadcastReceiver是广播接收器，是一种消息型组件。用于在**不同的组件**乃至**不同的应用**之间传递消息，是四大组件之一
 在我们的App中不同应用一般都处于不同的进程，由此可见，四大组件的广播接收器也是一种跨进程通信的工具。
@@ -12,7 +17,8 @@ BroadcastReceiver是广播接收器，是一种消息型组件。用于在**不�
 3. 消息中心（AMS，即Activity Manager Service）
 
 原理示意图：
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/32682386/1683958397183-71f41d74-428f-44bf-a1ac-f69b5ab3b64b.png#averageHue=%23f8f7f7&clientId=u89eca811-c15a-4&from=paste&id=ZdrbD&originHeight=385&originWidth=830&originalType=url&ratio=1.5&rotation=0&showTitle=false&size=147000&status=done&style=none&taskId=uf6d9490e-94b1-48f4-885d-4ef504b7345&title=)
+![image.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251651076.png)
+
 # 使用流程
 自定义一个广播接收者，继承自BroadcastReceiver，并重写抽象方法onReceive()，在其中实现接受广播后的具体逻辑事件，默认情况下，广播接收器运行在 UI 线程，因此，onReceive()方法**不能执行耗时操作**，否则将导致**ANR**
 ```java
@@ -335,7 +341,8 @@ localBroadcastManager.sendBroadcast(intent);
 AMS根据广播发送者要求，在已注册列表中，寻找合适的广播接收器（寻找依据：IntentFilter）并将广播发送到合适的广播接受者相应的消息循环队列中
 广播接受者通过消息循环，拿到此广播，并回调onReceive()方法。
 其中广播发送者与广播接受者的执行是异步的，即广播发送者不会关心有无接受者接收&也不确定接受者何时才能接收到。
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/32682386/1683958397183-71f41d74-428f-44bf-a1ac-f69b5ab3b64b.png#averageHue=%23f8f7f7&clientId=u89eca811-c15a-4&from=paste&id=cBjSQ&originHeight=385&originWidth=830&originalType=url&ratio=1.5&rotation=0&showTitle=false&size=147000&status=done&style=none&taskId=uf6d9490e-94b1-48f4-885d-4ef504b7345&title=)
+![image.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/picgo/202408251652132.png)
+
 ## 本地广播
 下面简析一下LocalBroadcastManager源码
 ### 实例化广播
