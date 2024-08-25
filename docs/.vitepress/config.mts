@@ -1,7 +1,17 @@
 import { defineConfig } from 'vitepress'
 
+import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+
+  vite: {
+    plugins:[
+      AutoSidebarPlugin({
+        srcDir:'./docs'
+      })
+    ]
+  },
   //最后更新时间戳
  lastUpdated: true,
   title: "StarAndroid",
