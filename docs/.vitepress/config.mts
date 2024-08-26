@@ -12,26 +12,32 @@ export default defineConfig({
       })
     ]
   },
-  //最后更新时间戳
- lastUpdated: true,
+  markdown:{
+    lineNumbers:true,//代码块显示行数
+    image: {
+      // 默认禁用图片懒加载
+      lazyLoading: true
+    }
+  },
+  
+ lastUpdated: true,//最后更新时间戳
   title: "StarAndroid",
   description: "一个移动开发学习网站",
   themeConfig: {
-    outline: 'deep',
-    lastUpdated: {
+    outline: 'deep',//文章目录显示所有标题
+    lastUpdated: {//最近更新时间
       text: '最近更新',
       formatOptions: {
         dateStyle: 'full',
         timeStyle: 'medium'
       }
     },
-    logo: '/logo.svg',
+    logo: '/logo.svg',//网站logo
     docFooter: {
       prev: '上一页',
       next: '下一页'
     },
-    //文章尾部
-    footer: {
+    footer: {//文章尾部
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2019-present Evan You'
     },
@@ -66,6 +72,7 @@ export default defineConfig({
         ]
       },
       { text: '开发工具', link: '/开发工具/Git使用指南' },
+      { text: '说明', link: 'README.md' },
     ],
 
     //侧边栏
