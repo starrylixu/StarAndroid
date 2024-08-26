@@ -2,9 +2,30 @@
 
 ## 项目介绍
 
-这是一个使用vitepress搭建的个人博客网站
+这是一个使用 vitepress + vercel + elog + 语雀 搭建的个人博客网站
+语雀 是阿里系的一个云笔记软件，在此之前我的很多学习笔记都在这里面。但是用一天我毕业入职了，发现公司网络是无法访问国内各大云笔记软件的，但是我偶尔还是需要查阅自己的一些技术记录。因此我需要一个方法把在语雀上的笔记转移到另一个域名下，所以我想到了要搭建一个个人博客。
 
+vitepress 是一个把md文件转换成html格式，生成静态网站的框架。因此我只要正常编写md格式的笔记，然后通过这个框架把他转换成html静态资源
 [VitePress | 由 Vite 和 Vue 驱动的静态站点生成器](https://vitepress.dev/zh/)
+
+最后我需要把我的这些笔记依托到一个平台上，一个能被公司网络访问的平台，可以是CSDN、掘金、Github Page等等。像CSDN、掘金这类不太满足我的需要，因为我希望笔记的数据能被我自己掌握。所以我考虑的还是Github，把我的笔记作为一个仓库开源了出去。
+其实到这里就能满足我的需要了，现在我已经能在公司访问自己的笔记了。
+
+但是我还是遇到一个问题：
+1. 语雀只能单篇导出，我有几百篇笔记，手动导出很慢
+
+面对第一个问题，我找到了 elog 这个神仙框架，它可以批量导出语雀的文档，并且还会帮我们把语雀的图片链接转换成本地图片（语雀的图片链接设有防盗链，如果文档中导出的图片不做处理发布到其他网站上会无法显示）
+并且elog是对vitepress十分友好，官方的demo就是基于vitepress去快速实现转移语雀笔记
+[elog的配置说明](https://elog.1874.cool/notion/config-catalog)
+
+最后 vercel 简单理解就是一个云平台，可以把我们部署的前端项目部署上线，暴露到公网上。
+1.最重要的是它能和github联动，能自动构建Github中的最新提交并更新网站。
+2.也支持配置自己的域名
+[vercel使用说明](https://vercel.com/docs)
+
+## vitepress配置
+vitepress还提供了很多插件，让我们能更自由且低成本的定制自己的个人网站
+例如自动根据文件结构生成侧边栏、图片点击方法预览、过长代码块折叠、集成Github评论等
 
 ### 自动生成生成侧边栏
 
@@ -104,7 +125,7 @@ npm i vitepress-plugin-codeblocks-fold
 
 use
 
-```ts{}
+```typescript
 // .vitepress/theme/index.ts
 import DefaultTheme from 'vitepress/theme';
 import { useData, useRoute } from 'vitepress';
@@ -200,7 +221,7 @@ export default {
 
 [Explorer - GitHub Docs](https://docs.github.com/en/graphql/overview/explorer)
 
-```json
+```
 {
   repository(owner: "starrylixu", name: "StarAndroid") {
     id
