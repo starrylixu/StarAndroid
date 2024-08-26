@@ -1,11 +1,18 @@
 import { defineConfig } from 'vitepress'
 
 import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
+import { YuQueSVG } from './utils/assists'
 
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-
+  cleanUrls: true,//VitePress将从URL中删除尾随的.html
+  ignoreDeadLinks: true,//当设置为true时，VitePress不会因死链接而导致构建失败。
+  head: [
+    [
+      'link', { rel: 'icon', href: '/logo.svg' }
+    ]
+  ],
   vite: {
     plugins:[
       AutoSidebarPlugin({
@@ -44,10 +51,6 @@ export default defineConfig({
     docFooter: {
       prev: '上一页',
       next: '下一页'
-    },
-    footer: {//文章尾部
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan You'
     },
     editLink: {//去编辑链接
       pattern: 'https://github.com/starrylixu/StarAndroid/edit/main/docs/:path',
@@ -92,7 +95,12 @@ export default defineConfig({
     //友链
     socialLinks: [
       { icon: 'github', link: 'https://github.com/starrylixu' },
-      { icon: 'x', link: 'https://ahoy-starry.blog.csdn.net' }
-    ]
+      { icon: 'x', link: 'https://ahoy-starry.blog.csdn.net' },
+      { icon: { svg: YuQueSVG }, link: "https://www.yuque.com/starryluli" }
+    ],
+    footer: {
+      message: 'Powered by <a href="https://www.yuque.com/starryluli" target="_blank">语雀</a>  & <a href="https://vitepress.dev" target="_blank">VitePress</a> with <a href="https://github.com/LetTTGACO/elog" target="_blank">Elog</a>',
+      copyright: 'Copyright © 2023-present'
+    },
   }
 })
