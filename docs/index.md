@@ -21,6 +21,9 @@ hero:
       link: /Flutter/1.控件
 
 features:
+  - title: 面试经历
+    details: 面试经历
+    link: /Compose/8.1Compose入门
   - title: Kotlin
     details: Kotlin入门
     link: /Kotlin/协程
@@ -29,6 +32,18 @@ features:
     link: /开源框架/RxJava/1.RxJava2简介与使用
   - title: Compose
     details: Compose入门
+    link: /Compose/8.1Compose入门
+  - title: 实习
+    details: 实习总结
+    link: /Compose/8.1Compose入门
+  - title: 毕业设计
+    details: 毕业设计
+    link: /毕业设计/常用文件地址
+  - title: 计算机基础
+    details: 计算机基础
+    link: /Compose/8.1Compose入门
+  - title: 生活有感
+    details: 生活有感
     link: /Compose/8.1Compose入门
 ---
 

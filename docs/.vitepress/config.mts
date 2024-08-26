@@ -29,6 +29,9 @@ export default defineConfig({
   title: "StarAndroid",
   description: "一个移动开发学习网站",
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     outline: 'deep',//文章目录显示所有标题
     lastUpdated: {//最近更新时间
       text: '最近更新',
@@ -46,8 +49,7 @@ export default defineConfig({
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2019-present Evan You'
     },
-    //去编辑链接
-    editLink: {
+    editLink: {//去编辑链接
       pattern: 'https://github.com/starrylixu/StarAndroid/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
@@ -58,14 +60,14 @@ export default defineConfig({
       {
         text: 'Android', items: [
           { text: '快速入门', link: '/Android基础知识/A-快速入门/1.Android第一课' },
-          { text: '四大组件', link: '/Android基础知识/b四大组件/四大组件之ContentProvider' },
-          { text: 'Fragment', link: '/Android基础知识/cFragment/Fragment简单使用' },
-          { text: 'View', link: '/Android基础知识/dView/1.ViewPager和ViewPager2的区别' },
-          { text: '多线程', link: '/Android基础知识/e多线程/1.实现多线程' }
+          { text: '四大组件', link: '/Android基础知识/B-四大组件/四大组件之ContentProvider' },
+          { text: 'Fragment', link: '/Android基础知识/C-Fragment/Fragment简单使用' },
+          { text: 'View', link: '/Android基础知识/D-View/1.ViewPager和ViewPager2的区别' },
+          { text: '多线程', link: '/Android基础知识/E-多线程/1.实现多线程' },
+          { text: '常用控件', link: '/Android控件/1.（待完善）BRV的简单使用' }
         ]
       },
       { text: 'Flutter', link: '/Flutter/1.控件' },
-    
       {
         text: '语言学习',
         items: [
@@ -83,6 +85,10 @@ export default defineConfig({
     //侧边栏
     //多级侧边栏
     //https://vitepress.dev/zh/reference/default-theme-sidebar#collapsible-sidebar-groups
+    sidebar: {
+      // "/docs/毕业设计": await genYuqueSideBar('/docs/毕业设计'),
+      // "/docs-shorturl/": await genYuqueSideBarWithShortUrl('/docs-shorturl')
+    },
     //友链
     socialLinks: [
       { icon: 'github', link: 'https://github.com/starrylixu' },

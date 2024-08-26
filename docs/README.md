@@ -1,4 +1,4 @@
-# android_starry
+# StarAndroid
 
 ## 项目介绍
 
@@ -215,12 +215,5 @@ export default {
 ```
 
 
-
-
-
 ## Android新星学习路线
-
-
-
-## Android基础知识
-
+https://roadmap.sh/android

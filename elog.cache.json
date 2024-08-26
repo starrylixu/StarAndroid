@@ -1,0 +1,2007 @@
+{
+  "docs": [
+    {
+      "id": 170254340,
+      "doc_id": "ro8u2zggtn5qutv0",
+      "updated": 1716302184000,
+      "properties": {
+        "title": "软著申请",
+        "urlname": "ro8u2zggtn5qutv0",
+        "date": "2024-05-19 18:38:10",
+        "updated": "2024-05-21 22:36:24",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1716115124062-69d45946-1556-491f-b2d7-b5b866db3bd7.png",
+        "description": "中药材溯源系统无问题银行秒杀系统无问题面向中医学科的智慧教育张梓艺未实名智慧迎新小程序5人均为实名随手买合作著作协议里没有写胡老师基于智能手写笔的电子病历系统无问题二手买卖平台无问题考研app无问题音乐播放器无问题数藏无问题智能健康管理无问题驴友无问题诗文观止无问题时光序无问题"
+      },
+      "catalog": [],
+      "realName": "软著申请",
+      "relativePath": "\\软著申请.md",
+      "docPath": "docs\\毕业设计"
+    },
+    {
+      "id": 156767750,
+      "doc_id": "lmzmhw8o5yi9koug",
+      "updated": 1716602722000,
+      "properties": {
+        "title": "环境配置说明",
+        "urlname": "lmzmhw8o5yi9koug",
+        "date": "2024-01-22 12:45:39",
+        "updated": "2024-05-25 10:05:22",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1705899372721-6b2d5917-e4e7-4ea8-b126-b83c63fc2c73.png",
+        "description": "以下配置说明，设计linux的基本命令，及其相关环境的搭建，nginx的基本配置等。是后端同学需要掌握的基本素养。服务器信息云服务器IP地址：8.130.124.187如何连接服务器？在控制台使用命令：ssh root@8.130.124.187会提示要求输入密码：当然也可以使用linux课程..."
+      },
+      "catalog": [
+        {
+          "title": "JavaEE后端技术",
+          "doc_id": "lmzmhw8o5yi9koug"
+        }
+      ],
+      "realName": "环境配置说明",
+      "relativePath": "\\JavaEE后端技术\\环境配置说明.md",
+      "docPath": "docs\\毕业设计\\JavaEE后端技术"
+    },
+    {
+      "id": 139819552,
+      "doc_id": "uxxgg3h9zkns0l35",
+      "updated": 1718535694000,
+      "properties": {
+        "title": "环境基础配置",
+        "urlname": "uxxgg3h9zkns0l35",
+        "date": "2023-09-13 23:57:16",
+        "updated": "2024-06-16 19:01:34",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1694620682931-e013da9b-495f-4f10-bbb8-6f0f3535bdf2.png",
+        "description": "项目中引入了智能笔的sdk，所以为了避免环境适配问题，医生端建议使用旧版的AS运行。Android Studio版本下载链接：bumblebee | 2021.1 patch 3AGP版本类名模板打开AS的设置File–> Settings–> Editor–> File and code T..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "uxxgg3h9zkns0l35"
+        },
+        {
+          "title": "基础配置",
+          "doc_id": "uxxgg3h9zkns0l35"
+        }
+      ],
+      "realName": "环境基础配置",
+      "relativePath": "\\医生端\\基础配置\\环境基础配置.md",
+      "docPath": "docs\\毕业设计\\医生端\\基础配置"
+    },
+    {
+      "id": 169910079,
+      "doc_id": "pst5sv57nlyss1sp",
+      "updated": 1715858248000,
+      "properties": {
+        "title": "系统介绍",
+        "urlname": "pst5sv57nlyss1sp",
+        "date": "2024-05-16 15:02:07",
+        "updated": "2024-05-16 19:17:28",
+        "description": "我的系统包括医生端、患者端和管理端。患者端患者小王使用账号密码登录挂号通APP，进入首页可以看到近期自己待就诊的挂号数量、岐黄智语智能问答医生、预约挂号、我的预约、我的病历本功能。患者点击预约挂号，可通过科室查询医生列表，选择自己需要挂号的医生，可查看到该医生的个人简介、选择日期进行挂号。患者..."
+      },
+      "catalog": [],
+      "realName": "系统介绍",
+      "relativePath": "\\系统介绍.md",
+      "docPath": "docs\\毕业设计"
+    },
+    {
+      "id": 168960955,
+      "doc_id": "lzybobc5x2inbpw3",
+      "updated": 1715258795000,
+      "properties": {
+        "title": "实验室系统",
+        "urlname": "lzybobc5x2inbpw3",
+        "date": "2024-05-09 20:14:10",
+        "updated": "2024-05-09 20:46:35",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1715256868001-9fec12f6-7e69-4b34-99b6-d31db57af938.png",
+        "description": "用户表角色表文件管理故障申报机房，失物招领"
+      },
+      "catalog": [],
+      "realName": "实验室系统",
+      "relativePath": "\\实验室系统.md",
+      "docPath": "docs\\毕业设计"
+    },
+    {
+      "id": 165873083,
+      "doc_id": "uf83dt2f3ggu9t9y",
+      "updated": 1715825354000,
+      "properties": {
+        "title": "Android分享",
+        "urlname": "uf83dt2f3ggu9t9y",
+        "date": "2024-04-16 16:15:20",
+        "updated": "2024-05-16 10:09:14",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1713405205789-023edfef-c9eb-4cd9-bbe8-06387b3d2d32.png",
+        "description": "AI帮写PPT请帮我生成一份PPT，PPT的主题是大四学长给大二学弟分享找工作的经验。PPT包括开篇自我介绍和致谢第一部分是时间线，展示大二暑假，大三上，大三寒假，大三下三四月份，大三暑假，大四上这6个时间线第二部分是介绍大二暑假，主要去确定自己的方向，以及学长本人是如何找到自己的工作方向的第..."
+      },
+      "catalog": [],
+      "realName": "Android分享",
+      "relativePath": "\\Android分享.md",
+      "docPath": "docs\\毕业设计"
+    },
+    {
+      "id": 164890952,
+      "doc_id": "geuec1gf20ucg30r",
+      "updated": 1712665772000,
+      "properties": {
+        "title": "软著申请",
+        "urlname": "geuec1gf20ucg30r",
+        "date": "2024-04-09 20:12:46",
+        "updated": "2024-04-09 20:29:32",
+        "description": "中药材溯源系统计算机软件合作开发协议个人信息不全，且未手写签字同学没有在系统上实名系统上无法上传操作手册需要张程晨同学的身份证号、身份证上的出生地银行秒杀系统缺少计算机软件合作开发协议同学没有在系统上实名需要同学提供姓名、身份证号、身份证上的出生地"
+      },
+      "catalog": [],
+      "realName": "软著申请_geuec1gf20ucg30r",
+      "relativePath": "\\软著申请_geuec1gf20ucg30r.md",
+      "docPath": "docs\\毕业设计"
+    },
+    {
+      "id": 141362324,
+      "doc_id": "ct1g8xgofm5iyfwm",
+      "updated": 1714201220000,
+      "properties": {
+        "title": "文心一言接入",
+        "urlname": "ct1g8xgofm5iyfwm",
+        "date": "2023-10-03 16:39:22",
+        "updated": "2024-04-27 15:00:20",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1696322616018-3ea3b841-e2d3-469b-a050-e58adbbf1892.png",
+        "description": "官方资料：AI能力免费体验：AI产品免费试用_免费试用文字识别_语音转文字免费_免费图像识别-百度智能云API调用指南 - 千帆大模型平台 | 百度智能云文档示例代码：服务与支持-自助服务-自助工具扣费界面：百度智能云-管理中心代金券使用说明：https://cloud.baidu.com/d..."
+      },
+      "catalog": [
+        {
+          "title": "三方SDK",
+          "doc_id": "ct1g8xgofm5iyfwm"
+        }
+      ],
+      "realName": "文心一言接入",
+      "relativePath": "\\三方SDK\\文心一言接入.md",
+      "docPath": "docs\\毕业设计\\三方SDK"
+    },
+    {
+      "id": 146230703,
+      "doc_id": "uv5caleix6smcsfk",
+      "updated": 1711546264000,
+      "properties": {
+        "title": "加载动画的实现",
+        "urlname": "uv5caleix6smcsfk",
+        "date": "2023-11-08 09:51:42",
+        "updated": "2024-03-27 21:31:04",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/jpeg/32682386/1699416273894-9926f164-ffbf-4f00-bc5c-ec6448617099.jpeg",
+        "description": "需求是希望实现一个聊天界面，对方正在回消息的时候，展示一个播放正在加载动画的TextView，网络请求收到了对方的消息就展示接收到的信息。所以自定义了一个带加载动画的TextView。自定义一个加载动画首先需要继承TextView类然后主要分为4步：初始化画笔画出加载的圆圈通过属性动画，控制圆..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "uv5caleix6smcsfk"
+        }
+      ],
+      "realName": "加载动画的实现",
+      "relativePath": "\\医生端\\加载动画的实现.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 162996226,
+      "doc_id": "qo3xaputc56lxana",
+      "updated": 1711273424000,
+      "properties": {
+        "title": "论文书写格式",
+        "urlname": "qo3xaputc56lxana",
+        "date": "2024-03-24 10:11:35",
+        "updated": "2024-03-24 17:43:44",
+        "description": "word上下边距https://jingyan.baidu.com/article/73c3ce28bd8642a50343d9d2.html行距固定磅页码设置页码分节https://zhidao.baidu.com/question/338558285.html页码设置第几页共几页https..."
+      },
+      "catalog": [],
+      "realName": "论文书写格式",
+      "relativePath": "\\论文书写格式.md",
+      "docPath": "docs\\毕业设计"
+    },
+    {
+      "id": 158007736,
+      "doc_id": "xdrvubnwnl1xvipk",
+      "updated": 1709554249000,
+      "properties": {
+        "title": "截屏和手写识别",
+        "urlname": "xdrvubnwnl1xvipk",
+        "date": "2024-02-03 21:12:22",
+        "updated": "2024-03-04 20:10:49",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1706966277442-a263ad97-065d-40e9-8d8a-d27c2a28a54d.png",
+        "description": "界面逻辑设置背景截屏点位截图识别请求token图片转字符串百度api需要字符串入参请求识别识别延时"
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "xdrvubnwnl1xvipk"
+        }
+      ],
+      "realName": "截屏和手写识别",
+      "relativePath": "\\医生端\\截屏和手写识别.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 160394801,
+      "doc_id": "lkdefgrthgzwizwt",
+      "updated": 1709465825000,
+      "properties": {
+        "title": "舌象诊断",
+        "urlname": "lkdefgrthgzwizwt",
+        "date": "2024-03-03 19:34:08",
+        "updated": "2024-03-03 19:37:05",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1709465678544-b5673745-1c60-4f59-b6ca-9a605a6cd259.png",
+        "description": "https://www.ai-tongue.com/doc/apiapp/sizhen/development.html"
+      },
+      "catalog": [
+        {
+          "title": "三方SDK",
+          "doc_id": "lkdefgrthgzwizwt"
+        }
+      ],
+      "realName": "舌象诊断",
+      "relativePath": "\\三方SDK\\舌象诊断.md",
+      "docPath": "docs\\毕业设计\\三方SDK"
+    },
+    {
+      "id": 159842798,
+      "doc_id": "ikddc1yp377f3cll",
+      "updated": 1709041576000,
+      "properties": {
+        "title": "中期答辩会议",
+        "urlname": "ikddc1yp377f3cll",
+        "date": "2024-02-27 21:37:32",
+        "updated": "2024-02-27 21:46:16",
+        "description": "舌诊，面诊   ： 辅助诊断的准确度软著申请"
+      },
+      "catalog": [
+        {
+          "title": "会议纪要",
+          "doc_id": "ikddc1yp377f3cll"
+        }
+      ],
+      "realName": "中期答辩会议",
+      "relativePath": "\\会议纪要\\中期答辩会议.md",
+      "docPath": "docs\\毕业设计\\会议纪要"
+    },
+    {
+      "id": 159125848,
+      "doc_id": "lnmembvtto3xgx85",
+      "updated": 1709004303000,
+      "properties": {
+        "title": "Login",
+        "urlname": "lnmembvtto3xgx85",
+        "date": "2024-02-21 14:27:40",
+        "updated": "2024-02-27 11:25:03",
+        "description": "<template>   <div class=\"site-wrapper site-page--login\">     <div class=\"site-content__wrapper\">       <div class=\"site-content\">         <div clas..."
+      },
+      "catalog": [
+        {
+          "title": "Vue",
+          "doc_id": "lnmembvtto3xgx85"
+        }
+      ],
+      "realName": "Login",
+      "relativePath": "\\Vue\\Login.md",
+      "docPath": "docs\\毕业设计\\Vue"
+    },
+    {
+      "id": 158878264,
+      "doc_id": "es4p5zwgefh4dz7d",
+      "updated": 1708327188000,
+      "properties": {
+        "title": "mysql动态级联sql",
+        "urlname": "es4p5zwgefh4dz7d",
+        "date": "2024-02-19 15:18:57",
+        "updated": "2024-02-19 15:19:48",
+        "description": "根据传入的参数，获取级联表的id<insert id=\"saveMedicalNode\" parameterType=\"io.renren.modules.hospital.entity.EmrJdInfoEntity\">     INSERT INTO EMR_JD_INFO (EMR_bl..."
+      },
+      "catalog": [
+        {
+          "title": "JavaEE后端技术",
+          "doc_id": "es4p5zwgefh4dz7d"
+        }
+      ],
+      "realName": "mysql动态级联sql",
+      "relativePath": "\\JavaEE后端技术\\mysql动态级联sql.md",
+      "docPath": "docs\\毕业设计\\JavaEE后端技术"
+    },
+    {
+      "id": 157571601,
+      "doc_id": "nmv22wcqa3evzgn4",
+      "updated": 1707120141000,
+      "properties": {
+        "title": "1.后端所有需求",
+        "urlname": "nmv22wcqa3evzgn4",
+        "date": "2024-01-30 11:26:59",
+        "updated": "2024-02-05 16:02:21",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1706603186000-fd30aaf1-7e3e-4335-beb9-33c3b6da1b85.png",
+        "description": "登录注册登录注册分为医生端和用户端，需要分别写医生的登录注册和用户的登录注册。科室查找所有的科室信息挂号一个患者可以选择某一个科室的医生挂号需要患者id，医生id患者挂号接口，save接口根据患者id查询自己的挂号记录接口 根据医生id查询挂在自己门下的记录接口 级联 用户信息表 医生根据 科..."
+      },
+      "catalog": [
+        {
+          "title": "JavaEE后端技术",
+          "doc_id": "nmv22wcqa3evzgn4"
+        }
+      ],
+      "realName": "1.后端所有需求",
+      "relativePath": "\\JavaEE后端技术\\1.后端所有需求.md",
+      "docPath": "docs\\毕业设计\\JavaEE后端技术"
+    },
+    {
+      "id": 158159289,
+      "doc_id": "qdg3wr8h3mufcnyo",
+      "updated": 1708327138000,
+      "properties": {
+        "title": "数据库insert数据报错",
+        "urlname": "qdg3wr8h3mufcnyo",
+        "date": "2024-02-05 15:41:15",
+        "updated": "2024-02-19 15:18:58",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1707118946337-6b8cd7b9-7ca9-4821-b9a0-5eb62ab4adea.png",
+        "description": "MySQL报错1055解决办法：[Err] 1055 - Expression #1 of ORDER BY clause is not in GROUP BY clause and contains  https://blog.csdn.net/qq_43514711/article/det..."
+      },
+      "catalog": [
+        {
+          "title": "JavaEE后端技术",
+          "doc_id": "qdg3wr8h3mufcnyo"
+        }
+      ],
+      "realName": "数据库insert数据报错",
+      "relativePath": "\\JavaEE后端技术\\数据库insert数据报错.md",
+      "docPath": "docs\\毕业设计\\JavaEE后端技术"
+    },
+    {
+      "id": 157681402,
+      "doc_id": "wao12ok1gug4t25w",
+      "updated": 1706686465000,
+      "properties": {
+        "title": "接入XUI框架",
+        "urlname": "wao12ok1gug4t25w",
+        "date": "2024-01-31 10:51:29",
+        "updated": "2024-01-31 15:34:25",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1706670156912-fef3292f-0a07-489e-974d-650f7d9645a8.png",
+        "description": "官方地址https://github.com/xuexiangjys/XUI接入依赖    //androidx项目     implementation(\"com.github.xuexiangjys:XUI:1.2.1\")     implementation(\"com.github.bu..."
+      },
+      "catalog": [
+        {
+          "title": "患者端",
+          "doc_id": "wao12ok1gug4t25w"
+        }
+      ],
+      "realName": "接入XUI框架",
+      "relativePath": "\\患者端\\接入XUI框架.md",
+      "docPath": "docs\\毕业设计\\患者端"
+    },
+    {
+      "id": 157619079,
+      "doc_id": "by2ec1cyz20918la",
+      "updated": 1706604880000,
+      "properties": {
+        "title": "数据库一对一级联查询",
+        "urlname": "by2ec1cyz20918la",
+        "date": "2024-01-30 16:26:53",
+        "updated": "2024-01-30 16:54:40",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1706603313065-1814db9d-d6d9-4968-ac91-c789fb365cae.png",
+        "description": "数据库的设计病历节点表 EMR_JD_INFO西医病历模板表 EMR_XY_MODEL病历节点表中记录着EMR_info_jd字段，它与西医病历模板表中的EMR_xy_id一一对应数据实体EMR_JD_INFO注意字段，数据库中并没有这个字段@TableField(exist = false)..."
+      },
+      "catalog": [
+        {
+          "title": "JavaEE后端技术",
+          "doc_id": "by2ec1cyz20918la"
+        }
+      ],
+      "realName": "数据库一对一级联查询",
+      "relativePath": "\\JavaEE后端技术\\数据库一对一级联查询.md",
+      "docPath": "docs\\毕业设计\\JavaEE后端技术"
+    },
+    {
+      "id": 157347967,
+      "doc_id": "degxztcpbv87nhxg",
+      "updated": 1706364171000,
+      "properties": {
+        "title": "医生端代码分享",
+        "urlname": "degxztcpbv87nhxg",
+        "date": "2024-01-27 20:28:16",
+        "updated": "2024-01-27 22:02:51",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1706358528275-393d6a8e-fe00-4425-a76b-beb365ad5a7f.png",
+        "description": "项目基础环境项目依赖开发语言：Java网络请求：okhttp    +retrofit+RxJava2图片加载：Glide开屏动画：Lottie弹窗：DialogX刷新列表：SmartRefreshLayout图片选择：pictureselector九宫格：AssNineGridView图片预..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "degxztcpbv87nhxg"
+        }
+      ],
+      "realName": "医生端代码分享",
+      "relativePath": "\\医生端\\医生端代码分享.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 156712165,
+      "doc_id": "naz6ze3z9gfxikhg",
+      "updated": 1706013684000,
+      "properties": {
+        "title": "第三次会议",
+        "urlname": "naz6ze3z9gfxikhg",
+        "date": "2024-01-21 21:56:09",
+        "updated": "2024-01-23 20:41:24",
+        "description": "患者端，设计好患者挂号的数据库表患者选择科室，医生，日期，挂号。挂号的信息，要展示再对应医生的主页因此需要接口如下：获取所有科室及其下属医生的接口患者挂号的接口获取今日挂号某一医生的所有患者的接口了解大家的分工了解大家的项目怎么分配的主要需要同学帮忙设计Android端和后台管理系统今后开会就..."
+      },
+      "catalog": [
+        {
+          "title": "会议纪要",
+          "doc_id": "naz6ze3z9gfxikhg"
+        }
+      ],
+      "realName": "第三次会议",
+      "relativePath": "\\会议纪要\\第三次会议.md",
+      "docPath": "docs\\毕业设计\\会议纪要"
+    },
+    {
+      "id": 141433040,
+      "doc_id": "fboma0le3tne1y63",
+      "updated": 1705906418000,
+      "properties": {
+        "title": "renrenfast框架",
+        "urlname": "fboma0le3tne1y63",
+        "date": "2023-10-05 12:56:00",
+        "updated": "2024-01-22 14:53:38",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1700035641045-07f23d9c-d7f1-4d36-a3be-be3b492f2734.png",
+        "description": "使用教程：56.renrenfast使用_哔哩哔哩_bilibili博文教程：https://blog.csdn.net/weixin_41212181/article/details/117752470官方文档：https://www.renren.io/开源地址：https://gitee..."
+      },
+      "catalog": [
+        {
+          "title": "JavaEE后端技术",
+          "doc_id": "fboma0le3tne1y63"
+        }
+      ],
+      "realName": "renrenfast框架",
+      "relativePath": "\\JavaEE后端技术\\renrenfast框架.md",
+      "docPath": "docs\\毕业设计\\JavaEE后端技术"
+    },
+    {
+      "id": 147233380,
+      "doc_id": "vbv077hyerv2n5gd",
+      "updated": 1705898735000,
+      "properties": {
+        "title": "linux node环境搭建",
+        "urlname": "vbv077hyerv2n5gd",
+        "date": "2023-11-17 09:22:11",
+        "updated": "2024-01-22 12:45:35",
+        "description": "安装分布式版本管理系统Git。a. 安装分布式版本管理系统Git。yum install git -yb. 使用Git将NVM的源码克隆到本地的~/.nvm目录下，并检查最新版本。说明：由于网络原因，可能会出现无法克隆的问题，建议您多尝试几次。git clone https://gitee.c..."
+      },
+      "catalog": [
+        {
+          "title": "JavaEE后端技术",
+          "doc_id": "vbv077hyerv2n5gd"
+        }
+      ],
+      "realName": "linux node环境搭建",
+      "relativePath": "\\JavaEE后端技术\\linux node环境搭建.md",
+      "docPath": "docs\\毕业设计\\JavaEE后端技术"
+    },
+    {
+      "id": 155969461,
+      "doc_id": "wp3dkf8mcu8gdsag",
+      "updated": 1705845370000,
+      "properties": {
+        "title": "工作分配",
+        "urlname": "wp3dkf8mcu8gdsag",
+        "date": "2024-01-14 21:43:00",
+        "updated": "2024-01-21 21:56:10",
+        "description": "参会人：@boy@starry陆离@胡棵梁@bias会议时间：2024-1-14会议地点：线上会前材料 各个文档的作用三个项目端目前的项目进展后台管理系统医生端（点阵笔应用）患者端当前阶段的问题点整纸打印识别字迹无效（我和胡老师在解决）数据库字段需要重新设计后续的工作安排大家的擅长点，工作分配..."
+      },
+      "catalog": [
+        {
+          "title": "会议纪要",
+          "doc_id": "wp3dkf8mcu8gdsag"
+        }
+      ],
+      "realName": "工作分配",
+      "relativePath": "\\会议纪要\\工作分配.md",
+      "docPath": "docs\\毕业设计\\会议纪要"
+    },
+    {
+      "id": 148142796,
+      "doc_id": "ln8s0945ifplitp9",
+      "updated": 1705588222000,
+      "properties": {
+        "title": "Fragment的懒加载",
+        "urlname": "ln8s0945ifplitp9",
+        "date": "2023-11-25 19:33:54",
+        "updated": "2024-01-18 22:30:22",
+        "description": "https://blog.csdn.net/qq_36486247/article/details/103959356将Fragment加载数据的逻辑放到onResume()方法中，这样就保证了Fragment可见时才会加载数据。声明一个变量标记是否是首次执行onResume()方法，因为每次..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "ln8s0945ifplitp9"
+        }
+      ],
+      "realName": "Fragment的懒加载",
+      "relativePath": "\\医生端\\Fragment的懒加载.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 141386121,
+      "doc_id": "ynb8q6saavaylkt7",
+      "updated": 1705242590000,
+      "properties": {
+        "title": "常用文件地址",
+        "urlname": "ynb8q6saavaylkt7",
+        "date": "2023-10-04 11:17:11",
+        "updated": "2024-01-14 22:29:50",
+        "description": "Gitee仓库android端：医生端：https://gitee.com/starry_lixu/nqpen-sdk患者端：https://gitee.com/starry_lixu/dotpen_patientsJava后端：https://gitee.com/starry_lixu/do..."
+      },
+      "catalog": [],
+      "realName": "常用文件地址",
+      "relativePath": "\\常用文件地址.md",
+      "docPath": "docs\\毕业设计"
+    },
+    {
+      "id": 152462901,
+      "doc_id": "xve2vqvxn9oemwac",
+      "updated": 1704539599000,
+      "properties": {
+        "title": "患者端功能介绍",
+        "urlname": "xve2vqvxn9oemwac",
+        "date": "2024-01-06 19:05:38",
+        "updated": "2024-01-06 19:13:19",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1704539373915-a472ed72-27da-408f-9831-c7e16a933bdd.png",
+        "description": "功能列表：挂号功能查看自己的挂号查看病历本查看就诊结果首页：挂号功能点击挂号，查看所有的科室，点击专家，进入挂号"
+      },
+      "catalog": [
+        {
+          "title": "患者端",
+          "doc_id": "xve2vqvxn9oemwac"
+        }
+      ],
+      "realName": "患者端功能介绍",
+      "relativePath": "\\患者端\\患者端功能介绍.md",
+      "docPath": "docs\\毕业设计\\患者端"
+    },
+    {
+      "id": 152462906,
+      "doc_id": "fvt92ukzqlas0dww",
+      "updated": 1704539190000,
+      "properties": {
+        "title": "患者端技术栈",
+        "urlname": "fvt92ukzqlas0dww",
+        "date": "2024-01-06 19:05:51",
+        "updated": "2024-01-06 19:06:30",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/32682386/1704539167400-280ae1b9-68e8-4de4-b2e1-341a6abe5c2f.png",
+        "description": "kotlin+协程+viewModel+MVVM"
+      },
+      "catalog": [
+        {
+          "title": "患者端",
+          "doc_id": "fvt92ukzqlas0dww"
+        }
+      ],
+      "realName": "患者端技术栈",
+      "relativePath": "\\患者端\\患者端技术栈.md",
+      "docPath": "docs\\毕业设计\\患者端"
+    },
+    {
+      "id": 147400557,
+      "doc_id": "gngu22bt601vo6od",
+      "updated": 1703901587000,
+      "properties": {
+        "title": "点阵铺码规则",
+        "urlname": "gngu22bt601vo6od",
+        "date": "2023-11-19 10:53:11",
+        "updated": "2023-12-30 09:59:47",
+        "description": "对象标识符(OBJECT IDENTIFIER, OID) 的编码规则一种二维光学辨别编码，通过编码的不同组合承载不同的内容。这些编码的实际印刷尺寸非常小，每个点通常相当于175线/英寸的网点5%的大小，以印刷的方式呈现在刊物上，但肉眼无法清晰分辨，就像完全隐身一样，所以被称为隐码或隐形光学标..."
+      },
+      "catalog": [
+        {
+          "title": "点阵笔调研",
+          "doc_id": "gngu22bt601vo6od"
+        }
+      ],
+      "realName": "点阵铺码规则",
+      "relativePath": "\\点阵笔调研\\点阵铺码规则.md",
+      "docPath": "docs\\毕业设计\\点阵笔调研"
+    },
+    {
+      "id": 151120001,
+      "doc_id": "tbgiygy0cw7smqk6",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "Ncode PDF",
+        "urlname": "tbgiygy0cw7smqk6",
+        "date": "2023-12-24 12:14:40",
+        "updated": "2023-12-28 12:03:21",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1703421854422-9613c234-3ad8-4316-a727-686e437ba439.png",
+        "description": "下载可打印的点阵纸https://neosmartpen.com/ncode-pdf/打印解决方案https://github.com/NeoSmartpen/Ncode-SDK2.0项目指导文档运行起来报错使用cs项目跑出来的点阵纸，点阵如下"
+      },
+      "catalog": [
+        {
+          "title": "点阵笔调研",
+          "doc_id": "tbgiygy0cw7smqk6"
+        }
+      ],
+      "realName": "Ncode PDF",
+      "relativePath": "\\点阵笔调研\\Ncode PDF.md",
+      "docPath": "docs\\毕业设计\\点阵笔调研"
+    },
+    {
+      "id": 131961668,
+      "doc_id": "ft0tldpso5tz9xmm",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "点阵笔调研",
+        "urlname": "ft0tldpso5tz9xmm",
+        "date": "2023-07-02 11:06:29",
+        "updated": "2023-12-28 12:03:21",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1689391893936-e6f81a63-2e35-4c8d-b495-ca1a86e8fcf1.png",
+        "description": "选题 基于点阵笔做Android蓝牙应用   在纸上写的字能实时还原到Android中   通过一些百度api实时的把手写体文字识别成电子文字   查到那种有sdk提供的产品  实现效果https://www.tqltech.com/solution/214.htmlhttps://www.b..."
+      },
+      "catalog": [],
+      "realName": "点阵笔调研",
+      "relativePath": "\\点阵笔调研.md",
+      "docPath": "docs\\毕业设计"
+    },
+    {
+      "id": 148136081,
+      "doc_id": "nn8rr2y3i51dhpr4",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "构建桌面小部件",
+        "urlname": "nn8rr2y3i51dhpr4",
+        "date": "2023-11-25 17:17:55",
+        "updated": "2023-12-28 12:03:21",
+        "description": "https://juejin.cn/post/7296031991320870912?searchId=20231125170129FFB34EC3C3EC3DAC0BAE#heading-1https://developer.android.google.cn/guide/topics/ap..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "nn8rr2y3i51dhpr4"
+        }
+      ],
+      "realName": "构建桌面小部件",
+      "relativePath": "\\医生端\\构建桌面小部件.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 148143024,
+      "doc_id": "rtigg251n53f7qrv",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "关于引入RxJava代码报警报The result of subscribe is not used",
+        "urlname": "rtigg251n53f7qrv",
+        "date": "2023-11-25 19:38:30",
+        "updated": "2023-12-28 12:03:21",
+        "description": "这是因为这个事件流可能存在内存泄漏的风险具体原因在这里分析过了RxJava2的内存泄漏问题"
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "rtigg251n53f7qrv"
+        }
+      ],
+      "realName": "关于引入RxJava代码报警报The result of subscribe is not used",
+      "relativePath": "\\医生端\\关于引入RxJava代码报警报The result of subscribe is not used.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 148055705,
+      "doc_id": "py9cofg2w1mv14r2",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "关于九宫格显示图片及预览图片的开源探究",
+        "urlname": "py9cofg2w1mv14r2",
+        "date": "2023-11-24 15:56:50",
+        "updated": "2023-12-28 12:03:21"
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "py9cofg2w1mv14r2"
+        }
+      ],
+      "realName": "关于九宫格显示图片及预览图片的开源探究",
+      "relativePath": "\\医生端\\关于九宫格显示图片及预览图片的开源探究.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 147980920,
+      "doc_id": "brt9f6nsrfpre9ip",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "后端联调以文件格式上传Bitmap图片",
+        "urlname": "brt9f6nsrfpre9ip",
+        "date": "2023-11-23 21:46:56",
+        "updated": "2023-12-28 12:03:21",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1700748809305-af8a17cd-0eed-4a0f-8818-8c78ca10bd6c.png",
+        "description": "更多关于Retrofit接口定义的知识如下：https://www.jianshu.com/p/74b7da380855前言阅读门槛：掌握Retrofit的使用遇到的问题：需要将Bitmap图片以文件的格式上传至后端服务器从Android端上传Bitmap图片有很多中方式，例如转换成字节流的格..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "brt9f6nsrfpre9ip"
+        }
+      ],
+      "realName": "后端联调以文件格式上传Bitmap图片",
+      "relativePath": "\\医生端\\后端联调以文件格式上传Bitmap图片.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 147323473,
+      "doc_id": "mk1ttxzbymhchs9w",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "空指针报错",
+        "urlname": "mk1ttxzbymhchs9w",
+        "date": "2023-11-17 20:47:20",
+        "updated": "2023-12-28 12:03:21",
+        "description": "2023-11-17 20:46:33.902 20075-20075/com.eningqu.aipendemo.custom E/AndroidRuntime: FATAL EXCEPTION: main     Process: com.eningqu.aipendemo.custom,..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "mk1ttxzbymhchs9w"
+        }
+      ],
+      "realName": "空指针报错",
+      "relativePath": "\\医生端\\空指针报错.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 147258767,
+      "doc_id": "thn65gxgyugw8p7a",
+      "updated": 1715867769000,
+      "properties": {
+        "title": "linux常用笔记",
+        "urlname": "thn65gxgyugw8p7a",
+        "date": "2023-11-17 11:46:01",
+        "updated": "2024-05-16 21:56:09",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1700192858508-7ce175e2-516a-409c-a671-e9098798c2cd.png",
+        "description": "scp传输文件https://cloud.tencent.com/developer/article/23228663.1 从Windows系统复制文件到Linux系统要从Windows系统向Linux系统传输文件，可以使用以下命令：scp C:\\path\\to\\file.txt userna..."
+      },
+      "catalog": [
+        {
+          "title": "JavaEE后端技术",
+          "doc_id": "thn65gxgyugw8p7a"
+        }
+      ],
+      "realName": "linux常用笔记",
+      "relativePath": "\\JavaEE后端技术\\linux常用笔记.md",
+      "docPath": "docs\\毕业设计\\JavaEE后端技术"
+    },
+    {
+      "id": 139855100,
+      "doc_id": "kq7lvuotsmxppnsk",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "基类设计",
+        "urlname": "kq7lvuotsmxppnsk",
+        "date": "2023-09-14 11:24:27",
+        "updated": "2023-12-28 12:03:21",
+        "description": "ViewBinding封装基类(BaseActivity,BaseFragment)https://blog.csdn.net/jingzz1/article/details/105909040封装DataBinding -- kotlin版https://juejin.cn/post/695..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "kq7lvuotsmxppnsk"
+        }
+      ],
+      "realName": "基类设计",
+      "relativePath": "\\医生端\\基类设计.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 147513523,
+      "doc_id": "gthr74izwnvgp0z6",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "JavaSpring常见问题合辑",
+        "urlname": "gthr74izwnvgp0z6",
+        "date": "2023-11-20 15:25:10",
+        "updated": "2023-12-28 12:03:21",
+        "description": "表单提交与文件上传错误原因：@ReponseBody不支持form-dataContent type 'multipart/form-data;boundary=----WebKitFormBoundaryiH9mGtoXVYEz7jLL;charset=UTF-解决措施;https://bl..."
+      },
+      "catalog": [
+        {
+          "title": "JavaEE后端技术",
+          "doc_id": "gthr74izwnvgp0z6"
+        }
+      ],
+      "realName": "JavaSpring常见问题合辑",
+      "relativePath": "\\JavaEE后端技术\\JavaSpring常见问题合辑.md",
+      "docPath": "docs\\毕业设计\\JavaEE后端技术"
+    },
+    {
+      "id": 145606989,
+      "doc_id": "esqqbk8vqe8lay0v",
+      "updated": 1705819341000,
+      "properties": {
+        "title": "会议纪要",
+        "urlname": "esqqbk8vqe8lay0v",
+        "date": "2023-11-02 10:23:43",
+        "updated": "2024-01-21 14:42:21",
+        "description": "参会人：@boy@starry陆离@胡棵梁@bias会议时间：2023-11-5会议地点：二楼食堂会前材料 点阵笔调研会议议题简单确定项目的需求，解答大家的疑问了解大家的擅长点，和初步任务分工首要的任务是：需求的探索和功能的设计手写字体识别的技术预研长期任务Android、JavaEE（前后端..."
+      },
+      "catalog": [],
+      "realName": "会议纪要",
+      "relativePath": "\\会议纪要.md",
+      "docPath": "docs\\毕业设计"
+    },
+    {
+      "id": 146941207,
+      "doc_id": "vkdq1pne31u65f13",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "数据库设计",
+        "urlname": "vkdq1pne31u65f13",
+        "date": "2023-11-14 20:57:38",
+        "updated": "2023-12-28 12:03:21",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1700040139203-9ceef60c-9c52-47e0-a2b2-488d28481327.png",
+        "description": "病人医生病历（病历以病历id为主键）每一次就诊都会生成一个信息节点病历信息节点：信息节点保证  病人 -- 医生 -- 此次就诊  一一对应📎数据库表.docx病历表设计对于病历表-由后台预置，模拟用户在前台挂号第一次挂号操作会触发：患者账号注册，病历单生成，并创建初始病历节点，自动关联用户..."
+      },
+      "catalog": [
+        {
+          "title": "点阵笔调研",
+          "doc_id": "vkdq1pne31u65f13"
+        }
+      ],
+      "realName": "数据库设计",
+      "relativePath": "\\点阵笔调研\\数据库设计.md",
+      "docPath": "docs\\毕业设计\\点阵笔调研"
+    },
+    {
+      "id": 146170381,
+      "doc_id": "ikrr365wg39qn7sc",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "铺码软件",
+        "urlname": "ikrr365wg39qn7sc",
+        "date": "2023-11-07 17:15:45",
+        "updated": "2023-12-28 12:03:21",
+        "description": "OidProducer-哔哩哔哩_Bilibili"
+      },
+      "catalog": [
+        {
+          "title": "三方SDK",
+          "doc_id": "ikrr365wg39qn7sc"
+        }
+      ],
+      "realName": "铺码软件",
+      "relativePath": "\\三方SDK\\铺码软件.md",
+      "docPath": "docs\\毕业设计\\三方SDK"
+    },
+    {
+      "id": 141371092,
+      "doc_id": "echte58t0npnr8py",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "网络请求封装",
+        "urlname": "echte58t0npnr8py",
+        "date": "2023-10-03 20:49:07",
+        "updated": "2023-12-28 12:03:21"
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "echte58t0npnr8py"
+        },
+        {
+          "title": "基础配置",
+          "doc_id": "echte58t0npnr8py"
+        }
+      ],
+      "realName": "网络请求封装",
+      "relativePath": "\\医生端\\基础配置\\网络请求封装.md",
+      "docPath": "docs\\毕业设计\\医生端\\基础配置"
+    },
+    {
+      "id": 139860242,
+      "doc_id": "ubnssna88hwk8xoa",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "Login界面",
+        "urlname": "ubnssna88hwk8xoa",
+        "date": "2023-09-14 11:50:59",
+        "updated": "2023-12-28 12:03:21",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1694668418508-2a98ba7e-8b52-4b08-b83e-24fafadb160f.png",
+        "description": "materialbutton-一种可设置圆角和图标的原生控件https://juejin.cn/post/6965442836787855390TextInputLayout-一种样式更多样的输入框控件https://blog.csdn.net/W41ted/article/details/1..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "ubnssna88hwk8xoa"
+        }
+      ],
+      "realName": "Login界面",
+      "relativePath": "\\医生端\\Login界面.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 136818573,
+      "doc_id": "ozgwah8kg3mldwl4",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "🌟SurfaceView是什么",
+        "urlname": "ozgwah8kg3mldwl4",
+        "date": "2023-08-20 16:49:00",
+        "updated": "2023-12-28 12:03:21",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/jpeg/32682386/1695736895660-967a2aae-2b6a-417e-ba37-233960532f32.jpeg",
+        "description": "参考资料：android安卓SurfaceView与view的区别是什么参考资料：Android-View的孪生兄弟---SurfaceView入门SurfaceView和View最本质的区别在于：SurfaceView是在一个新起的单独线程中可以重新绘制画面，而View必须在UI的主线程中更..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "ozgwah8kg3mldwl4"
+        }
+      ],
+      "realName": "🌟SurfaceView是什么",
+      "relativePath": "\\医生端\\🌟SurfaceView是什么.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 141008586,
+      "doc_id": "geg82894avlxlghh",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "蓝牙连接原理",
+        "urlname": "geg82894avlxlghh",
+        "date": "2023-09-26 19:06:52",
+        "updated": "2023-12-28 12:03:21",
+        "description": "首先对sdk做了一次二次封装，创建一个单例类PenCtrlSdkManager实现对智能笔的使用初始化SDK初始化sdk需要做的操作有初始化NQPen初始化页面大小设置屏幕常亮设置远程解析此方法提供给需要初始化智能笔设备时调用public void init(@NonNull Context ..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "geg82894avlxlghh"
+        }
+      ],
+      "realName": "蓝牙连接原理",
+      "relativePath": "\\医生端\\蓝牙连接原理.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 141015007,
+      "doc_id": "plg3kr05zs60el7s",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "实时书写画板的实现原理",
+        "urlname": "plg3kr05zs60el7s",
+        "date": "2023-09-26 20:51:10",
+        "updated": "2023-12-28 12:03:21",
+        "description": "CanvasFrameCanvasFrame是一个自定义画布类继承自LinearLayout，承载着真正用于显示绘制内容的CanvasDrawView类，之所以要将两个类分离是因为可以单独设置CanvasFrame的背景重写onDraw方法，主要设置此类的硬件加速 @Override prot..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "plg3kr05zs60el7s"
+        }
+      ],
+      "realName": "实时书写画板的实现原理",
+      "relativePath": "\\医生端\\实时书写画板的实现原理.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 141014786,
+      "doc_id": "pmz69vw14rrpkwsc",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "书写线程的实现",
+        "urlname": "pmz69vw14rrpkwsc",
+        "date": "2023-09-26 20:48:39",
+        "updated": "2023-12-28 12:03:21",
+        "description": "/**  * 用于实时书写的线程  */ private static class SendThread extends Thread {     private final Object lock = new Object();      private final String mac; ..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "pmz69vw14rrpkwsc"
+        }
+      ],
+      "realName": "书写线程的实现",
+      "relativePath": "\\医生端\\书写线程的实现.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 139883754,
+      "doc_id": "pyu6uk30tvhl1np4",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "DeviceListActivity",
+        "urlname": "pyu6uk30tvhl1np4",
+        "date": "2023-09-14 15:24:22",
+        "updated": "2023-12-28 12:03:21",
+        "description": "引入下拉刷新https://github.com/scwang90/SmartRefreshLayout//这个是官方的刷新控件 implementation \"androidx.swiperefreshlayout:swiperefreshlayout:1.1.0\"  //这个是开源的，功能..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "pyu6uk30tvhl1np4"
+        }
+      ],
+      "realName": "DeviceListActivity",
+      "relativePath": "\\医生端\\DeviceListActivity.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 136413964,
+      "doc_id": "fatdoig79fy3b1tu",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "单例的多种写法",
+        "urlname": "fatdoig79fy3b1tu",
+        "date": "2023-08-15 23:02:35",
+        "updated": "2023-12-28 12:03:21",
+        "description": "https://juejin.cn/post/6844904094658723848单例模式详细解析为什么要使用单例：在开发中，经常要保证一个类只有唯一的一个对象实例，比如线程池、缓存、网络请求。如果这些出现了多个对象实例，那么可能导致程序前后得到的结果不一致单例的优点：提供对唯一实例的受控访..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "fatdoig79fy3b1tu"
+        }
+      ],
+      "realName": "单例的多种写法",
+      "relativePath": "\\医生端\\单例的多种写法.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 139920254,
+      "doc_id": "xn6dgz4lx6bursmp",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "连接蓝牙自定义dialog",
+        "urlname": "xn6dgz4lx6bursmp",
+        "date": "2023-09-14 20:36:10",
+        "updated": "2023-12-28 12:03:21",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1694697335255-a9ffb809-2e5b-42a4-b887-ee7d9162a35f.png",
+        "description": "https://juejin.cn/post/7094450920372568071实现方案官方推荐的实现方案，继承DialogFragment继承结构，DialogFragment是Fragment的子类，因此自定义一个Dialog的流程和创建一个Fragment类似主要关注onCreate..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "xn6dgz4lx6bursmp"
+        }
+      ],
+      "realName": "连接蓝牙自定义dialog",
+      "relativePath": "\\医生端\\连接蓝牙自定义dialog.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 136812672,
+      "doc_id": "yrn814upywreor5f",
+      "updated": 1703736201000,
+      "properties": {
+        "title": "蓝牙连接的实现",
+        "urlname": "yrn814upywreor5f",
+        "date": "2023-08-20 15:10:11",
+        "updated": "2023-12-28 12:03:21",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1692515457359-d471b140-e87f-44c9-b3b5-ea21cc2d4aea.png",
+        "description": "初始化//1.初始化nqpen sdk NQPenSDK.getInstance().logSwitch(this,false,false);蓝牙连接在主界面中找到探测蓝牙连接的界面：1.检查是否支持蓝牙，调用原生的sdk2.初始化蓝牙连接3.扫描设备if (!isBluetoothAvail..."
+      },
+      "catalog": [
+        {
+          "title": "医生端",
+          "doc_id": "yrn814upywreor5f"
+        }
+      ],
+      "realName": "蓝牙连接的实现",
+      "relativePath": "\\医生端\\蓝牙连接的实现.md",
+      "docPath": "docs\\毕业设计\\医生端"
+    },
+    {
+      "id": 145602773,
+      "doc_id": "ddzxgmusfyzxnbb5",
+      "updated": 1705906459000,
+      "properties": {
+        "title": "手写识别",
+        "urlname": "ddzxgmusfyzxnbb5",
+        "date": "2023-11-02 10:08:01",
+        "updated": "2024-01-22 14:54:19",
+        "cover": "https://cdn.nlark.com/yuque/0/2023/png/32682386/1699859754511-7d8f7a86-7f80-4c3a-ba39-c3ec6e0b8dca.png",
+        "description": "服务与支持-自助服务-自助工具-手写识别package baidu.com;  import okhttp3.*; import org.json.JSONObject;  import java.io.*;  import java.nio.file.Files; import java.n..."
+      },
+      "catalog": [
+        {
+          "title": "三方SDK",
+          "doc_id": "ddzxgmusfyzxnbb5"
+        }
+      ],
+      "realName": "手写识别",
+      "relativePath": "\\三方SDK\\手写识别.md",
+      "docPath": "docs\\毕业设计\\三方SDK"
+    }
+  ],
+  "catalog": [
+    {
+      "type": "DOC",
+      "title": "软著申请",
+      "uuid": "Fo7mvxewMi9yyZfD",
+      "url": "ro8u2zggtn5qutv0",
+      "prev_uuid": "",
+      "sibling_uuid": "qlhWXBvW87vRgvmC",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 170254340,
+      "level": 0,
+      "id": 170254340,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "系统介绍",
+      "uuid": "qlhWXBvW87vRgvmC",
+      "url": "pst5sv57nlyss1sp",
+      "prev_uuid": "Fo7mvxewMi9yyZfD",
+      "sibling_uuid": "AL53R7Qf_eFLNc1L",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 169910079,
+      "level": 0,
+      "id": 169910079,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "实验室系统",
+      "uuid": "AL53R7Qf_eFLNc1L",
+      "url": "lzybobc5x2inbpw3",
+      "prev_uuid": "qlhWXBvW87vRgvmC",
+      "sibling_uuid": "Gi2ekYTvvxVdGmmR",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 168960955,
+      "level": 0,
+      "id": 168960955,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Android分享",
+      "uuid": "Gi2ekYTvvxVdGmmR",
+      "url": "uf83dt2f3ggu9t9y",
+      "prev_uuid": "AL53R7Qf_eFLNc1L",
+      "sibling_uuid": "qjzG33_owAshLfHY",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 165873083,
+      "level": 0,
+      "id": 165873083,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "论文书写格式",
+      "uuid": "qjzG33_owAshLfHY",
+      "url": "qo3xaputc56lxana",
+      "prev_uuid": "Gi2ekYTvvxVdGmmR",
+      "sibling_uuid": "4B0N0BVrqOe3RaA5",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 162996226,
+      "level": 0,
+      "id": 162996226,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "软著申请",
+      "uuid": "4B0N0BVrqOe3RaA5",
+      "url": "geuec1gf20ucg30r",
+      "prev_uuid": "qjzG33_owAshLfHY",
+      "sibling_uuid": "qYjwP_rL_usYAPUa",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 164890952,
+      "level": 0,
+      "id": 164890952,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "TITLE",
+      "title": "Vue",
+      "uuid": "qYjwP_rL_usYAPUa",
+      "url": "",
+      "prev_uuid": "4B0N0BVrqOe3RaA5",
+      "sibling_uuid": "rUE4ohABkDU9WNQD",
+      "child_uuid": "9hIquPrNwSveIA0j",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Login",
+      "uuid": "9hIquPrNwSveIA0j",
+      "url": "lnmembvtto3xgx85",
+      "prev_uuid": "qYjwP_rL_usYAPUa",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "qYjwP_rL_usYAPUa",
+      "doc_id": 159125848,
+      "level": 1,
+      "id": 159125848,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "TITLE",
+      "title": "患者端",
+      "uuid": "rUE4ohABkDU9WNQD",
+      "url": "",
+      "prev_uuid": "qYjwP_rL_usYAPUa",
+      "sibling_uuid": "s0foRrQ32_8Nx4AC",
+      "child_uuid": "fMLlPYyscU0fUGf5",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "接入XUI框架",
+      "uuid": "fMLlPYyscU0fUGf5",
+      "url": "wao12ok1gug4t25w",
+      "prev_uuid": "rUE4ohABkDU9WNQD",
+      "sibling_uuid": "oKWYrCu6QM1_srsh",
+      "child_uuid": "",
+      "parent_uuid": "rUE4ohABkDU9WNQD",
+      "doc_id": 157681402,
+      "level": 1,
+      "id": 157681402,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "患者端技术栈",
+      "uuid": "oKWYrCu6QM1_srsh",
+      "url": "fvt92ukzqlas0dww",
+      "prev_uuid": "fMLlPYyscU0fUGf5",
+      "sibling_uuid": "YYwjr1xHx52Q5VrA",
+      "child_uuid": "",
+      "parent_uuid": "rUE4ohABkDU9WNQD",
+      "doc_id": 152462906,
+      "level": 1,
+      "id": 152462906,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "患者端功能介绍",
+      "uuid": "YYwjr1xHx52Q5VrA",
+      "url": "xve2vqvxn9oemwac",
+      "prev_uuid": "oKWYrCu6QM1_srsh",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "rUE4ohABkDU9WNQD",
+      "doc_id": 152462901,
+      "level": 1,
+      "id": 152462901,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "TITLE",
+      "title": "三方SDK",
+      "uuid": "s0foRrQ32_8Nx4AC",
+      "url": "",
+      "prev_uuid": "rUE4ohABkDU9WNQD",
+      "sibling_uuid": "5_k_6HUoQH1kngnD",
+      "child_uuid": "Eh1AaEjHk0oAk809",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "舌象诊断",
+      "uuid": "Eh1AaEjHk0oAk809",
+      "url": "lkdefgrthgzwizwt",
+      "prev_uuid": "s0foRrQ32_8Nx4AC",
+      "sibling_uuid": "TphujyC2kzxkAr5Y",
+      "child_uuid": "",
+      "parent_uuid": "s0foRrQ32_8Nx4AC",
+      "doc_id": 160394801,
+      "level": 1,
+      "id": 160394801,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "铺码软件",
+      "uuid": "TphujyC2kzxkAr5Y",
+      "url": "ikrr365wg39qn7sc",
+      "prev_uuid": "Eh1AaEjHk0oAk809",
+      "sibling_uuid": "cr-TtQcOM-Iy-CdA",
+      "child_uuid": "",
+      "parent_uuid": "s0foRrQ32_8Nx4AC",
+      "doc_id": 146170381,
+      "level": 1,
+      "id": 146170381,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "手写识别",
+      "uuid": "cr-TtQcOM-Iy-CdA",
+      "url": "ddzxgmusfyzxnbb5",
+      "prev_uuid": "TphujyC2kzxkAr5Y",
+      "sibling_uuid": "JmgxiB6uGyco9BQN",
+      "child_uuid": "",
+      "parent_uuid": "s0foRrQ32_8Nx4AC",
+      "doc_id": 145602773,
+      "level": 1,
+      "id": 145602773,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "文心一言接入",
+      "uuid": "JmgxiB6uGyco9BQN",
+      "url": "ct1g8xgofm5iyfwm",
+      "prev_uuid": "cr-TtQcOM-Iy-CdA",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "s0foRrQ32_8Nx4AC",
+      "doc_id": 141362324,
+      "level": 1,
+      "id": 141362324,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "常用文件地址",
+      "uuid": "5_k_6HUoQH1kngnD",
+      "url": "ynb8q6saavaylkt7",
+      "prev_uuid": "s0foRrQ32_8Nx4AC",
+      "sibling_uuid": "162PZWV2yk_FrkO3",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 141386121,
+      "level": 0,
+      "id": 141386121,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "TITLE",
+      "title": "JavaEE后端技术",
+      "uuid": "162PZWV2yk_FrkO3",
+      "url": "",
+      "prev_uuid": "5_k_6HUoQH1kngnD",
+      "sibling_uuid": "sCliayE0p9JCFyLl",
+      "child_uuid": "qmAuBsyR4FRRvq0y",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "mysql动态级联sql",
+      "uuid": "qmAuBsyR4FRRvq0y",
+      "url": "es4p5zwgefh4dz7d",
+      "prev_uuid": "162PZWV2yk_FrkO3",
+      "sibling_uuid": "R1FHLlvanQ3T1fGU",
+      "child_uuid": "",
+      "parent_uuid": "162PZWV2yk_FrkO3",
+      "doc_id": 158878264,
+      "level": 1,
+      "id": 158878264,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "数据库insert数据报错",
+      "uuid": "R1FHLlvanQ3T1fGU",
+      "url": "qdg3wr8h3mufcnyo",
+      "prev_uuid": "qmAuBsyR4FRRvq0y",
+      "sibling_uuid": "ocZ8hPhyk0Xvs4Pa",
+      "child_uuid": "",
+      "parent_uuid": "162PZWV2yk_FrkO3",
+      "doc_id": 158159289,
+      "level": 1,
+      "id": 158159289,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "数据库一对一级联查询",
+      "uuid": "ocZ8hPhyk0Xvs4Pa",
+      "url": "by2ec1cyz20918la",
+      "prev_uuid": "R1FHLlvanQ3T1fGU",
+      "sibling_uuid": "Snt3CxoUiRBdw7WZ",
+      "child_uuid": "",
+      "parent_uuid": "162PZWV2yk_FrkO3",
+      "doc_id": 157619079,
+      "level": 1,
+      "id": 157619079,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "1.后端所有需求",
+      "uuid": "Snt3CxoUiRBdw7WZ",
+      "url": "nmv22wcqa3evzgn4",
+      "prev_uuid": "ocZ8hPhyk0Xvs4Pa",
+      "sibling_uuid": "lEOZKdYMyGMjY6yQ",
+      "child_uuid": "",
+      "parent_uuid": "162PZWV2yk_FrkO3",
+      "doc_id": 157571601,
+      "level": 1,
+      "id": 157571601,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "环境配置说明",
+      "uuid": "lEOZKdYMyGMjY6yQ",
+      "url": "lmzmhw8o5yi9koug",
+      "prev_uuid": "Snt3CxoUiRBdw7WZ",
+      "sibling_uuid": "-Ddxmie_LgFd7IHU",
+      "child_uuid": "",
+      "parent_uuid": "162PZWV2yk_FrkO3",
+      "doc_id": 156767750,
+      "level": 1,
+      "id": 156767750,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "JavaSpring常见问题合辑",
+      "uuid": "-Ddxmie_LgFd7IHU",
+      "url": "gthr74izwnvgp0z6",
+      "prev_uuid": "lEOZKdYMyGMjY6yQ",
+      "sibling_uuid": "UjF2In7hICb2eNp9",
+      "child_uuid": "",
+      "parent_uuid": "162PZWV2yk_FrkO3",
+      "doc_id": 147513523,
+      "level": 1,
+      "id": 147513523,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "linux常用笔记",
+      "uuid": "UjF2In7hICb2eNp9",
+      "url": "thn65gxgyugw8p7a",
+      "prev_uuid": "-Ddxmie_LgFd7IHU",
+      "sibling_uuid": "6ltpfGYhRHEvnTYF",
+      "child_uuid": "",
+      "parent_uuid": "162PZWV2yk_FrkO3",
+      "doc_id": 147258767,
+      "level": 1,
+      "id": 147258767,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "linux node环境搭建",
+      "uuid": "6ltpfGYhRHEvnTYF",
+      "url": "vbv077hyerv2n5gd",
+      "prev_uuid": "UjF2In7hICb2eNp9",
+      "sibling_uuid": "l4ODLTcq9IV5e69i",
+      "child_uuid": "",
+      "parent_uuid": "162PZWV2yk_FrkO3",
+      "doc_id": 147233380,
+      "level": 1,
+      "id": 147233380,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "renrenfast框架",
+      "uuid": "l4ODLTcq9IV5e69i",
+      "url": "fboma0le3tne1y63",
+      "prev_uuid": "6ltpfGYhRHEvnTYF",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "162PZWV2yk_FrkO3",
+      "doc_id": 141433040,
+      "level": 1,
+      "id": 141433040,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "TITLE",
+      "title": "医生端",
+      "uuid": "sCliayE0p9JCFyLl",
+      "url": "",
+      "prev_uuid": "162PZWV2yk_FrkO3",
+      "sibling_uuid": "XNoBOy85sBYucla8",
+      "child_uuid": "AnSkAHMZ2bHLg2Fl",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "截屏和手写识别",
+      "uuid": "AnSkAHMZ2bHLg2Fl",
+      "url": "xdrvubnwnl1xvipk",
+      "prev_uuid": "sCliayE0p9JCFyLl",
+      "sibling_uuid": "peDuOmhWHWoxcjre",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 158007736,
+      "level": 1,
+      "id": 158007736,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "医生端代码分享",
+      "uuid": "peDuOmhWHWoxcjre",
+      "url": "degxztcpbv87nhxg",
+      "prev_uuid": "AnSkAHMZ2bHLg2Fl",
+      "sibling_uuid": "9UPT5nH0FiBmIrE7",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 157347967,
+      "level": 1,
+      "id": 157347967,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "TITLE",
+      "title": "基础配置",
+      "uuid": "9UPT5nH0FiBmIrE7",
+      "url": "",
+      "prev_uuid": "peDuOmhWHWoxcjre",
+      "sibling_uuid": "dq5g0gWt4DufK6YN",
+      "child_uuid": "6FlWQIDvxZTtWyzM",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": "",
+      "level": 1,
+      "id": "",
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "网络请求封装",
+      "uuid": "6FlWQIDvxZTtWyzM",
+      "url": "echte58t0npnr8py",
+      "prev_uuid": "9UPT5nH0FiBmIrE7",
+      "sibling_uuid": "6dIgFRxmQA4QC8bd",
+      "child_uuid": "",
+      "parent_uuid": "9UPT5nH0FiBmIrE7",
+      "doc_id": 141371092,
+      "level": 2,
+      "id": 141371092,
+      "open_window": 1,
+      "visible": 0
+    },
+    {
+      "type": "DOC",
+      "title": "环境基础配置",
+      "uuid": "6dIgFRxmQA4QC8bd",
+      "url": "uxxgg3h9zkns0l35",
+      "prev_uuid": "6FlWQIDvxZTtWyzM",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "9UPT5nH0FiBmIrE7",
+      "doc_id": 139819552,
+      "level": 2,
+      "id": 139819552,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "关于引入RxJava代码报警报The result of subscribe is not used",
+      "uuid": "dq5g0gWt4DufK6YN",
+      "url": "rtigg251n53f7qrv",
+      "prev_uuid": "9UPT5nH0FiBmIrE7",
+      "sibling_uuid": "TGl5gDTwqDKUS-40",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 148143024,
+      "level": 1,
+      "id": 148143024,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Fragment的懒加载",
+      "uuid": "TGl5gDTwqDKUS-40",
+      "url": "ln8s0945ifplitp9",
+      "prev_uuid": "dq5g0gWt4DufK6YN",
+      "sibling_uuid": "HHOAvsyI01C6MNRb",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 148142796,
+      "level": 1,
+      "id": 148142796,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "构建桌面小部件",
+      "uuid": "HHOAvsyI01C6MNRb",
+      "url": "nn8rr2y3i51dhpr4",
+      "prev_uuid": "TGl5gDTwqDKUS-40",
+      "sibling_uuid": "hY5mPVeKuhZw_vit",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 148136081,
+      "level": 1,
+      "id": 148136081,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "关于九宫格显示图片及预览图片的开源探究",
+      "uuid": "hY5mPVeKuhZw_vit",
+      "url": "py9cofg2w1mv14r2",
+      "prev_uuid": "HHOAvsyI01C6MNRb",
+      "sibling_uuid": "Urdcq4BOP2AIJcm7",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 148055705,
+      "level": 1,
+      "id": 148055705,
+      "open_window": 1,
+      "visible": 0
+    },
+    {
+      "type": "DOC",
+      "title": "后端联调以文件格式上传Bitmap图片",
+      "uuid": "Urdcq4BOP2AIJcm7",
+      "url": "brt9f6nsrfpre9ip",
+      "prev_uuid": "hY5mPVeKuhZw_vit",
+      "sibling_uuid": "v-1CIzdgebHQv0uC",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 147980920,
+      "level": 1,
+      "id": 147980920,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "空指针报错",
+      "uuid": "v-1CIzdgebHQv0uC",
+      "url": "mk1ttxzbymhchs9w",
+      "prev_uuid": "Urdcq4BOP2AIJcm7",
+      "sibling_uuid": "4DOjiQjIdYq1hyB1",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 147323473,
+      "level": 1,
+      "id": 147323473,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "加载动画的实现",
+      "uuid": "4DOjiQjIdYq1hyB1",
+      "url": "uv5caleix6smcsfk",
+      "prev_uuid": "v-1CIzdgebHQv0uC",
+      "sibling_uuid": "DBUbuELJUMAMBYFe",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 146230703,
+      "level": 1,
+      "id": 146230703,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "基类设计",
+      "uuid": "DBUbuELJUMAMBYFe",
+      "url": "kq7lvuotsmxppnsk",
+      "prev_uuid": "4DOjiQjIdYq1hyB1",
+      "sibling_uuid": "0QiLXpLZJmJyOE5S",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 139855100,
+      "level": 1,
+      "id": 139855100,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Login界面",
+      "uuid": "0QiLXpLZJmJyOE5S",
+      "url": "ubnssna88hwk8xoa",
+      "prev_uuid": "DBUbuELJUMAMBYFe",
+      "sibling_uuid": "89LjQt-i0PWNtrtN",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 139860242,
+      "level": 1,
+      "id": 139860242,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "DeviceListActivity",
+      "uuid": "89LjQt-i0PWNtrtN",
+      "url": "pyu6uk30tvhl1np4",
+      "prev_uuid": "0QiLXpLZJmJyOE5S",
+      "sibling_uuid": "ZYRDaBBrg93YNPyT",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 139883754,
+      "level": 1,
+      "id": 139883754,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "连接蓝牙自定义dialog",
+      "uuid": "ZYRDaBBrg93YNPyT",
+      "url": "xn6dgz4lx6bursmp",
+      "prev_uuid": "89LjQt-i0PWNtrtN",
+      "sibling_uuid": "R8LXAQqRbH2s7RpU",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 139920254,
+      "level": 1,
+      "id": 139920254,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "蓝牙连接原理",
+      "uuid": "R8LXAQqRbH2s7RpU",
+      "url": "geg82894avlxlghh",
+      "prev_uuid": "ZYRDaBBrg93YNPyT",
+      "sibling_uuid": "z_P1l1Ol3i2fsicF",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 141008586,
+      "level": 1,
+      "id": 141008586,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "书写线程的实现",
+      "uuid": "z_P1l1Ol3i2fsicF",
+      "url": "pmz69vw14rrpkwsc",
+      "prev_uuid": "R8LXAQqRbH2s7RpU",
+      "sibling_uuid": "chpRPczk6k5X6BnK",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 141014786,
+      "level": 1,
+      "id": 141014786,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "实时书写画板的实现原理",
+      "uuid": "chpRPczk6k5X6BnK",
+      "url": "plg3kr05zs60el7s",
+      "prev_uuid": "z_P1l1Ol3i2fsicF",
+      "sibling_uuid": "SsZm0HuXzZHQBE2n",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 141015007,
+      "level": 1,
+      "id": 141015007,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "🌟SurfaceView是什么",
+      "uuid": "SsZm0HuXzZHQBE2n",
+      "url": "ozgwah8kg3mldwl4",
+      "prev_uuid": "chpRPczk6k5X6BnK",
+      "sibling_uuid": "NGDvbF61GOtXSlrW",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 136818573,
+      "level": 1,
+      "id": 136818573,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "蓝牙连接的实现",
+      "uuid": "NGDvbF61GOtXSlrW",
+      "url": "yrn814upywreor5f",
+      "prev_uuid": "SsZm0HuXzZHQBE2n",
+      "sibling_uuid": "ki6l1cXJww8zCrXn",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 136812672,
+      "level": 1,
+      "id": 136812672,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "单例的多种写法",
+      "uuid": "ki6l1cXJww8zCrXn",
+      "url": "fatdoig79fy3b1tu",
+      "prev_uuid": "NGDvbF61GOtXSlrW",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "sCliayE0p9JCFyLl",
+      "doc_id": 136413964,
+      "level": 1,
+      "id": 136413964,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "待办清单",
+      "uuid": "XNoBOy85sBYucla8",
+      "url": "ct6dil1yvfd0uegs",
+      "prev_uuid": "sCliayE0p9JCFyLl",
+      "sibling_uuid": "mg7epoQoAu8chmgT",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 136272100,
+      "level": 0,
+      "id": 136272100,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "会议纪要",
+      "uuid": "mg7epoQoAu8chmgT",
+      "url": "esqqbk8vqe8lay0v",
+      "prev_uuid": "XNoBOy85sBYucla8",
+      "sibling_uuid": "bwPfJZVBjpg5-mYL",
+      "child_uuid": "sMyKVKvuyj_JD-J2",
+      "parent_uuid": "",
+      "doc_id": 145606989,
+      "level": 0,
+      "id": 145606989,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "中期答辩会议",
+      "uuid": "sMyKVKvuyj_JD-J2",
+      "url": "ikddc1yp377f3cll",
+      "prev_uuid": "mg7epoQoAu8chmgT",
+      "sibling_uuid": "AQ3fXO3AP7O8NdBJ",
+      "child_uuid": "",
+      "parent_uuid": "mg7epoQoAu8chmgT",
+      "doc_id": 159842798,
+      "level": 1,
+      "id": 159842798,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "第三次会议",
+      "uuid": "AQ3fXO3AP7O8NdBJ",
+      "url": "naz6ze3z9gfxikhg",
+      "prev_uuid": "sMyKVKvuyj_JD-J2",
+      "sibling_uuid": "9iByPvn24jPok7vB",
+      "child_uuid": "",
+      "parent_uuid": "mg7epoQoAu8chmgT",
+      "doc_id": 156712165,
+      "level": 1,
+      "id": 156712165,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "工作分配",
+      "uuid": "9iByPvn24jPok7vB",
+      "url": "wp3dkf8mcu8gdsag",
+      "prev_uuid": "AQ3fXO3AP7O8NdBJ",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "mg7epoQoAu8chmgT",
+      "doc_id": 155969461,
+      "level": 1,
+      "id": 155969461,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "点阵笔调研",
+      "uuid": "bwPfJZVBjpg5-mYL",
+      "url": "ft0tldpso5tz9xmm",
+      "prev_uuid": "mg7epoQoAu8chmgT",
+      "sibling_uuid": "",
+      "child_uuid": "zfkjfa0jgyQm4wZq",
+      "parent_uuid": "",
+      "doc_id": 131961668,
+      "level": 0,
+      "id": 131961668,
+      "open_window": 0,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Ncode PDF",
+      "uuid": "zfkjfa0jgyQm4wZq",
+      "url": "tbgiygy0cw7smqk6",
+      "prev_uuid": "bwPfJZVBjpg5-mYL",
+      "sibling_uuid": "dznmyeyEUNskMawX",
+      "child_uuid": "",
+      "parent_uuid": "bwPfJZVBjpg5-mYL",
+      "doc_id": 151120001,
+      "level": 1,
+      "id": 151120001,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "点阵铺码规则",
+      "uuid": "dznmyeyEUNskMawX",
+      "url": "gngu22bt601vo6od",
+      "prev_uuid": "zfkjfa0jgyQm4wZq",
+      "sibling_uuid": "kKrTVhPbt_SZVNaI",
+      "child_uuid": "",
+      "parent_uuid": "bwPfJZVBjpg5-mYL",
+      "doc_id": 147400557,
+      "level": 1,
+      "id": 147400557,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "数据库设计",
+      "uuid": "kKrTVhPbt_SZVNaI",
+      "url": "vkdq1pne31u65f13",
+      "prev_uuid": "dznmyeyEUNskMawX",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "bwPfJZVBjpg5-mYL",
+      "doc_id": 146941207,
+      "level": 1,
+      "id": 146941207,
+      "open_window": 1,
+      "visible": 1
+    }
+  ]
+}
