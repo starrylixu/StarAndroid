@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
-import { YuQueSVG } from './utils/assists'
+import { csdn, YuQueSVG } from './utils/assists'
+// import { genYuqueSideBar } from './utils/route'
 
 
 // https://vitepress.dev/reference/site-config
@@ -70,6 +71,7 @@ export default defineConfig({
           { text: '常用控件', link: '/Android控件/1.（待完善）BRV的简单使用' }
         ]
       },
+      { text: 'New Android', link: '/Android/View' },
       { text: 'Flutter', link: '/Flutter/1.控件' },
       {
         text: '语言学习',
@@ -90,12 +92,13 @@ export default defineConfig({
     //https://vitepress.dev/zh/reference/default-theme-sidebar#collapsible-sidebar-groups
     sidebar: {
       // "/docs/毕业设计": await genYuqueSideBar('/docs/毕业设计'),
+      // "/docs/Android基础知识": await genYuqueSideBar('/docs/Android基础知识'),
       // "/docs-shorturl/": await genYuqueSideBarWithShortUrl('/docs-shorturl')
     },
     //友链
     socialLinks: [
       { icon: 'github', link: 'https://github.com/starrylixu' },
-      { icon: 'x', link: 'https://ahoy-starry.blog.csdn.net' },
+      { icon: {svg:csdn}, link: 'https://ahoy-starry.blog.csdn.net' },
       { icon: { svg: YuQueSVG }, link: "https://www.yuque.com/starryluli" }
     ],
     footer: {

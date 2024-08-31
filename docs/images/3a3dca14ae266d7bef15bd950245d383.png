@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchBucket</Code>
+  <Message>The specified bucket does not exist.</Message>
+  <RequestId>66CC83951AFF653134B7CD6B</RequestId>
+  <HostId>starry-lixu.oss-cn-hangzhou.aliyuncs.com</HostId>
+  <BucketName>starry-lixu</BucketName>
+  <EC>0015-00000101</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0015-00000101</RecommendDoc>
+</Error>

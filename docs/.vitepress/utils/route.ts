@@ -76,7 +76,7 @@ function genYuqueRoute(arr: any[], pathname?: string) {
  * @param pathname 路由前缀
  */
 export const genYuqueSideBar = async (pathname?: string) => {
-  const cache = await import('../elog.cache.json')
+  const cache = await import('../elog-android.cache.json')
   const {catalog} = cache
   return genYuqueRoute(catalog, pathname)
 }
