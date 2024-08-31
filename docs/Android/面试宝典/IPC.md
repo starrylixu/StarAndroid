@@ -15,11 +15,11 @@
 - 更深入一点，为什么要这么设计这门语言？会不会有更好的方式来实现我们的目的？
 
 [Android：学习AIDL，这一篇文章就够了(上)_lypeer的博客-CSDN博客_aidl](https://blog.csdn.net/luoyanglizi/article/details/51980630)
-![image.png](/images/bcb96cb1251baf176bc189787810ef07.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/bcb96cb1251baf176bc189787810ef07.png)
 在客户端修改，增加一本新书
-![image.png](/images/bb411134c715d73c87ba85a7ec1bf89e.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/bb411134c715d73c87ba85a7ec1bf89e.png)
 观察者模式，客户端注册服务端方法，服务端触发事件回调客户端的监听方法
-![image.png](/images/adbecb354821bdce056649da5b4701b3.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/adbecb354821bdce056649da5b4701b3.png)
 退出活动，应该取消注册，但是却找不到此客户端
 demo app 的演示到从为止
 注意这里为什么服务端无法成功解除注册
@@ -27,16 +27,16 @@ page71-84
 退出BookManagerActivity后服务端无法找到注册的listener
 对象无法跨进程直接传输
 Binder会把 客户端传来的对象重新转化并生成一个新的对象。
-![image.png](/images/9682d7a5d4dff136186082c1fb900b25.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/9682d7a5d4dff136186082c1fb900b25.png)
 新的demo  chapter2_1
 使用RemoteCallBackList成功解决取消注册
-![image.png](/images/99af5fa9bf8cbd80caa932f1f1a5b661.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/99af5fa9bf8cbd80caa932f1f1a5b661.png)
 执行耗时操作
 客户端在主线程中请求服务器端的耗时操作时
 主线程长时间阻塞，客户端可能会ANR
 服务端调用客户端的方法时，它也是运行在客户端的线程池中，并不是服务端的哦
 因此主动调用还是被动调用都不要放在主线程中
-![image.png](/images/9e168e8ae1ec16fe21c4ce434b375f12.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/9e168e8ae1ec16fe21c4ce434b375f12.png)
 # Binder死亡代理
  我们都知道，在和service进行交互时，service返回一个Binder对象。Binder是工作在service端，如果，由于某种原因，服务端出现故障而死亡，那么该返回的Binder对象也将消失，这时，如果我们在客户端在使用Binder对象进行某些函数调用将会出现错误。为了避免该情况的发生，我们可以为Binder对象设置死亡代理。当出现和服务端连接发生故障时，系统将自动调用死亡代理函数binderDied（）。
 死亡代理是由
@@ -93,7 +93,7 @@ private final ServiceConnection mConnection = new ServiceConnection() {
 原文链接：
 [android 之 linkToDeath和unlinkToDeath。(死亡代理)_L_L_R_A_C的博客-CSDN博客_linktodeath](https://blog.csdn.net/lea_fy/article/details/52987004)
 在命令行以su命令杀死服务端进程
-![image.png](/images/86841755cbe347b5e6fe73df30ac0204.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/86841755cbe347b5e6fe73df30ac0204.png)
 # AIDL权限验证
 权限验证有两种方式：
 
@@ -120,12 +120,12 @@ private final ServiceConnection mConnection = new ServiceConnection() {
     }
 
 ```
-![image.png](/images/51a21a6a7435eacebf21d7955f3098ff.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/51a21a6a7435eacebf21d7955f3098ff.png)
 ```xml
 <!--    内部应用绑定服务-->
     <uses-permission android:name="com.hnucm.chapter2_1.permission.ACCESS_BOOK_SERVICE"/>
 ```
-![image.png](/images/2eeb6b29fda1e64720af4cfd7ff39d18.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/2eeb6b29fda1e64720af4cfd7ff39d18.png)
 ## 在onTeansact()中验证
 即验证了包名又验证了permission
 ```java
@@ -263,7 +263,7 @@ public class ProviderActivity extends Activity {
 ```
 首先BookProvider 调用onCreate()方法，运行在主线程
 其后三次调用query()方法，执行在Binder线程池中（这里有一个疑问，Binder线程池是怎么处理进程和分配资源的）
-![image.png](/images/8a23741c3ae0b9d0a29988ec3773c017.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/8a23741c3ae0b9d0a29988ec3773c017.png)
 ## 4.通过BookProvider调用数据
 首先建立一个数据库保存数据
 ```java
@@ -334,8 +334,8 @@ public class BookProvider extends ContentProvider {
 }
 
 ```
-![image.png](/images/14c463dfaf84012fae08f462b0832de6.png)
-![image.png](/images/fd8a207fa91d0d50979d97a999d25fb2.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/14c463dfaf84012fae08f462b0832de6.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/fd8a207fa91d0d50979d97a999d25fb2.png)
 # Socket套接字
 不仅可以实现进程间通信，还可以实现设备间通信。
 分类
@@ -625,7 +625,7 @@ public class TCPClientActivity extends Activity implements OnClickListener {
 
 ```
 主线程访问访问网络错误
-![image.png](/images/1948de090cb367658fe8efbcdc9b7762.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/1948de090cb367658fe8efbcdc9b7762.png)
 书中客户端的代码有错误，IO操作不应该在主线程中执行，应将`mPrintWriter.println(msg);`在子线程中执行
 ```java
 @Override
@@ -649,7 +649,7 @@ public class TCPClientActivity extends Activity implements OnClickListener {
         }
     }
 ```
-![image.png](/images/cbf3c65c6308efdb96bcbfa59e53cb48.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/cbf3c65c6308efdb96bcbfa59e53cb48.png)
 # Binder连接池（page112-121)
 AIDL是进程间通信的首选。
 ## AIDL的使用流程
@@ -662,7 +662,7 @@ AIDL是进程间通信的首选。
 缺点（限制）：业务大时，Service的数量会增多，会消耗系统资源。如何减少Service的数量，将所有的AIDL放在同一个Service中管理？？
 ## Binder连接池的工作机制
 Binder连接池的主要作用就是将每个业务模块的Binder请求**统一转发到远程Service**中去执行，从而**避免了重复创建Service**的过程。
-![image.png](/images/ed99688e43d72a576a38d4c033b43b4d.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/ed99688e43d72a576a38d4c033b43b4d.png)
 ## 多业务模块使用AIDL
 一个客户端调用多个业务模块` SecurityCenterImpl `和` ComputeImpl` ，通过中间层Binder池调用queryBinder方法统一拿到不同的业务请求转发给远程Service中，这样便实现了一个Service管理多个AIDL接口：具体代码看module：chapter2_4
 ```java
@@ -722,10 +722,10 @@ public class BinderPoolActivity extends AppCompatActivity {
 }
 ```
 ### 为什么要在子线程中执行
-![image.png](/images/39fe148955cd6e3fa3ec95d451bfaf88.png)
-![image.png](/images/6cde9e9856031b6c5de92c7111545771.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/39fe148955cd6e3fa3ec95d451bfaf88.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/6cde9e9856031b6c5de92c7111545771.png)
 ### 如何扩展业务
 只需要新增AIDL接口，以及修改BinderPoolImpl池中的queryBinder方法，无需新增Service类
 但缺点也很明显，BinderPoolImpl的逻辑判断会越来越多。
 # 如何选择IPC方式
-![image.png](/images/a3187865a69bff333a523e8f074fd8d0.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/a3187865a69bff333a523e8f074fd8d0.png)

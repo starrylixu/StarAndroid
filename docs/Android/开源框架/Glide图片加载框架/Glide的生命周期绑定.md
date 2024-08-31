@@ -29,7 +29,7 @@ RequestManager get(@NonNull Fragment fragment) {}
 RequestManager get(@NonNull Activity activity) {}
 RequestManager get(@NonNull View view) {}
 ```
-![image.png](/images/00a4ca32cd6b11827913d37c419fa391.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/00a4ca32cd6b11827913d37c419fa391.png)
 ## 传入Application参数
 传入Application Context或者在子线程使用：调用`**getApplicationManager(context);**`这样被绑定的图片生命周期就和应用程序一样了。
 这里获取Lifecycle对象，用的是ApplicationLifecycle，由于没有绑定具有生命周期的对象，所以这里只会调用onStart()，这种情况绑定的图片的生命周期就和Application一样长了。
@@ -79,7 +79,7 @@ class ApplicationLifecycle implements Lifecycle {
 4. 这样当Activity生命周期变化的时候，就能通过接口回调去通知RequestManager处理请求，从而管理Glide的图片请求。
 
 创建了一个无UI的Fragment，**SupportRequestManagerFragment。**
-![image.png](/images/b2a0ff20ebe85cb38884d68022a22127.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/b2a0ff20ebe85cb38884d68022a22127.png)
 ```java
   @NonNull
   private SupportRequestManagerFragment getSupportRequestManagerFragment(
@@ -136,7 +136,7 @@ switch (message.what) {
 可以看到在【4】调用SupportRequestManagerFragment对象的getGlideLifecycle()方法，不同于传入Application直接调用ApplicationLifecycle。
 getGlideLifecycle()方法返回的是一个**ActivityFragmentLifecycle**对象，细看此类的实现：
 它实现了Lifecycle接口，并且保存着一个LifecycleListener的Set集合。而我们的addListener方法一共就在三处调用，添加的正是RequestManager对象（因为它实现类LifecycleListener接口）。
-![image.png](/images/9b55075c6cf8a9ee0a82af8c1b95ec30.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/9b55075c6cf8a9ee0a82af8c1b95ec30.png)
 ```java
 class ActivityFragmentLifecycle implements Lifecycle {
   private final Set<LifecycleListener> lifecycleListeners =
@@ -237,7 +237,7 @@ protected void onStart() {
 2. 紧接着使用Handler来发送消息从HashMap中删除刚才保存的Fragment，假设这个消息为m2；
 3. 由于是异步的，在消息未处理之前已经开始执行第二行Glide代码了，具体说可能是m1，m2还没有处理，就已经开始调用getSupportRequestManagerFragment方法了，这个方法内部是获取Fragment对象的，具体分析上面说过了；如果不用map来缓存fragment，那么代码流程应该是这样的
 
-![image.png](/images/2b599c353b1278b2ab420184ca328a41.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/2b599c353b1278b2ab420184ca328a41.png)
 因为**【6】提交事务，将fragment绑定到Activity**  可能还没有完成，此时通过`findFragmentByTag`就找不到Fragment，就会重新生成一个Fragment，这是Glide所不允许的，每一个Activity或者Fragment在使用Glide时，只能有一个所依附的无UI的Fragment。所以将之前所生成的Fragment存储到HashMap中，这样就不会重复生成。
 等到SupportRequestManagerFragment与Activity**绑定完成后**，也就是消息m1处理完成后，再将Fragment从Map中销毁。
 所以使用缓存其实就是为了保证在提交事务，将fragment绑定到Activity 这个过程间隙中，能获取到这个无UI的Fragemnt，而不会去创建重复的。

@@ -9,7 +9,7 @@ unity导出作为安卓项目中的库来使用
 
 在unity中勾选
 
-![](/images/375df58fb2a2f362cf25d76621169102.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/375df58fb2a2f362cf25d76621169102.png)
 
 然后export
 
@@ -17,11 +17,11 @@ unity导出作为安卓项目中的库来使用
 
 打开一个现有的，取消gradle的下载，在Project Structure中设置自己下好了的gradle版本，如下是我的版本
 
-![](/images/ceffe7aeed48f2da79c869c62e7021f3.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/ceffe7aeed48f2da79c869c62e7021f3.png)
 
 ## 1. 找不到unityStreamingAssets文件错误
 
-![](/images/1eac2b0db4fe8df1a3255a42ed937e37.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/1eac2b0db4fe8df1a3255a42ed937e37.png)
 
 在gradle.properties里添加如下代码
 
@@ -33,7 +33,7 @@ unity导出作为安卓项目中的库来使用
 
 Location specified by ndk.dir (D:\AndroidTool\TEMP\android-ndk-r16b) did not contain a valid NDK
 
-![](/images/4cde506b15b971de3759a902bc969e7b.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/4cde506b15b971de3759a902bc969e7b.png)
 
 ```
 ndk.dir=D\:/Unity/UntiyDownLoad/2020.3.26f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK
@@ -41,13 +41,13 @@ ndk.dir=D\:/Unity/UntiyDownLoad/2020.3.26f1c1/Editor/Data/PlaybackEngines/Androi
 
 ## 尝试将Unity中AR项目导入到AS
 
-![](/images/4f2e1b1c198bf98c203e082ca2e33842.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/4f2e1b1c198bf98c203e082ca2e33842.png)
 
 解决方案：
 
 1.删掉setting.gradle中的部分代码
 
-![](/images/1ba47991189802da4843a082e75e737c.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/1ba47991189802da4843a082e75e737c.png)
 
 2.将项目的build.gradle更改
 

@@ -12,7 +12,7 @@ Glide图片的缓存是最多存在两份：
 
 图片缓存不会同时存在活动缓存和内存缓存。
 磁盘缓存通过LRU算法缓存，磁盘缓存是持久性缓存
-![image.png](/images/1b2ab6abc6038569a4a182b9ae69b994.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/1b2ab6abc6038569a4a182b9ae69b994.png)
 
 # 什么是LRU算法
 LRU （Least recently used：**最近最少使用**）算法在缓存写满的时候，会根据所有数据的访问记录，淘汰掉未来被访问几率最低的数据。也就是说该算法认为，最近被访问过的数据，在将来被访问的几率最大。

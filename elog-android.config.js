@@ -21,7 +21,7 @@ module.exports = {
     //按目录存放catalog: true
     platform: 'local',
     local: {
-      outputDir: './docs/Android基础知识',
+      outputDir: './docs/',
       filename: 'title',
       format: 'markdown',
       catalog: true
@@ -48,11 +48,11 @@ module.exports = {
   },
   image: {
     enable: true,
-    platform: 'local',
+    platform: 'oss',
     local: {
-      outputDir: './docs/images/Android基础知识',
+      outputDir: './docs/images/',
       prefixKey: '/images',
-      pathFollowDoc: false,
+      pathFollowDoc: true,
     },
     oss: {
       secretId: process.env.OSS_SECRET_ID,

@@ -1,5 +1,5 @@
 # 主线流程
-![image.png](/images/f5c8ba81426cb10de6663676de236d13.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/f5c8ba81426cb10de6663676de236d13.png)
 在Dispathcer的enqueue方法中把请求添加进了队列中，然后通过线程池去执行请求任务，那么线程池的内部是如何实现的呢？
 ```java
 synchronized void enqueue(AsyncCall call) {
@@ -19,12 +19,12 @@ synchronized void enqueue(AsyncCall call) {
 ## 
 什么是线程池呢？
 OkHttp源码中的，进入executorService().execute(call); 方法发现，在同步锁的机制下创建了一个线程池
-![image.png](/images/de5ab18c3baef79ea078b337887cf03c.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/de5ab18c3baef79ea078b337887cf03c.png)
 ## Java中线程池的继承结构
-![image.png](/images/2d2a354606070fd19f91138e8d13fe16.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/2d2a354606070fd19f91138e8d13fe16.png)
 Java中的线程池
 Executor抽象类，其中只有一个方法。
-![image.png](/images/aff89c07fad446c7de4f81ccf5c74bda.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/aff89c07fad446c7de4f81ccf5c74bda.png)
 使用Executor的实现接口ExecutorService，它也是一个接口。以及它的具体实现类ThreadPoolExecutor来实现线程池。
 其中有5个参数：
 

@@ -5,11 +5,11 @@
 # 获取FragmentManager
 每个 [FragmentActivity](https://developer.android.google.cn/reference/androidx/fragment/app/FragmentActivity?hl=zh-cn) 及其子类（如 [AppCompatActivity](https://developer.android.google.cn/reference/androidx/appcompat/app/AppCompatActivity?hl=zh-cn)）都可以通过 [getSupportFragmentManager()](https://developer.android.google.cn/reference/androidx/fragment/app/FragmentActivity?hl=zh-cn#getSupportFragmentManager()) 方法访问 FragmentManager。
 Fragment 也能够托管一个或多个子 fragment。在 fragment 内，您可以通过 [getChildFragmentManager()](https://developer.android.google.cn/reference/androidx/fragment/app/Fragment?hl=zh-cn#getChildFragmentManager()) 获取对管理 fragment 子级的 FragmentManager 的引用。 如果您需要访问其宿主 FragmentManager，可以使用 [getParentFragmentManager()](https://developer.android.google.cn/reference/androidx/fragment/app/Fragment?hl=zh-cn#getParentFragmentManager())。
-![image.png](/images/c88b52673bfc124d453fe3ee48ee86ca.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/c88b52673bfc124d453fe3ee48ee86ca.png)
 图 1 显示了两个示例，每个示例中都有一个 activity 宿主。这两个示例中的宿主 activity 都以 [BottomNavigationView](https://developer.android.google.cn/reference/com/google/android/material/bottomnavigation/BottomNavigationView?hl=zh-cn) 的形式向用户显示顶级导航，该视图负责以应用中的不同屏幕换出宿主 fragment，其中每个屏幕都实现为单独的 fragment。
 **示例 1** 中的宿主 fragment 托管两个子 fragment，这些子 fragment 构成拆分视图屏幕。**示例 2** 中的宿主 fragment 托管一个子 fragment，该子 fragment 构成[滑动视图](https://developer.android.google.cn/guide/navigation/navigation-swipe-view-2?hl=zh-cn#implement_swipe_views)的显示 fragment。
 基于此设置，您可以将每个宿主视为具有与其关联的 FragmentManager，用于管理其子 fragment。图 2 说明了这一点，并显示了 supportFragmentManager、parentFragmentManager 和 childFragmentManager 之间的属性映射。
-![image.png](/images/7715e0dda846c7770b2abb70b9b431fc.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/7715e0dda846c7770b2abb70b9b431fc.png)
 # 使用FragmentManager
 FragmentManager 管理 fragment 返回堆栈。在运行时，FragmentManager 可以执行添加或移除 fragment 等返回堆栈操作来响应用户互动。每一组更改作为一个单元（称为 [FragmentTransaction](https://developer.android.google.cn/reference/androidx/fragment/app/FragmentTransaction?hl=zh-cn)）一起提交。
 当用户按设备上的“返回”按钮时，或者当您调用 FragmentManager.popBackStack() 时，最上面的 fragment 事务会从堆栈中弹出。（在提交事务的时候要相应的 [addToBackStack()](https://developer.android.google.cn/reference/androidx/fragment/app/FragmentTransaction?hl=zh-cn#addToBackStack(java.lang.String)) ，才会将事务提交到堆栈中，默认是不会添加到堆栈中的）

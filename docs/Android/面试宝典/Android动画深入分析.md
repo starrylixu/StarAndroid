@@ -10,7 +10,7 @@ Android的动画分为3种：
 3. 旋转动画
 4. 透明度动画
 
-![image.png](/images/7d8b90f228691aa62b092c0a7330da72.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/7d8b90f228691aa62b092c0a7330da72.png)
 # 帧动画
 顺序播放一组预先定义好的图片。
 系统提供AnimationDrawable来使用帧动画。
@@ -89,7 +89,7 @@ controller.setDelay(0.5f);
 controller.setOrder(LayoutAnimationController.ORDER_NORMAL);
 listView.setLayoutAnimation(controller);
 ```
-![1.gif](/images/b75714fbd56d367f1e1522572fc37149.gif)![b7de457b-3675-4e7f-871a-d9db9c2789ce.gif](/images/660963bd2e5e95431b433c116d2509b8.gif)![1.gif](/images/92a4690d1cf041beb6207d3f09adabfe.gif)![1.gif](/images/30782712f1c6ad9b11a03b1d0e93aba2.gif)
+![1.gif](http://starrylixu.oss-cn-beijing.aliyuncs.com/b75714fbd56d367f1e1522572fc37149.gif)![b7de457b-3675-4e7f-871a-d9db9c2789ce.gif](http://starrylixu.oss-cn-beijing.aliyuncs.com/660963bd2e5e95431b433c116d2509b8.gif)![1.gif](http://starrylixu.oss-cn-beijing.aliyuncs.com/92a4690d1cf041beb6207d3f09adabfe.gif)![1.gif](http://starrylixu.oss-cn-beijing.aliyuncs.com/30782712f1c6ad9b11a03b1d0e93aba2.gif)
 ## Activity的切换效果
 主要用到`overridePendingTransition(R.anim.enter_anim, R.anim.exit_anim);`方法。
 注意：这个方法必须在startActivity或者finish()之后被调用。
@@ -144,7 +144,7 @@ TypeEvaluator   类型估值器   ：根据当前属性改变的百分比来计�
 自定义插值器：需要实现IntEvaluator或者TimeInterpolator 
 自定义估值器：需要实现TypeEvaluator  
 ## 属性动画的监听器
-![image.png](/images/be0f892d2f7827e45a2953e290c33081.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/be0f892d2f7827e45a2953e290c33081.png)
 属性动画提供了监听器用于监听动画的播放过程。
 
 - AnimatorUpdateListener：每播放一帧都会被调用一次
@@ -347,4 +347,4 @@ private void start(boolean playBackwards) {
     }
 ```
 # 使用动画的注意事项
-![image.png](/images/7316b4d2b43826135f0de3cd3ac8bdec.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/7316b4d2b43826135f0de3cd3ac8bdec.png)

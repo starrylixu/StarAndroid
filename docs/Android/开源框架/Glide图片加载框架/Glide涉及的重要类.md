@@ -11,8 +11,8 @@ Glide的加载过程大致如下:
 5. request通过Engine分别尝试从活动缓存、Lru缓存、文件缓存中加载图片，当以上的缓存中都不存在对应的图片后，会从网络中获取。
 6. 网络获取大致可以分成，ModelLoader模型匹配，DataFetcher数据获取，然后经历解码、图片变换、转换。如果能够进行缓存原始数据，还会将解码的数据进行编码缓存到文件。
 
-![](/images/877ab143af66f9ab394a61280029d6c6.webp)
-![](/images/d7721918cdf1a88ea26f2ec4f0e1d5f0.webp)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/877ab143af66f9ab394a61280029d6c6.webp)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/d7721918cdf1a88ea26f2ec4f0e1d5f0.webp)
 # 源码中涉及的类
 ## RequestManagerRetriever
 **RequestManagerRetriever**类负责RequestManager的创建，并通过创建RequestManagerFragment / **SupportRequestManagerFragment** 并与RequestManager进行绑定，来赋予RequestManager生命周期
@@ -149,8 +149,8 @@ ImageViewTarget：在ImageView中展示图片的基类，有如下两个子类
 ```
 ## LifecycleListener
 Fragment和Activity生命周期方法的监听类，主要用来监听onStart，onStop，onDestroy三个方法。实现类如下RequestTracker
-![image.png](/images/8f2a359556e8d60c1ca68737a20a9c0c.png)
-![image.png](/images/7939e8627628a1ed9352d48c207bb31c.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/8f2a359556e8d60c1ca68737a20a9c0c.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/7939e8627628a1ed9352d48c207bb31c.png)
 ```java
 RequestManager：负责监听Fragment和Activity中对应的方法
       @Override

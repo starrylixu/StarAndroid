@@ -8,18 +8,18 @@
 ## 什么是View
 View是所有控件的基类，它是界面层控件的一种抽象
 android studio查看类的继承体系（快捷键CTRL+H）
-![image.png](/images/57570ede2ab629caab10359a0c3aa409.png)
-![image.png](/images/138f41a1d9856da5cd61413ce0bdb35d.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/57570ede2ab629caab10359a0c3aa409.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/138f41a1d9856da5cd61413ce0bdb35d.png)
 可见ViewGroup也是继承自View，这让我想到了组合设计模式
 ## View的位置参数
-![image.png](/images/fb22b41f6989925f673f078db3524a70.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/fb22b41f6989925f673f078db3524a70.png)
 在onCreate()[回调](https://so.csdn.net/so/search?q=%E5%9B%9E%E8%B0%83&spm=1001.2101.3001.7020)方法中去调用view.getLeft(), getRight()…getX()、getY() 等值为0
 View的显示必须经历Measure（测量）、Layout（布局）和Draw（绘制）过程。而在Measure与Layout过程完成之后，View的width、height、top、left等属性才被正确赋值，此时我们才能获取到正确的值，这几个过程都晚于onCreate执行
 [android view.getLeft(), getRight()...等获取值为0_轻狂书生YT的博客-CSDN博客_view getleft 0](https://blog.csdn.net/qq_41466437/article/details/106279868)
 疑问：View是在什么时候绘制的？？
 [Activity启动后View何时开始绘制（onCreate中还是onResume之后？）](https://www.jianshu.com/p/c5d200dde486)
 View在平移的过程中，top和left是原始左上角的位置信息，其值不会发生变化，此时发生改变的是x，y，translationX和translationY。
-![image.png](/images/d20e8e783f11459aa8a5fd404ba0c0c4.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/d20e8e783f11459aa8a5fd404ba0c0c4.png)
 ## MotionEvent和TouchSlop
 ## Scroller弹性滑动
 
@@ -80,7 +80,7 @@ textView.setOnClickListener(new View.OnClickListener() {
     }
 });
 ```
-![image.png](/images/78feb7df28b7a16efd4e6404cac7bc9b.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/78feb7df28b7a16efd4e6404cac7bc9b.png)
 滑动过程中的几个要点：详看Demo  chapter3_1
 
 1. View本身不会移动，移动的是View中的内容
@@ -88,7 +88,7 @@ textView.setOnClickListener(new View.OnClickListener() {
 3. mScrollY的大小是View上边缘到View中内容的上边缘的水平距离
 4. 从左往右滑动，mScrollX为正值（View左边缘在View中内容的左边缘的右边）
 
-![image.png](/images/ec9a62044868bfad138bf3dd77c7b4a5.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/ec9a62044868bfad138bf3dd77c7b4a5.png)
 ## 使用动画
 在1000ms内从原点水平右移200px，并保持状态
 ```xml
@@ -128,7 +128,7 @@ textView.setOnClickListener(new View.OnClickListener() {
 原生动画并不能真正改变View的位置，如果控件有交互事件，那么控件内容不在原始位置了，但是View容器还在原始位置能响应交互事件。
 可以新位置只是View的一个影像。
 但是属性动画可以解决这个问题。
-![image.png](/images/d379870f31aa2a61631c577d1bab17fb.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/d379870f31aa2a61631c577d1bab17fb.png)
 ## 改变布局参数
 实现把textView3控件向右平移100px
 ```java
@@ -142,7 +142,7 @@ textView3.setOnClickListener(new View.OnClickListener() {
 });
 ```
 
-![image.png](/images/1168e587e8eb4bb6df9ea01c8639157e.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/1168e587e8eb4bb6df9ea01c8639157e.png)
 ## 滑动方式的对比
 
 1. scrollTo/scrollBy：操作简单，适合对View内容的滑动
@@ -158,7 +158,7 @@ textView3.setOnClickListener(new View.OnClickListener() {
 [RecyclerView - 使用ItemTouchHelper实现侧滑删除效果_fjnu_se的博客-CSDN博客](https://blog.csdn.net/fjnu_se/article/details/121896299)
 # 事件分发机制（难点）
 
-![image.png](/images/de94e3c9b09410f545213d40cbecba46.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/de94e3c9b09410f545213d40cbecba46.png)
 [View的事件分发机制](https://zhuanlan.zhihu.com/p/158195747#:~:text=View%20%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%88%86%E5%8F%91%E5%85%B6%E5%AE%9E%E5%B0%B1%E6%98%AF%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%EF%BC%88%20MotionEvent%20%EF%BC%89%E4%BB%8E%E4%BA%A7%E7%94%9F%E5%90%8E%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%A7%8B%E5%88%86%E5%8F%91%EF%BC%8C%E5%88%B0%E4%BC%A0%E9%80%92%E7%BB%99%E4%B8%80%E4%B8%AA%E5%85%B7%E4%BD%93%E7%9A%84%20View%20%EF%BC%88%20%E6%88%96%E8%80%85Activity%20%EF%BC%89%E7%9A%84%E8%BF%87%E7%A8%8B%EF%BC%8CView,DOWN%20%E5%BC%80%E5%A7%8B%EF%BC%8C%E4%B8%AD%E9%97%B4%E6%9C%89%E4%B8%8D%E5%AE%9A%E6%95%B0%E4%B8%AA%20MOVE%20%2C%E6%9C%80%E5%90%8E%E4%BB%A5%20UP%20%E6%88%96%E8%80%85%20CANCLE%20%E7%BB%93%E6%9D%9F%E3%80%82)
 [Android事件分发机制详解：史上最全面、最易懂](https://www.jianshu.com/p/38015afcdb58)
 点击事件的传递顺序：Activity->Window->ViewGroup->具体的View
@@ -190,19 +190,19 @@ textView3.setOnClickListener(new View.OnClickListener() {
         return onTouchEvent(ev);
     }
 ```
-![image.png](/images/52e5564e06cb11213fbbc92df1ac09b4.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/52e5564e06cb11213fbbc92df1ac09b4.png)
 Window是如何将事件传递给ViewGroup的？
 Window是一个抽象类，其中的`superDispatchTouchEvent`方法也是抽象方法。
 它的实现类是PhoneWindow，这个类不能在AS中查看。
-![image.png](/images/9eb0d68df29721fc5278f560636c038c.png)
-![image.png](/images/4058b4d177d9cb0f553add9315a4008f.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/9eb0d68df29721fc5278f560636c038c.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/4058b4d177d9cb0f553add9315a4008f.png)
 
-![image.png](/images/1b5a78978b46929f04a64280f08ca36f.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/1b5a78978b46929f04a64280f08ca36f.png)
 DecorView类也是在`package com.android.internal.policy;`这个包目录下。
-![image.png](/images/edb84e2aa34327c2c60ae780bb41651e.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/edb84e2aa34327c2c60ae780bb41651e.png)
 # 滑动冲突
 ## 常见的滑动冲突场景
-![image.png](/images/171f5fdf4b3d995186eedd0be4b73566.png)
+![image.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/171f5fdf4b3d995186eedd0be4b73566.png)
 场景一：外部控件左右滑动，内部控件上下滑动：类似ViewPager嵌套Fragment（ListView）
 场景二：类似ScrollView嵌套ListView
 ## 滑动冲突的处理规则

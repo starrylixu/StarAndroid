@@ -13,15 +13,15 @@
 > ADB，即 Android Debug Bridge，ADB具有安装卸载apk、拷贝推送文件、查看设备硬件信息、查看应用程序占用资源、在设备执行shell命令等功能，是 Android 开发/测试人员不可替代的强大工具。
 
 
-![](/images/d924e11da2818fca5c1b04b80f8d8c48.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/d924e11da2818fca5c1b04b80f8d8c48.png)
 
 # 2.添加系统环境变量
 
-![](/images/9589178917659476ede8d547e8935481.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/9589178917659476ede8d547e8935481.png)
 
 配置好环境变量后，在CMD中输入adb，可以看到这次有交互式输出，说明环境变量配好了
 
-![](/images/6d908321df02645ea368f5bbb16431a5.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/6d908321df02645ea368f5bbb16431a5.png)
 
 # 3.Unity怎么通过WIFI真机调试
 
@@ -45,10 +45,10 @@ adb tcpip 5555
 adb connect 手机IP:5555
 ```
 
-![](/images/bd299a07ca18c294ea136478d1c613a7.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/bd299a07ca18c294ea136478d1c613a7.png)
 
 连接手机后，就可以直接拔掉USB啦，此后运行调试应用只要保证手机和电脑在同一个子网中即可。
 
 连接成功后打开Unity，选择运行设备为我们的真机，然后Build And Run，这样无需用USB连接电脑应用就直接跑到手机上啦
 
-![](/images/cdd94c0d8da8225632d253295b862851.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/cdd94c0d8da8225632d253295b862851.png)

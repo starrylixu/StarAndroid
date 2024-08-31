@@ -1,4 +1,4 @@
-![](/images/87bd275bd2aa5537d11ca36f3fe7e590.jpeg)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/87bd275bd2aa5537d11ca36f3fe7e590.jpeg)
 网络请求是 Android开发中必不可少的一部分，几乎是个app都需要请求网络获取数据。那么实现网络请求的方式是如何的呢？以及网络请求的主流方式是怎么样的呢？
 首先来看看比较原始的一种网络请求方式吧！
 # 网络请求权限
@@ -10,11 +10,11 @@
 ```java
 android:usesCleartextTraffic="true"
 ```
-![](/images/75c7220f5a1245fb0c7d337bc954ead5.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/75c7220f5a1245fb0c7d337bc954ead5.png)
 # 网络请求
 ## 网络在主线程异常
 这段代码是网络请求数据，http://121.4.44.56/user（目前这个链接已失效，但并不影响理解文章）这是老师提前发在网上的数据文件，可通过这个网址访问，其中的数据是：
-![](/images/206d010a4d6ea953bbfe25d580c27e4c.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/206d010a4d6ea953bbfe25d580c27e4c.png)
 ```java
 try {
     URL url = new URL("http://121.4.44.56/user");
@@ -86,14 +86,14 @@ public void run() {
 thread.start();
 ```
 运行发现虚拟机上**只显示一部分数据**，查看日志窗口发现：
-![](/images/30787279826a790193e117c20dc3d3cd.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/30787279826a790193e117c20dc3d3cd.png)
 ## 线程切换
 打开logcat日志台，可以看到有如下警告：**在错误的线程中执行**
 ```java
 W/System.err: android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
 ```
 出现这个警告⚠️原因： 对于UI控件的操作不能放在子线程中->需要放到主线程中执行->线程切换
-![](/images/8e22d7693337e27960730aaf1f85ba39.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/8e22d7693337e27960730aaf1f85ba39.png)
 不能直接在主线程中设置，因为主线程和子线程是一起运行的，它们在运行时是无法人为预知的
 我们需要在子线程中网络请求到数据，再通过`**runOnUiThread(new Runnable()**`实现线程切换将请求到的内容设置到`**TextView**`中
 ```java
@@ -106,7 +106,7 @@ runOnUiThread(new Runnable() {
 });
 ```
 这样就能完成的显示请求到的数据了
-![](/images/e36e88d77c9a5e0f7e359a78c4f92868.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/e36e88d77c9a5e0f7e359a78c4f92868.png)
 # JSON数据解析
 [JSON](https://baike.baidu.com/item/JSON)([JavaScript](https://baike.baidu.com/item/JavaScript) Object Notation, JS 对象简谱) 是一种**轻量级的数据交换格式**。它基于 [ECMAScript](https://baike.baidu.com/item/ECMAScript) (欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。
 问题：网络请求是耗时的，那么如何一次请求到所有的数据呢？
@@ -130,7 +130,7 @@ runOnUiThread(new Runnable() {
 }
 ```
 json字符串的数据结构可以是浮点型，整型，长整型，字符串型，布尔型 ，数组类型，josn类型，class类型等等
-![](/images/3a15ad32dc36117a6e8aa94896777763.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/3a15ad32dc36117a6e8aa94896777763.png)
 ## Json类型
 json数据结构还可以是json类型的，这种情况需要嵌套解析，`**http://121.4.44.56/object1**`文件里的内容如下：
 ```java
@@ -154,7 +154,7 @@ JSONObject classObj=jsonObject.getJSONObject("class");
 String className=classObj.getString("classname");
 ```
 
-![](/images/5a883d5c4ed9b6128c168e83048f8f51.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/5a883d5c4ed9b6128c168e83048f8f51.png)
 
 ## 数组类型
 json数据结构还可以是**数组类型**，`**http://121.4.44.56/object2**`文件里的内容如下：
@@ -175,7 +175,7 @@ for(int i=0;i<jsonArray.length();++i){
      Log.i("Students","student = "+student);
 }
 ```
-![](/images/de48255217690c395211bf1e141aa76c.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/de48255217690c395211bf1e141aa76c.png)
 
 ## Json数组类型
 再复杂一丢丢，json数组类型，`**http://121.4.44.56/object3**`文件里的内容如下：
@@ -209,7 +209,7 @@ JSONArray jsonArray= jsonObject.getJSONArray("students");
     Log.i("MainActivity","name = "+name+" age = "+age);
   }
 ```
-![](/images/57cade175e45e69d1721fb2310ffafea.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/57cade175e45e69d1721fb2310ffafea.png)
 学习要求：会解析json数据结构，会构json造数据结构
 例如京东列表：
 ```java
@@ -234,7 +234,7 @@ implementation 'com.google.code.gson:gson:2.9.0'
 ```json
 { "age":30,"name":"张三", "isstudent":true }
 ```
-![](/images/b7de0ff191588ce85fe42791e5481436.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/b7de0ff191588ce85fe42791e5481436.png)
 ## 使用GSON框架解析
 ### 普通json数据类型类
 ```java
@@ -246,7 +246,7 @@ Gson gson=new Gson();
 Student student=gson.fromJson(finalResult,Student.class);
 Log.i("MainActivity", "run: "+student.name);
 ```
-![](/images/c4ef7810fa420170f50a684d21e09974.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/c4ef7810fa420170f50a684d21e09974.png)
 ### 嵌套json类型实体类
 如果是json类型嵌套实体类，那么实体类应该做如下修改：
 ```json
@@ -255,31 +255,31 @@ Log.i("MainActivity", "run: "+student.name);
 
 Json数据类型对应java的类，所以嵌套的Json结构，改写成实体类时也是**嵌套的类（内部类）**，除此之外还要**声明这个内部类**
 因为这里键名是class与java的关键字冲突，**所以要注解"class"**，然后换个变量名
-![](/images/466f108bb441419db94c50ad02917ad7.png)
-![](/images/4d49d20f0d00132302ab47410fa4301a.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/466f108bb441419db94c50ad02917ad7.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/4d49d20f0d00132302ab47410fa4301a.png)
 在`MainActivity`的子线程中解析数据并打印
-![](/images/9cf6393bd5f053a9bef3f0552bc12a5d.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/9cf6393bd5f053a9bef3f0552bc12a5d.png)
 ### json数组实体类
 通常使用java集合类中的**List可变数组**定义json数据结构中的数组
-![](/images/a97eaa6ae1a5f886caaf456490489e46.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/a97eaa6ae1a5f886caaf456490489e46.png)
 
-![](/images/e6ca53f3d3db6cd2c6cd320f2fca020e.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/e6ca53f3d3db6cd2c6cd320f2fca020e.png)
 ## 实体类插件GsonFormatPlus(Java版)
 GSON框架虽然简化了我们解析数据的过程，但是需要书写一个实体类又给我们添加了麻烦，复杂的JSON字符串，可能有近百个键值，如果有嵌套，编写实体类更加困难，所以可以通过如下插件**一键生成Json数据结构**的实体类
 ### 安装GsonFormatPlus
 
-![](/images/decc3759b62ec85068e7ba7a5d0e8328.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/decc3759b62ec85068e7ba7a5d0e8328.png)
 ### 打开GsonFormatPlus
 
-![](/images/7ba19f915822c39e66811b9e219f5e98.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/7ba19f915822c39e66811b9e219f5e98.png)
 
 ### 设置GsonFormatPlus
 
-![](/images/e7dc1bacc6b39f17f39b61cae6d27b61.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/e7dc1bacc6b39f17f39b61cae6d27b61.png)
 ### 使用GsonFormatPlus
 在左侧粘贴json数据结构的字符串，然后ok即可
-![](/images/621a57ab0033f04715a29c374a1ec8ee.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/621a57ab0033f04715a29c374a1ec8ee.png)
 
 ## 实体类插件JSONToKotlinClass(kotlin版)
-![image.png](/images/c50ebf95042ca1a5ef4b9ffe4e154450.png)
-![image.png](/images/5b67881149036e4213e96808dcc4c87c.png)
+![image.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/c50ebf95042ca1a5ef4b9ffe4e154450.png)
+![image.png](https://starrylixu.oss-cn-beijing.aliyuncs.com/5b67881149036e4213e96808dcc4c87c.png)

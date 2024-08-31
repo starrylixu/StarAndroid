@@ -1,4 +1,4 @@
-![黄绿色手绘风新闻资讯微信公众号封面.gif](/images/788aeef1caa05aa07ba4839df0ff9e65.gif)
+![黄绿色手绘风新闻资讯微信公众号封面.gif](http://starrylixu.oss-cn-beijing.aliyuncs.com/788aeef1caa05aa07ba4839df0ff9e65.gif)
 
 1. Activity是什么
 2. Activity的生命周期，异常生命周期有哪些情况
@@ -28,7 +28,7 @@ onCreate和onDestory很好理解，其他的两对方法怎么理解呢？
 onStart和onStop：区分Activity是否可见
 onResume和onPause：区分Activity是否处于前台
 例如A Activity跳转到B Activity，在调用A的onPause后，A不再处于前台，也就是用户无法与之交互，而是去创建B，直到B处于用户可见并处于前台，之后再调用A的onStop，至此A彻底用户不可见。
-![未命名绘图.drawio.png](/images/c9960477cbb18b426ea061edc15eca22.png)
+![未命名绘图.drawio.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/c9960477cbb18b426ea061edc15eca22.png)
 
 ## 具体场景
 ### 横竖屏切换
@@ -53,7 +53,7 @@ android:configChanges属性为“orientation|screenSize”时，会调用onConfi
 所以一定会执行的就是A onPause -> B onStart -> onResume
 例如如下实例：
 这是正常情况下的生命周期调用：
-![image.png](/images/42cf6702e948e6c291407a4ac5bd8550.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/42cf6702e948e6c291407a4ac5bd8550.png)
 如果BActivity设置为透明主题
 ```markdown
 <style name="TranslucentStyle" parent="Theme.AppCompat.Light.NoActionBar">
@@ -64,10 +64,10 @@ android:configChanges属性为“orientation|screenSize”时，会调用onConfi
     <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item> <!-- activity窗口切换效果 -->
 </style>
 ```
-![image.png](/images/357148e7ad266cac6636f2825ae5aa5c.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/357148e7ad266cac6636f2825ae5aa5c.png)
 如果是透明的BActivity，那么AActivity会一直处于可见的状态，不过处于可见但不可交互状态，AActivity不会执行onStop方法。
 因为onStop（）方法调用后表示当前界面**必定不可见**了。所以当跳转**透明界面或者显示dialog**时候，不会调用onStop()方法，因为当前界面可见。
-![image.png](/images/ead8284106d9922b7b27ed54ef29332a.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/ead8284106d9922b7b27ed54ef29332a.png)
 # Activity的启动模式
 ## 什么是启动模式
 决定是生成新的Activity还是重用已存在的Activity。Android 中默认启动模式为 standard，我们可以通过在 AndroidManifest.xml 的 activity 标签下通过 **launchMode** 属性指定我们想要设置的启动模式。
@@ -116,7 +116,7 @@ taskAffinity是指activity的任务栈的相关性。拥有相同affinity的acti
 </application>
 ```
 效果是不是很熟悉，没错这就是我们常见的一种app应用启动小程序的场景，使用`lanchMode=singleInstance`也能实现这种效果：
-![微信图片_20240107111702.jpg](/images/5d1f96fa2b5f275c2fc61f5ec0aaf7f2.jpeg)![微信图片_20240107112203.jpg](/images/b46c5e7409c7b6007887846bd7618a86.jpeg)
+![微信图片_20240107111702.jpg](http://starrylixu.oss-cn-beijing.aliyuncs.com/5d1f96fa2b5f275c2fc61f5ec0aaf7f2.jpeg)![微信图片_20240107112203.jpg](http://starrylixu.oss-cn-beijing.aliyuncs.com/b46c5e7409c7b6007887846bd7618a86.jpeg)
 ## 五种启动模式
 ### Standard
 每启动一次Activity，就会创建一个新的Activity的实例并将该实例置于栈顶
@@ -152,7 +152,7 @@ singleTop适合**接收通知**启动的内容显示页面。例如，某个新�
 - 若存在任务栈，则查看该Activity是否存在栈中，若不存在，则创建Activity实例并置于栈顶
 - 若该Activity存在栈中，在将实例上的所有Activity出栈，使该Activity位于栈顶（回调`onNewIntent`）
 
-![image.png](/images/d00324c17a4b4b8027cab5356ead88de.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/d00324c17a4b4b8027cab5356ead88de.png)
 使用场景
 SingleTask这种启动模式最常使用的就是一个**APP的首页**，因为一般为一个APP的第一个页面，且长时间保留在栈中，所以最适合设置singleTask启动模式来复用。
 
@@ -395,7 +395,7 @@ public void onCreate(Bundle savedInstanceState){
 有些内存不足、设备配置、意外操作可能会在运行时发生变化（例如屏幕方向、键盘可用性及语言设定切换而不是正常的应用程序行为）。 发生这种变化时，Android系统会破坏正在运行的 Activity。但系统会使用一组存储在Bundle对象中的键值对的集合来保存该Activity当前状态。这样如果用户导航回它，系统会创建一个新的Activity实例并使用一组保存的数据描述Activity被销毁的状态。从而回复之前"实例状态"。
 要妥善处理重启行为，Activity 必须通过常规的Activity 生命周期恢复其以前的状态，在 Activity 生命周期中，Android 会在停止 Activity 之前调用 `onSaveInstanceState()`，以便您保存有关应用状态的数据。 然后，您可以在 `onCreate()` 或 `onRestoreInstanceState() `期间恢复 Activity 状态。
 因此结合之前的生命周期方法，一个Activity从创建到销毁执行的生命周期方法有： onResume -> onSaveInstanceState（保存数据） ->onPuase -> onStop ->onDestory -> onCreate -> onStart -> onRestoreInstanceState（恢复数据）->onResumne
-![image.png](/images/bfa51232a7593d735613e8c043ccff20.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/bfa51232a7593d735613e8c043ccff20.png)
 这里存在几个问题：
 
 1. 什么时候会去调用`onSaveInstanceState`保存Activity状态？

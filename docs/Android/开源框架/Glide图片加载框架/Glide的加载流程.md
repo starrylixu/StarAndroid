@@ -52,7 +52,7 @@ load.into(iv);
 11. 构建内存缓存
 12. 最终回到ImageViewTarget显示图片
 
-![image.png](/images/d7aeb11c85eba8f41d8fec0ee7185487.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/d7aeb11c85eba8f41d8fec0ee7185487.png)
 # with（如何实现生命周期的管控）
 调用with方法
 ```java
@@ -78,7 +78,7 @@ public RequestManager get(@NonNull FragmentActivity activity) {
 # load
 调用load最终会返回一个`RequestBuilder`对象
 load负责做什么？
-![image.png](/images/a3fe3d9f6dc850ad8d438d6c7159b14f.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/a3fe3d9f6dc850ad8d438d6c7159b14f.png)
 
 # into
 into创建请求
@@ -381,7 +381,7 @@ private DataFetcherGenerator getNextGenerator() {
   }
 ```
 以下截图来自Glide类中
-![image.png](/images/1da773be978474f148e94c42c32cb8f1.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/1da773be978474f148e94c42c32cb8f1.png)
 ## HttpGlideUrlLoader
 既然如此自然而然调用的就是`HttpGlideUrlLoader`类中的`buildLoadData`方法
 ```java
@@ -506,7 +506,7 @@ synchronized void activate(Key key, EngineResource<?> resource) {
   }
 ```
 有3个子类实现了这个方法，最终由它们去显示图片	
-![image.png](/images/22eba63a902f8f8aae8b5c520f4aa7bb.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/22eba63a902f8f8aae8b5c520f4aa7bb.png)
 ## DrawableImageViewTarget
 这里的view就是一个ImageView对象，至此一张图片就显示在了屏幕上
 ```java

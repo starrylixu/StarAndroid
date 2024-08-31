@@ -28,7 +28,7 @@ ANR的全称：应用程序无响应（ANR：Application NotResponding）
 # 如何解决ANR
 首先需要定位ANR发生的位置：通过ANR日志定位问题
 可以通过查看/data/anr/traces.txt即可，最新的ANR信息在最开始部分。
-![image.png](/images/0bcde093db643d207131e3093c5d50ef.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/0bcde093db643d207131e3093c5d50ef.png)
 解决的思路：将所有的耗时操作在子线程中进行
 1、使用AsyncTask处理耗时IO操作。
 2、使用Thread或者HandlerThread时，调用Process.setThreadPriority(Process.THREAD_PRIORITY_BACKGROUND)设置优先级，否则仍然会降低程序响应，因为默认Thread的优先级和主线程相同。

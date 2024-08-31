@@ -11,7 +11,7 @@
 9. okhttp取消请求
 10. retrofit
 
-> ![image.png](/images/0512d2ef2e66f862052707134e67386b.png)HTTP/2 支持允许对同一主机的所有请求共享一个套接字。
+> ![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/0512d2ef2e66f862052707134e67386b.png)HTTP/2 支持允许对同一主机的所有请求共享一个套接字。
 > - 连接池可减少请求延迟（如果 HTTP/2 不可用）。
 > - 透明 GZIP 可缩小下载大小。
 > - 响应缓存完全避免了重复请求的网络。
@@ -25,7 +25,7 @@ OkHttp 适用于 Android 5.0+（API 级别 21+）和 Java 8+。
 3、发送请求: 使用 `**OkHttpClient**` 的 `**newCall()**` 方法创建一个 `**Call**` 对象，其实实际请求网络的是Call接口的真正的实现类是RealCall，通过调用 Call 的 `**execute() **`或者`** enqueue()**` 方法来发送请求。
 4、处理响应: 发送请求后，`**OkHttp**`会返回一个 `**Response**` 对象，这个对象包含有响应状态码、头信息、响应体等相关内容。
 5、释放资源: 最后，我们需要释放一些资源，如：连接池、缓存等。
-![](/images/b6f27757a0c3e5976cfbb4d84ebcdee4.jpeg)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/b6f27757a0c3e5976cfbb4d84ebcdee4.jpeg)
 ## 发起同步请求
 ```java
 //[1]、创建OkhttpClient对象
@@ -117,7 +117,7 @@ OkHttp在Android中的使用步骤是什么？
 Retrofit和OkHttp的区别是什么？
 
 
-![image.png](/images/7441785450b62ef70d9575c032083a02.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/7441785450b62ef70d9575c032083a02.png)
 HttpURLConnection每一次网络请求都会重新建立一个连接，频繁的建立和释放网络连接会耗费大量资源
 Okhttp 使用 Socket 建立长连接，使用连接池技术，可以减少网络请求的连接建立时间，提升性能。
 # 异步请求流程分析
@@ -489,10 +489,10 @@ public synchronized int runningCallsCount() {
 //1.创建一个okhttpclient对象
 OkHttpClient okHttpClient=new OkHttpClient();
 ```
-![image.png](/images/13c5feb5658d1a9b09972dedea9a4712.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/13c5feb5658d1a9b09972dedea9a4712.png)
 Builder是OkHttpClient的一个静态内部类，采用的是创建者模式，将复杂对象的创建与它的表示分离，在Builder的构造方法中，实例化了分发器Dispatcher和连接池ConnectionPool，以及对各种属性进行初始化配置。
-![image.png](/images/846ea9363c7be0952106bc30d0711b45.png)
-![image.png](/images/1831ba04a964c8c884aaa2804e0007fc.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/846ea9363c7be0952106bc30d0711b45.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/1831ba04a964c8c884aaa2804e0007fc.png)
 ```java
 final Dispatcher dispatcher;//调度器
 final @Nullable
@@ -540,8 +540,8 @@ Request request=new Request.Builder()
         .get()
         .build();
 ```
-![image.png](/images/33be6c5808448fbfbbdbe6b4d2733b3b.png)
-![image.png](/images/791a3c085db60788ef1dfbffd8741e09.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/33be6c5808448fbfbbdbe6b4d2733b3b.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/791a3c085db60788ef1dfbffd8741e09.png)
 这里可以继续深入，get()方法和post()
 
 ## 创建Call对象
@@ -549,11 +549,11 @@ Request request=new Request.Builder()
 //3.将数据放到okHttpClient对象中
 Call call = okHttpClient.newCall(request);
 ```
-![image.png](/images/66ea37c7c93d223cebbcde22a7bcffa7.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/66ea37c7c93d223cebbcde22a7bcffa7.png)
 Call是一个接口，实则调用的是它的实现类RealCall
-![image.png](/images/0800f31d0f9d877749e617f4c854ba84.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/0800f31d0f9d877749e617f4c854ba84.png)
 在RealCall类中的静态方法中创建了call对象
-![image.png](/images/d53d1ebff6e5307787918b8f96ff17c0.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/d53d1ebff6e5307787918b8f96ff17c0.png)
 ## 异步请求
 ```java
 //enqueue一个队列，程序可以发起多个请求，将这些请求存在队列中一个一个的处理
@@ -572,7 +572,7 @@ call.enqueue(new Callback() {
 });
 ```
 同样调用的也是Call接口在RealCall实现类中的enqueue方法
-![image.png](/images/d998b8bedefb10bfddb49e9cd1b84eb3.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/d998b8bedefb10bfddb49e9cd1b84eb3.png)
 
 
 当面试官要求你详细讲解OkHttp的原理时，你可以按照以下步骤来解释连接池、请求队列和线程池等机制是如何帮助OkHttp高效地处理并发请求的：

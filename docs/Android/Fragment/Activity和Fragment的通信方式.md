@@ -27,7 +27,7 @@ textView.setOnClickListener(new View.OnClickListener() {
     }
 });
 ```
-![image.png](/images/cfd94e780e42a79fb44ceed13074f77d.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/cfd94e780e42a79fb44ceed13074f77d.png)
 ## 动态创建（fragment还没有添加）
 
 1. 在Activity中建一个bundle，把要传的值存入bundle，然后通过fragment的setArguments（bundle）传到fragment
@@ -72,7 +72,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
     return view;
 }
 ```
-![image.png](/images/306ff722c914d8b8af32d0f1f4cbd7e8.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/306ff722c914d8b8af32d0f1f4cbd7e8.png)
 # Fragment传递数据到Activity
 ## 接口回调
 

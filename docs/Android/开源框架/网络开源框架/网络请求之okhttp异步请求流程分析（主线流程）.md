@@ -1,5 +1,5 @@
 # 涉及的类
-![image.png](/images/ed1aa4aff2bd2cb2f79c139a97a5374c.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/ed1aa4aff2bd2cb2f79c139a97a5374c.png)
 首先我们学习了OkHttp的使用[网络请求之okhttp框架](https://www.yuque.com/starryluli/android/ctrtgpfwggf1g8zd)，如何发起一个同步请求和异步请求
 # 异步请求流程分析
 参考文章：[https://juejin.cn/post/7041855208418181127](https://juejin.cn/post/7041855208418181127)
@@ -377,4 +377,4 @@ public synchronized int runningCallsCount() {
 ```
 
 # 主线流程
-![image.png](/images/a38029100196b8bf16607c6450244ad0.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/a38029100196b8bf16607c6450244ad0.png)

@@ -28,7 +28,7 @@ dependencies {
 4. 图标中的数据
 
 四个部分组成，因此我们在设置一副图表时需要对这些部分一一设置样式。
-![](/images/471edc2494bedb995c5e3fe015baf5c7.png)
+![](https://camo.githubusercontent.com/9aeb2c8582c30fc991c7d12708585f466482e57967dd01bffd9d34c581289c73/68747470733a2f2f7261772e6769746875622e636f6d2f5068696c4a61792f4d5043686172742f6d61737465722f73637265656e73686f74732f73696d706c6564657369676e5f6c696e656368617274342e706e67#from=url&id=FFryo&originHeight=560&originWidth=1200&originalType=binary&ratio=1.5&rotation=0&showTitle=false&status=done&style=none&title=)
 ## 设置图例属性
 设置图例的形状
 ```groovy

@@ -47,7 +47,7 @@ NotificationManager manager= (NotificationManager)
                               getSystemService(Context.NOTIFICATION_SERVICE);
 ```
 ### 通知式样介绍
-![image.png](/images/3b22b18ed329618c59ce9d6aed643938.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/3b22b18ed329618c59ce9d6aed643938.png)
 
 - ① 小图标：此为必要图标，通过 setSmallIcon() 设置。
 - ② 应用名称：此由系统提供。
@@ -104,7 +104,7 @@ NotificationManager manager= (NotificationManager) getSystemService(Context.NOTI
 - 添加响应：remoteViews.setOnClickPendingIntent(添加响应的控件id，PendingIntent）
 ## 桌面小部件
 AppWidgetProvider类，本质是一个广播，即BroadcastRecevier。
-![image.png](/images/76148ac3dfc311a766f682187a346ac3.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/76148ac3dfc311a766f682187a346ac3.png)
 [构建应用微件 | Android 开发者 | Android Developers](https://developer.android.google.cn/guide/topics/appwidgets?hl=zh-cn#Basics)
 ### 1.定义AppWidgetProviderInfo 元数据（小部件配置信息）
 保存在项目的 `res/xml/ `文件夹中。
@@ -354,12 +354,12 @@ RemoteViews 对象（因而应用微件）可以支持以下布局类：
 但是不支持这些类的后代以及自定义View。
 :::
 ## 通过反射更新View元素
-![image.png](/images/267e158a13f0888769e913c84fb184db.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/267e158a13f0888769e913c84fb184db.png)
 ## RemoteViews的内部机制
 布局文件实际上在Service中被加载。
 疑问
 系统对加载的View的一系列界面更新任务会通过set提交。但是set方法并不是立刻执行，而是等到RemoteViews被加载以后才执行。具体的更新操作是在SystemServer中执行。
-![](/images/503fafd466d5a412db6bb775fc2344f1.jpeg)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/503fafd466d5a412db6bb775fc2344f1.jpeg)
 之所以不通过Binder直接跨进程去更新View和操作View，是因为View的方法多，代价太大；其次频繁的更新View势必产生大量的IPC操作，影响效率。
 因此使用RemoteViews中的一个Action的概念。一个Action就代表一个View操作，它实现了Parcelable接口可以跨进程传输，系统将这些Action传输道远程进程中，在远程进程中去执行这些Action
 NotificationManager和 AppWidgetManager提交界面更新，也就是一组Action，而在NotificationService和NotificationService中通过RemoteViews的apply方法，实则调用到Action的apply方法，由他执行真正的界面更新操作。
@@ -368,7 +368,7 @@ NotificationManager和 AppWidgetManager提交界面更新，也就是一组Actio
 1. 不需要定义大量的Binder接口
 2. 对于远程进程中的界面操作是批量进行的（每次执行一组Action），提高了效率和性能
 
-![image.png](/images/59411dffd889e2a7879d544c2fd0fd0e.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/59411dffd889e2a7879d544c2fd0fd0e.png)
 ```java
 private Action getActionFromParcel(Parcel parcel, int depth) {
         int tag = parcel.readInt();

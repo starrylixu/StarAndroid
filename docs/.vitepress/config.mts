@@ -20,7 +20,8 @@ export default defineConfig({
         srcDir:'./docs',
         title:{
           map:{
-            '/Android基础知识': '🎉Android World🎉'
+            '/Android基础知识/': '🎉Android World🎉',
+
           }
         }
       })
@@ -71,7 +72,7 @@ export default defineConfig({
           { text: '常用控件', link: '/Android控件/1.（待完善）BRV的简单使用' }
         ]
       },
-      { text: 'New Android', link: '/Android/View' },
+      { text: 'New Android', link: '/Android/多线程' },
       { text: 'Flutter', link: '/Flutter/1.控件' },
       {
         text: '语言学习',

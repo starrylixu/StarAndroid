@@ -1,4 +1,4 @@
-![image.png](/images/b6e7dfe061dfd22614fec53da91763ef.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/b6e7dfe061dfd22614fec53da91763ef.png)
 # With()源码
 ```java
 
@@ -166,7 +166,7 @@ public static Glide get(Context context) {
     }
 
 ```
-![image.png](/images/d7a792fda37c7c41a871b8404c8c5ee3.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/d7a792fda37c7c41a871b8404c8c5ee3.png)
 # Glide4.11
 [Glide 4.11 源码解析(一)：图片加载流程_make sure you’re using the provided registry rathe_鹭岛猥琐男的博客-CSDN博客](https://blog.csdn.net/zzw0221/article/details/107146650)
 

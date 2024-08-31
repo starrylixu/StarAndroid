@@ -16,4 +16,4 @@
 进行封装。`retrofit`通过接口和注解来描述我们的网络请求，然后通过`client`去调用`okhttp`
 框架，通过`addConverterFactory`来实现对返回的json数据进行处理，转换成我们需要的数据类型，可以理解为**okhttp的加强版，底层封装了Okhttp**。
 
-![image.png](/images/865f8b2243a85810067c317a77a7225e.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/865f8b2243a85810067c317a77a7225e.png)

@@ -8,13 +8,13 @@ implementation("com.squareup.okhttp3:okhttp:4.9.3")
 implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 ```
-![](/images/096da1671e8a3c92e0732c0b05e8ac28.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/096da1671e8a3c92e0732c0b05e8ac28.png)
 # 使用步骤
 ### 5.2.1 创建接口
 
 创建一个接口，返回值是Call类型，使用泛型封装Student类，注意引入包不要用okhttp的
 
-![](/images/3fbd71b5c4ec2c730c4beddac75cc093.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/3fbd71b5c4ec2c730c4beddac75cc093.png)
 
 ```java
 import retrofit2.Call;
@@ -81,7 +81,7 @@ Retrofit框架看上去已经很完美了，但是因为它帮我们完成了数
 implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
 ```
 
-![](/images/042070a3b9af0238e4c19943c9bc97f8.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/042070a3b9af0238e4c19943c9bc97f8.png)
 
 通过如下工具类进行拦截，使用这个工具类我们通过日志过滤的方法查看请求的状态和数据解析是否成功
 
@@ -124,8 +124,8 @@ public class RetrofitUtils {
 Api api = RetrofitUtils.getRetrofit("http://121.4.44.56/").create(Api.class);
 ```
 
-![](/images/ad45265e7952a093d8cd0fac82de3049.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/ad45265e7952a093d8cd0fac82de3049.png)
 
 通过debug级的日志过滤我们可以查看数据请求的状态信息和数据解析结果，也方便我们排错分析
 
-![](/images/8c114e6deb18276b7ba552e2c24cb70e.png)
+![](https://starrylixu.oss-cn-beijing.aliyuncs.com/8c114e6deb18276b7ba552e2c24cb70e.png)

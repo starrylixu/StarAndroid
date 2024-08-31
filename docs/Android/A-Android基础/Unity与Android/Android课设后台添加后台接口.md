@@ -40,10 +40,10 @@ user_comment 用户评论表
 # 
 # Server层权限
 注释注解，权限放行
-![image.png](/images/29509a1d3fe64033b6504daa627314e9.png)![image.png](/images/6ce70bd11164a98b450f57221cd4e1eb.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/29509a1d3fe64033b6504daa627314e9.png)![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/6ce70bd11164a98b450f57221cd4e1eb.png)
 
 # Swagger
-![image.png](/images/b850bee5d994d15e643ee8bb6470eab1.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/b850bee5d994d15e643ee8bb6470eab1.png)
 # Android Lombok
 [Android](https://projectlombok.org/setup/android)
 ```groovy
@@ -54,7 +54,7 @@ dependencies {
 ```
 # Android 请求数据失败
 [java.net.ConnectException: Failed to connect to /127.0.0.1:80_切切歆语的博客-CSDN博客](https://blog.csdn.net/dickyqie/article/details/105534207)
-![image.png](/images/f9535026d01b9edb72e9822faa157a20.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/f9535026d01b9edb72e9822faa157a20.png)
 # Android Application保存全局变量
 ```java
 package com.hnucm.c202001020216;

@@ -1,4 +1,4 @@
-![黄绿色手绘风新闻资讯微信公众号封面 (2).gif](/images/c730d6845c99bc53242d6a77776e800a.gif)
+![黄绿色手绘风新闻资讯微信公众号封面 (2).gif](http://starrylixu.oss-cn-beijing.aliyuncs.com/c730d6845c99bc53242d6a77776e800a.gif)
 [https://www.jianshu.com/p/ca3d87a4cdf3](https://www.jianshu.com/p/ca3d87a4cdf3)
 # 什么是广播接收器
 BroadcastReceiver是广播接收器，是一种消息型组件。用于在**不同的组件**乃至**不同的应用**之间传递消息，是四大组件之一
@@ -12,7 +12,7 @@ BroadcastReceiver是广播接收器，是一种消息型组件。用于在**不�
 3. 消息中心（AMS，即Activity Manager Service）
 
 原理示意图：
-![image.png](/images/64f82f4af3b5a10e9f6e78a47c89e68b.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/64f82f4af3b5a10e9f6e78a47c89e68b.png)
 # 使用流程
 自定义一个广播接收者，继承自BroadcastReceiver，并重写抽象方法onReceive()，在其中实现接受广播后的具体逻辑事件，默认情况下，广播接收器运行在 UI 线程，因此，onReceive()方法**不能执行耗时操作**，否则将导致**ANR**
 ```java
@@ -32,7 +32,7 @@ public class mBroadcastReceiver extends BroadcastReceiver {
 # 广播接收器的注册方式
 分为两种：1. 静态注册 2. 动态注册
 ## 静态注册
-使用：在androidManifest文件中通过**<receive>**标签声明
+使用：在androidManifest文件中通过**receive**标签声明
 特点：常驻、不受任何组件的生命周期影响（应用程序关闭后，如果有信息广播，程序依旧会被系统调用），耗电，占内存
 ```xml
 <receiver 
@@ -335,7 +335,7 @@ localBroadcastManager.sendBroadcast(intent);
 AMS根据广播发送者要求，在已注册列表中，寻找合适的广播接收器（寻找依据：IntentFilter）并将广播发送到合适的广播接受者相应的消息循环队列中
 广播接受者通过消息循环，拿到此广播，并回调onReceive()方法。
 其中广播发送者与广播接受者的执行是异步的，即广播发送者不会关心有无接受者接收&也不确定接受者何时才能接收到。
-![image.png](/images/64f82f4af3b5a10e9f6e78a47c89e68b.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/64f82f4af3b5a10e9f6e78a47c89e68b.png)
 ## 本地广播
 下面简析一下LocalBroadcastManager源码
 ### 实例化广播

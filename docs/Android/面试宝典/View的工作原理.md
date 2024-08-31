@@ -36,20 +36,20 @@
         }
     }
 ```
-![image.png](/images/659c4c04a3d5cfca1343331a8a651a51.png)
-![image.png](/images/5cae1f037543e28e94a70ccb292df3c9.png)
-![image.png](/images/01cff04d328651e27f0f0461036ced2e.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/659c4c04a3d5cfca1343331a8a651a51.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/5cae1f037543e28e94a70ccb292df3c9.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/01cff04d328651e27f0f0461036ced2e.png)
 # 如何获取View的宽高
 在onCreate、onStart、onResume中均不能获取到某个View的宽高信息。View的measure过程和Activity的生命周期不同步。
 ## 1.View#onWindowFocusChanged
 View已经初始化完成。当Activity的窗口得到和失去焦点时均会被调用此方法。
-![image.png](/images/e3ea1903ffba51dee5fe2581a643d554.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/e3ea1903ffba51dee5fe2581a643d554.png)
 ## 2.view.post
 通过post将一个runnable投递到消息队列的尾部。
-![image.png](/images/58c5dd84ac03b9654fd116c606fac9c0.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/58c5dd84ac03b9654fd116c606fac9c0.png)
 ## 3.ViewTreeObserver
 
-![image.png](/images/038e6d7ef5a93c74d874a9cc579ab15f.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/038e6d7ef5a93c74d874a9cc579ab15f.png)
 # Layout过程
 
 1. Layout过程的作用：View Group用来确定子元素的位置
@@ -666,13 +666,13 @@ public class CircleView extends View {
 
 </LinearLayout>
 ```
-![image.png](/images/16cad0f8cc94231053a3a9de34ec1bad.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/16cad0f8cc94231053a3a9de34ec1bad.png)
 margin生效，margin属性由父容器控制
-![image.png](/images/e0d0d1eeae5181617ff77adc586a6b0a.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/e0d0d1eeae5181617ff77adc586a6b0a.png)
 padding无效
-![image.png](/images/0d91a8d2afb4979dc569f440742332ba.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/0d91a8d2afb4979dc569f440742332ba.png)
 wrap_content无效
-![image.png](/images/b11c3c34739c0951eae93ef02e31609d.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/b11c3c34739c0951eae93ef02e31609d.png)
 ### 3.处理wrap_content失效
 ```java
 //解决继承View实现控件wrap_content失效通法
@@ -695,7 +695,7 @@ wrap_content无效
         }
     }
 ```
-![image.png](/images/cf57f35eeef48c4e198f9613a2ed8142.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/cf57f35eeef48c4e198f9613a2ed8142.png)
 ### 4.处理padding失效
 ```java
  @Override
@@ -711,7 +711,7 @@ wrap_content无效
         canvas.drawCircle(paddingLeft+width/2,paddingTop+height/2,radius,mPaint);
     }
 ```
-![image.png](/images/157360c4fe358419347c86021947dd3f.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/157360c4fe358419347c86021947dd3f.png)
 ### 5.自定义属性
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -721,8 +721,8 @@ wrap_content无效
     </declare-styleable>
 </resources>
 ```
-![image.png](/images/6cf1d2f18fcdd8d93c4c7136045b624a.png)
-![image.png](/images/b0e7ac542a01bcab3e9f961583fae37b.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/6cf1d2f18fcdd8d93c4c7136045b624a.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/b0e7ac542a01bcab3e9f961583fae37b.png)
 ### 6.CircleView
 ```java
 package com.hnucm.chapter4_1.ui;

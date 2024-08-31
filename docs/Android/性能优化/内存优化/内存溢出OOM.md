@@ -1,7 +1,7 @@
 # 什么是内存泄漏
-![image.png](/images/774b9a7d8a6135ad83bf5669e9262216.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/774b9a7d8a6135ad83bf5669e9262216.png)
 如下是常见的内存溢出导致应用奔溃
-![image.png](/images/f2743b7117e259d24f8659cf618a9dcf.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/f2743b7117e259d24f8659cf618a9dcf.png)
 # 垃圾回收机制
 Java中垃圾回收机制
 判断一个对象是否存活

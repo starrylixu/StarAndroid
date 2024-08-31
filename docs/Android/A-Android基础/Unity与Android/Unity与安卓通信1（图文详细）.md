@@ -10,40 +10,40 @@
 
 记住选择的API等级，在unity中会用到，如图我用的是API21，Android5.0
 
-![](/images/0ea8d4e5a13e4bfdf9cdd1390953cda1.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/0ea8d4e5a13e4bfdf9cdd1390953cda1.png)
 
 创建好后，as默认打开是在Android结构下
 
-![](/images/fcc11286345e915c0cc75a886cc6b2f0.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/fcc11286345e915c0cc75a886cc6b2f0.png)
 
 我们将其切换到Project结构目录下
 
-![](/images/60c4311c6a004e9e36990697b96e5ec7.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/60c4311c6a004e9e36990697b96e5ec7.png)
 
 ### 2.导入classes.jar
 
 1.  导入unity的jar包
 在unity的安装目录下找到classes.jar文件，并将其复制到as的libs文件下`D:\Unity\UntiyDownLoad\2020.3.26f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Release\Classes`
-![](/images/c8af783fd0a193f17c2d83df3d91ec7d.png)
-![](/images/2f0cb758cf348586c1ef4592166f82b3.png) 
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/c8af783fd0a193f17c2d83df3d91ec7d.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/2f0cb758cf348586c1ef4592166f82b3.png) 
 2.  右键classes.jar，选择add as library，点击ok，完成classes.jar文件的导入
-![](/images/445fe66777ebf557d787ccbb6cc11e2b.png) 
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/445fe66777ebf557d787ccbb6cc11e2b.png) 
 
 ### 3、编写MainActivity
 
 在MainActivity中编写通信代码，如果显示没有UnityPlayerActivity，则在unity的安装目录下`D:\Unity\UntiyDownLoad\2020.3.26f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\Source\com\unity3d\player`找到`UnityPlayerActivity.java`这个类，这是因为在2019版以后的unity中`UnityPlayerActivity.java`不再放在classes.jar中
 
-![](/images/29b62cb7541f260a4376974af4e95d6d.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/29b62cb7541f260a4376974af4e95d6d.png)
 
-![](/images/b36f30800eee1623058d2871f56dd759.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/b36f30800eee1623058d2871f56dd759.png)
 
 找到这个类之后将其放在com.example.unitytoandroid包目录下，与MainActivity同级
 
-![](/images/4004290a3a0ebfbd7fbcd4eb2dad101d.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/4004290a3a0ebfbd7fbcd4eb2dad101d.png)
 
 这样就不会再出现报错
 
-![](/images/816224ec7ab0a3dc45cb6f34a62bd4ce.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/816224ec7ab0a3dc45cb6f34a62bd4ce.png)
 
 然后在MainActivity中编写通信代码，
 
@@ -74,11 +74,11 @@ public class MainActivity extends UnityPlayerActivity {
 
 把src文件下的所有文件删除，打开AndroidManifest.xml文件，删除当中的报错代码，有时也不会报错但也要删除否则在unity中运行时也会报错，删除后AndroidManifest.xml文件代码应如下
 
-![](/images/0fa08e146caa1f45aaf754151b841e0c.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/0fa08e146caa1f45aaf754151b841e0c.png)
 
 删除后AndroidManifest.xml文件中应该只有两行代码
 
-![](/images/35e10c58c523e9f8df53822a5e87214c.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/35e10c58c523e9f8df53822a5e87214c.png)
 
 ### 5、build.gradle文件
 
@@ -106,7 +106,7 @@ compileOnly files('libs\\classes.jar')
 
 在上方工具栏找到Build->Rebuild project，成功运行出来，我们便得到了aar文件
 
-![](/images/fe47ccd0fec9809dbbd8d74665b3fa3d.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/fe47ccd0fec9809dbbd8d74665b3fa3d.png)
 
 ## Unity
 
@@ -114,7 +114,7 @@ compileOnly files('libs\\classes.jar')
 
 创建一个Unity项目将其切换到安卓平台
 
-![](/images/98f5d837e51d48be7fb7f4672f8144b4.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/98f5d837e51d48be7fb7f4672f8144b4.png)
 
 ### 2、添加app-debug.aar文件
 
@@ -122,19 +122,19 @@ compileOnly files('libs\\classes.jar')
 
 如果电脑没有解压aar格式的软件，可以复制一份aar文件，更改后缀名为zip然后解压，取出AndroidManifest.xml文件，双击打开可以查看AndroidManifest.xml文件里的内容
 
-![](/images/ebf2d18761eaeb549eaa4c0cbc145357.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/ebf2d18761eaeb549eaa4c0cbc145357.png)
 
-![](/images/46c4696add02b1458691da1ff558a1b0.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/46c4696add02b1458691da1ff558a1b0.png)
 
-![](/images/d9bb6370e2192ac0eae980bf793cce8e.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/d9bb6370e2192ac0eae980bf793cce8e.png)
 
 ### 3、创建一个UI按钮
 
 在unity中创建一个UI按钮，并编写一个脚本
 
-![](/images/95ec744821b5139edde4df0878203a75.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/95ec744821b5139edde4df0878203a75.png)
 
-![](/images/95fee8238a47467f7775b6b21bc9b353.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/95fee8238a47467f7775b6b21bc9b353.png)
 
 ```c
 using System.Collections;
@@ -166,16 +166,16 @@ public class Test : MonoBehaviour
 
 将脚本挂在Button上
 
-![](/images/034cbbcdeff638647b27bf2b6201640e.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/034cbbcdeff638647b27bf2b6201640e.png)
 
 ### 4、在unity里build
 
 build之前要确保unity中API的等级设置要与AS中的一样
 
-![](/images/7f27f5c3ecaf220419da1d80e30bcd61.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/7f27f5c3ecaf220419da1d80e30bcd61.png)
 
 ## 运行
 
 在手机上点击按钮，as中弹出提示，标识通信成功
 
-![](/images/e88461455026e5c40f511218e6f4c131.png)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/e88461455026e5c40f511218e6f4c131.png)

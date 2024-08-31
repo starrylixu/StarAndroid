@@ -3,6 +3,7 @@ node_modules
 docs/.vitepress/cache
 docs/.vitepress/dist
 .elog-*
+.elog-import.env
 dist
 .vscode
 cache

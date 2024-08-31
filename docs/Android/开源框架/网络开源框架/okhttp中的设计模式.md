@@ -50,7 +50,7 @@ OkHttpClient.Builder builder = new OkHttpClient.Builder();
 用户需要盖房子的例子。
 例如用户需要盖房子，那么他会去联系设计师，根据用户的需求先设计出一套图纸，再将图纸交给建筑工人去建造，最终工人交互房子给用户。
 因此涉及到四个对象：设计师，图纸，工人，房子
-![image.png](/images/326d19c8cfdcdd0f46b1bcaf794088cf.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/326d19c8cfdcdd0f46b1bcaf794088cf.png)
 
 首先是House，房子对象，房子对象有它的属性，例如要建的高度宽度颜色等。
 ```java
@@ -235,7 +235,7 @@ public class Client {
 }
 
 ```
-![image.png](/images/dc7aa2db1912d14ab1357aeeddc24650.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/dc7aa2db1912d14ab1357aeeddc24650.png)
 可见，建造者模式主要利用了复制的思想，用户提供需求给设计师，设计师设计好图纸，最终工人按照图纸复刻出一栋房子即可。
 ## Okhttp中的实现
 链式调用，okhttp中的建造者可以实现链式调用，我们也来优化一下我们的实现。
@@ -294,7 +294,7 @@ public class Client {
     }
 }
 ```
-![image.png](/images/a5f75a97bef7041b258f3d3122d43fab.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/a5f75a97bef7041b258f3d3122d43fab.png)
 在**Okhttp**中，我们都知道**OkHttpClient**和**Request**都使用了建造者模式，以**Request**为例：
 ```java
 Request request=new Request.Builder()
@@ -303,7 +303,7 @@ Request request=new Request.Builder()
 	.build();
 ```
 Reqeust是我们需要的对象，而Builder就是构造这个对象的“图纸”，Builder也是Request的内部类，从它们的属性就可以窥见，Builder确实就是Request的“图纸”。
-![image.png](/images/c5957fe69c4e3dc3992a6d35cf282a51.png)![image.png](/images/beb49d38dbc8371e4e1163e71356a34c.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/c5957fe69c4e3dc3992a6d35cf282a51.png)![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/beb49d38dbc8371e4e1163e71356a34c.png)
 以下方法均来自Builder类中，可以看到它的这些方法确实是返回了this，因此能够实现链式调用。
 ```java
 public Builder url(HttpUrl url) {
@@ -420,7 +420,7 @@ Response getResponseWithInterceptorChain() throws IOException {
 // 我们可以自定义拦截器，它会优先执行，按照我们自定义的规则优先拦截
 interceptors.addAll(client.interceptors());
 ```
-![image.png](/images/ca97f068a3c3ea0134e5bdb888f5acf9.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/ca97f068a3c3ea0134e5bdb888f5acf9.png)
 ## 责任链举例
 抽象责任
 具体责任

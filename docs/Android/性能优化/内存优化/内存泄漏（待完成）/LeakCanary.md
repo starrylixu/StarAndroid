@@ -10,13 +10,13 @@ dependencies {
 }
 
 ```
-![image.png](/images/88870ec08c218ee2e5959f3e951a35a5.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/88870ec08c218ee2e5959f3e951a35a5.png)
 单例对象  -》 activity  
 发生内存泄漏时会通过通知的方式提醒给用户，根据引用链找到可能发生内存泄漏的位置
 除此之外它还会保存一份内存快照
 /sdcard/Download/包名/2023-05-10_02-29-01_847.hprof
 双击可以通过as自带的profiler打开
-![image.png](/images/340454f0b0a29f924366582b47af70bd.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/340454f0b0a29f924366582b47af70bd.png)
 
 # LeakCanary是如何安装的
 涉及framework
@@ -49,7 +49,7 @@ catch (Exception e) {
         + data.instrumentationName + ": " + e.toString(), e);
 }
 ```
-![image.png](/images/1463705620cf3ea08a2112b6bfa7d454.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/1463705620cf3ea08a2112b6bfa7d454.png)
 
 在创建应用程序类之前加载contentprovider。MainProcessAppWatcherInstaller用于安装泄漏金丝雀。应用程序启动时的App Watch。MainProcessAppWatcherInstaller自动设置在主应用进程中运行的LeakCanary代码。
 ```java
@@ -225,10 +225,10 @@ private fun removeWeaklyReachableObjects() {
 3. 一个Retained队列
 
 当一个新的对象调用onDestory方法后，首先会清除之前的弱引用队列中的弱可达对象，然后计算这个对象的key值，然后将它和弱引用队列关联，并将这个对象的key作为下标加入到监测数组中。最终延时5s触发泄漏监测机制，从弱引用队列中能取出该对象，说明它是弱可达的，那么就把它从监测数组中移除，否则就移入到Retained队中，说明这个对象可能发生了泄漏
-![image.png](/images/1a73e4bead34b714dcb246521aaceb92.png)
+![image.png](http://starrylixu.oss-cn-beijing.aliyuncs.com/1a73e4bead34b714dcb246521aaceb92.png)
 :::
 ## 这里不是很理解
 **checkRetainedExecutor**其实是个单例对象，里面会通过handler来延迟5s来执行方法。如果超过5s则会触发LeakCanary的泄漏检测机制。5s只是个经验值应该，因为GC并不是实时发生，因而预留5s交给GC操作。
 触发了LeakCanary的泄漏检测之后，则会执行**HeapDumpTrigger**的dumpHeap方法，在获取到了.hprof文件之后，调用HeapAnalyzerService.runAnalysis()给出分析结果。
 关于.hprof文件的分析，不是本文重点，具体可以参考hprof文件协议。其分析基本也就是根据GC Root去寻找泄漏的对象，大体流程图如下。
-![](/images/f6c8ce2839689ba1137050b3974ae900.webp)
+![](http://starrylixu.oss-cn-beijing.aliyuncs.com/f6c8ce2839689ba1137050b3974ae900.webp)
