@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
 import { csdn, YuQueSVG } from './utils/assists'
-// import { genYuqueSideBar } from './utils/route'
+import { genYuqueSideBar } from './utils/route'
 
 
 // https://vitepress.dev/reference/site-config
@@ -21,7 +21,6 @@ export default defineConfig({
         title:{
           map:{
             '/Android基础知识/': '🎉Android World🎉',
-
           }
         }
       })
@@ -72,7 +71,7 @@ export default defineConfig({
           { text: '常用控件', link: '/Android控件/1.（待完善）BRV的简单使用' }
         ]
       },
-      { text: 'New Android', link: '/Android/多线程' },
+      { text: 'New Android', link: '/Android/多线程/1.实现多线程' },
       { text: 'Flutter', link: '/Flutter/1.控件' },
       {
         text: '语言学习',
@@ -92,7 +91,7 @@ export default defineConfig({
     //多级侧边栏
     //https://vitepress.dev/zh/reference/default-theme-sidebar#collapsible-sidebar-groups
     sidebar: {
-      // "/docs/毕业设计": await genYuqueSideBar('/docs/毕业设计'),
+      // "/Android": await genYuqueSideBar(''),
       // "/docs/Android基础知识": await genYuqueSideBar('/docs/Android基础知识'),
       // "/docs-shorturl/": await genYuqueSideBarWithShortUrl('/docs-shorturl')
     },
@@ -104,7 +103,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Powered by <a href="https://www.yuque.com/starryluli" target="_blank">语雀</a>  & <a href="https://vitepress.dev" target="_blank">VitePress</a> with <a href="https://github.com/LetTTGACO/elog" target="_blank">Elog</a>',
-      copyright: 'Copyright © 2023-present'
+      copyright: 'Copyright © 2024-present'
     },
   }
 })
